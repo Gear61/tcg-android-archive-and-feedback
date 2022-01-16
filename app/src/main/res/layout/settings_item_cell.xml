@@ -12,7 +12,7 @@
     >
 
     <com.joanzapata.iconify.widget.IconTextView
-        android:id="@+id/settingsIcon"
+        android:id="@+id/settings_icon"
         android:gravity="center"
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -22,7 +22,7 @@
         />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/settingsToggle"
+        android:id="@+id/settings_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -30,13 +30,13 @@
         />
 
     <TextView
-        android:id="@+id/settingsOptionText"
+        android:id="@+id/settings_option_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
-        android:layout_toRightOf="@id/settingsIcon"
-        android:layout_toLeftOf="@id/settingsToggle"
+        android:layout_toRightOf="@id/settings_icon"
+        android:layout_toLeftOf="@id/settings_toggle"
         android:layout_centerVertical="true"
         android:gravity="center_vertical"
         android:textSize="17sp"

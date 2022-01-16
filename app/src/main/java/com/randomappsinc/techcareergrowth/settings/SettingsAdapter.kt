@@ -13,7 +13,7 @@ import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.theme.ThemeManager
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
-import com.randomappsinc.techcareergrowth.util.UIUtils
+import com.randomappsinc.techcareergrowth.util.UIUtil
 
 open class SettingsAdapter(
     val context: Context,
@@ -50,9 +50,9 @@ open class SettingsAdapter(
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val iconView: TextView = itemView.findViewById(R.id.settingsIcon)
-        private val optionText: TextView = itemView.findViewById(R.id.settingsOptionText)
-        private val toggle: SwitchCompat = itemView.findViewById(R.id.settingsToggle)
+        private val iconView: TextView = itemView.findViewById(R.id.settings_icon)
+        private val optionText: TextView = itemView.findViewById(R.id.settings_option_text)
+        private val toggle: SwitchCompat = itemView.findViewById(R.id.settings_toggle)
 
         fun bind(position: Int) {
             iconView.text = icons[position]
@@ -63,9 +63,9 @@ open class SettingsAdapter(
                 val darkModeFromSystem = preferencesManager.themeMode == ThemeMode.FOLLOW_SYSTEM &&
                         resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
                 if (preferencesManager.themeMode == ThemeMode.DARK || darkModeFromSystem) {
-                    UIUtils.setCheckedImmediately(toggle, true)
+                    UIUtil.setCheckedImmediately(toggle, true)
                 } else {
-                    UIUtils.setCheckedImmediately(toggle, false)
+                    UIUtil.setCheckedImmediately(toggle, false)
                 }
                 toggle.visibility = View.VISIBLE
                 iconView.setTextSize(

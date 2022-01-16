@@ -41,4 +41,11 @@
         <item>@string/document_icon</item>
         <item>@string/document_icon</item>
     </string-array>
+
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="copy_link">Copy link</string>
+    <string name="share_link">Share link</string>
+    <string name="link_copied_to_clipboard">Link copied to clipboard</string>
 </resources>

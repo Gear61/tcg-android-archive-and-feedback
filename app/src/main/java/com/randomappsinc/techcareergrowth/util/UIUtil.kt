@@ -12,7 +12,7 @@ import com.joanzapata.iconify.Icon
 import com.joanzapata.iconify.IconDrawable
 import com.randomappsinc.techcareergrowth.R
 
-object UIUtils {
+object UIUtil {
 
     fun hideKeyboard(activity: Activity) {
         val inputMethodManager =

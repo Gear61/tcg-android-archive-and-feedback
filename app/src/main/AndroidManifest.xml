@@ -31,5 +31,11 @@
             android:label="@string/full_app_name"
             android:exported="true"
             />
+
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/settings"
+            android:exported="false"
+            />
     </application>
 </manifest>
