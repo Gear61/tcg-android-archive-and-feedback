@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    tools:ignore="RtlHardcoded,SpUsage,UnusedAttribute"
+    >
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/settingsIcon"
+        android:gravity="center"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_normal"
+        android:textSize="22dp"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/settingsToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/settingsOptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@id/settingsIcon"
+        android:layout_toLeftOf="@id/settingsToggle"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:textColor="@color/text_normal"
+        />
+</RelativeLayout>
