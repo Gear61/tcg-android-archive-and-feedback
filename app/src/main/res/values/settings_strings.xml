@@ -24,8 +24,8 @@
     <string name="share_app_message">
         Hey! I think you\'ll enjoy Tech Career Growth, a free app with high-quality courses around growing in tech.
         You can learn about topic like mastering data structures and algorithms, resume optimization, and more!
-        Android: https://play.google.com/store/apps/details?id=com.randomappsinc.techcareergrowth
-        iOS: https://apps.apple.com/app/id1605094641
+        \n\nAndroid: https://play.google.com/store/apps/details?id=com.randomappsinc.techcareergrowth
+        \n\niOS: https://apps.apple.com/app/id1605094641
     </string>
 
     <string name="dark_mode_icon">{ion-ios-moon}</string>

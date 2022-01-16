@@ -37,5 +37,10 @@
             android:label="@string/settings"
             android:exported="false"
             />
+
+        <activity
+            android:name=".web.WebActivity"
+            android:exported="false"
+            />
     </application>
 </manifest>

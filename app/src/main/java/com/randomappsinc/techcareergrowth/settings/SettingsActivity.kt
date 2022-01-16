@@ -23,9 +23,9 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
 
         const val SUPPORT_EMAIL = "randomappsinc61@gmail.com"
         const val TERMS_AND_CONDITIONS_URL =
-            "https://github.com/Gear61/Openhouse-Documents/blob/main/Terms%20and%20Conditions.md#terms-and-conditions"
+            "https://github.com/Gear61/Tech-Career-Growth-Documents/blob/main/Terms%20And%20Conditions.md#terms-and-conditions"
         const val PRIVACY_POLICY_URL =
-            "https://github.com/Gear61/Openhouse-Documents/blob/main/Privacy%20Policy.md#privacy-notice"
+            "https://github.com/Gear61/Tech-Career-Growth-Documents/blob/main/Privacy%20Policy.md#privacy-notice"
     }
 
     private lateinit var binding: SettingsBinding
