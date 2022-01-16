@@ -16,12 +16,12 @@ import com.randomappsinc.techcareergrowth.theme.ThemeMode
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
 open class SettingsAdapter(
-    val context: Context,
+    context: Context,
     protected var settingsSelectionListener: SettingsSelectionListener
 ) : RecyclerView.Adapter<SettingsAdapter.ViewHolder>()  {
 
     companion object {
-        const val DARK_MODE_POSITION = 0
+        const val DARK_MODE_POSITION = 1
     }
 
     interface SettingsSelectionListener {

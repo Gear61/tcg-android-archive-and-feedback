@@ -22,11 +22,13 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
 
     companion object {
 
+        const val SLACK_URL = "https://join.slack.com/t/techcareergrowth/shared_invite/zt-lt2tbjcn-LOAVIDuGPI~nkuc4woHDLg"
         const val SUPPORT_EMAIL = "randomappsinc61@gmail.com"
         const val TERMS_AND_CONDITIONS_URL =
             "https://github.com/Gear61/Tech-Career-Growth-Documents/blob/main/Terms%20And%20Conditions.md#terms-and-conditions"
         const val PRIVACY_POLICY_URL =
             "https://github.com/Gear61/Tech-Career-Growth-Documents/blob/main/Privacy%20Policy.md#privacy-notice"
+        const val REPO_URL = "https://github.com/Gear61/Tech-Career-Growth-Android"
     }
 
     private lateinit var binding: SettingsBinding
@@ -48,7 +50,8 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
 
     override fun onSettingsItemClicked(position: Int) {
         when (position) {
-            0 -> {
+            0 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(SLACK_URL)))
+            1 -> {
                 val itemCell: View = binding.settingsOptions.getChildAt(SettingsAdapter.DARK_MODE_POSITION)
                 val darkModeToggle = itemCell.findViewById<SwitchCompat>(R.id.settings_toggle)
                 darkModeToggle.isChecked = !darkModeToggle.isChecked
@@ -56,14 +59,14 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
                 preferencesManager.themeMode = themeMode
                 ThemeManager.applyTheme(themeMode)
             }
-            1 -> {
+            2 -> {
                 val uriText =
                     "mailto:${SUPPORT_EMAIL}?subject=" + Uri.encode(getString(R.string.feedback_subject))
                 val mailUri = Uri.parse(uriText)
                 val sendIntent = Intent(Intent.ACTION_SENDTO, mailUri)
                 startActivity(Intent.createChooser(sendIntent, getString(R.string.send_email)))
             }
-            2 -> {
+            3 -> {
                 val uri = Uri.parse("market://details?id=${packageName}")
                 val rateIntent = Intent(Intent.ACTION_VIEW, uri)
                 if (packageManager.queryIntentActivities(rateIntent, 0).size <= 0) {
@@ -71,7 +74,7 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
                 }
                 startActivity(rateIntent)
             }
-            3 -> {
+            4 -> {
                 val shareIntent = ShareCompat.IntentBuilder(this)
                     .setType("text/plain")
                     .setText(getString(R.string.share_app_message))
@@ -80,8 +83,9 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
                     startActivity(shareIntent)
                 }
             }
-            4 -> openWebActivity(getString(R.string.terms_and_conditions), TERMS_AND_CONDITIONS_URL)
-            5 -> openWebActivity(getString(R.string.privacy_policy), PRIVACY_POLICY_URL)
+            5 -> openWebActivity(getString(R.string.terms_and_conditions), TERMS_AND_CONDITIONS_URL)
+            6 -> openWebActivity(getString(R.string.privacy_policy), PRIVACY_POLICY_URL)
+            7 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(REPO_URL)))
         }
     }
 
