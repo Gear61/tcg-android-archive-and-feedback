@@ -1,10 +1,5 @@
 package com.randomappsinc.techcareergrowth.web
 
-import com.randomappsinc.techcareergrowth.R
-import com.randomappsinc.techcareergrowth.databinding.WebViewBinding
-import com.randomappsinc.techcareergrowth.util.ClipboardUtil
-import com.randomappsinc.techcareergrowth.util.UIUtil
-
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
@@ -16,6 +11,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ShareCompat
 import com.joanzapata.iconify.IconDrawable
 import com.joanzapata.iconify.fonts.IoniconsIcons
+import com.randomappsinc.techcareergrowth.R
+import com.randomappsinc.techcareergrowth.databinding.WebViewBinding
+import com.randomappsinc.techcareergrowth.util.ClipboardUtil
+import com.randomappsinc.techcareergrowth.util.UIUtil
 
 open class WebActivity : AppCompatActivity() {
 
