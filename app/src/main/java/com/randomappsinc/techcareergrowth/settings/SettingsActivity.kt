@@ -3,6 +3,7 @@ package com.randomappsinc.techcareergrowth.settings
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
@@ -35,6 +36,7 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
         super.onCreate(savedInstanceState)
         binding = SettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         preferencesManager = PreferencesManager(this)
 
         val itemDecorator = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
@@ -89,5 +91,13 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
         intent.putExtra(WebActivity.URL_KEY, url)
         startActivity(intent)
         overridePendingTransition(R.anim.slide_in_bottom, R.anim.stay)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
