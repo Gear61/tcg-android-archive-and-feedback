@@ -35,6 +35,7 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
         super.onCreate(savedInstanceState)
         binding = SettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        preferencesManager = PreferencesManager(this)
 
         val itemDecorator = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         itemDecorator.setDrawable(ContextCompat.getDrawable(this, R.drawable.line_divider)!!)
