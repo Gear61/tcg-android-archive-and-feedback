@@ -28,6 +28,7 @@
 
         <activity
             android:name=".MainActivity"
+            android:label="@string/full_app_name"
             android:exported="true"
             />
     </application>
