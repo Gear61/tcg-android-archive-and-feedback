@@ -4,6 +4,8 @@
     package="com.randomappsinc.techcareergrowth"
     >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".init.MyApplication"
         android:allowBackup="true"
