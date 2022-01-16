@@ -93,6 +93,11 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
         overridePendingTransition(R.anim.slide_in_bottom, R.anim.stay)
     }
 
+    override fun finish() {
+        super.finish()
+        overridePendingTransition(R.anim.slide_right_out, R.anim.slide_right_in)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
             finish()
