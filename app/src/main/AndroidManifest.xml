@@ -45,5 +45,10 @@
             android:name=".web.WebActivity"
             android:exported="false"
             />
+
+        <activity
+            android:name=".learning.LessonActivity"
+            android:exported="false"
+            />
     </application>
 </manifest>

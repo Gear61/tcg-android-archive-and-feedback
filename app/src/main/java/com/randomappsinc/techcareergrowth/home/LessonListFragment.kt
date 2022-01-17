@@ -1,5 +1,6 @@
 package com.randomappsinc.techcareergrowth.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonListBinding
+import com.randomappsinc.techcareergrowth.learning.LessonActivity
 import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.settings.SettingsAdapter
 
@@ -30,6 +32,8 @@ class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
 
     private var _binding: LessonListBinding? = null
     private val binding get() = _binding!!
+    private lateinit var lessonsAdapter: LessonsAdapter
+    private var clickedPosition = -1
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = LessonListBinding.inflate(inflater, container, false)
@@ -48,7 +52,7 @@ class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
         val itemDecorator = DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
         itemDecorator.setDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.line_divider)!!)
         binding.lessonList.addItemDecoration(itemDecorator)
-        val lessonsAdapter = LessonsAdapter(
+        lessonsAdapter = LessonsAdapter(
             lessons = lessons,
             selectionListener = this
         )
@@ -56,6 +60,11 @@ class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
     }
 
     override fun onLessonClicked(position: Int) {
+        clickedPosition = position
 
+        val activity = requireActivity()
+        val intent = Intent(activity, LessonActivity::class.java)
+        intent.putExtra(LessonActivity.LESSON_KEY, lessonsAdapter.lessons[position])
+        activity.startActivity(intent)
     }
 }

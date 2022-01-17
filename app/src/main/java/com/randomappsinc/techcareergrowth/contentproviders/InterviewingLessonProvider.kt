@@ -3,6 +3,7 @@ package com.randomappsinc.techcareergrowth.contentproviders
 import android.content.Context
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
+import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.models.Question
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
@@ -61,6 +62,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_1"
         return Lesson(
             id = lessonId,
+            type = LessonType.INTERVIEWING,
             nameResId = R.string.interviewing_lesson_1_name,
             youtubeVideoId = "j9FD_Y5JTbw",
             questions = questions,
@@ -109,6 +111,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_2"
         return Lesson(
             id = lessonId,
+            type = LessonType.INTERVIEWING,
             nameResId = R.string.interviewing_lesson_2_name,
             youtubeVideoId = "guxFTl_qIRg",
             questions = questions,
@@ -157,6 +160,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_3"
         return Lesson(
             id = lessonId,
+            type = LessonType.INTERVIEWING,
             nameResId = R.string.interviewing_lesson_3_name,
             youtubeVideoId = "LSLyly2GJo4",
             questions = questions,

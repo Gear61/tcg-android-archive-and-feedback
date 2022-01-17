@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'org.jetbrains.kotlin.android.extensions'
 }
 
 android {
@@ -12,6 +13,10 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0.0"
+    }
+
+    androidExtensions {
+        experimental = true
     }
 
     buildFeatures {

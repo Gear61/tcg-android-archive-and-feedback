@@ -9,7 +9,7 @@ import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
 
 open class LessonsAdapter(
-    private val lessons: List<Lesson>,
+    val lessons: List<Lesson>,
     protected var selectionListener: SelectionListener
 ) : RecyclerView.Adapter<LessonsAdapter.ViewHolder>()  {
 
