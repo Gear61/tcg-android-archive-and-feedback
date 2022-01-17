@@ -1,11 +1,15 @@
-package com.randomappsinc.techcareergrowth
+package com.randomappsinc.techcareergrowth.home
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.tabs.TabLayoutMediator
 import com.joanzapata.iconify.fonts.IoniconsIcons
+import com.randomappsinc.techcareergrowth.R
+import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
+import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.SettingsActivity
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
@@ -13,7 +17,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
+
+        val profileTabs = resources.getStringArray(R.array.learning_category_options)
+        val profileTabsAdapter = LearningCategoryTabsAdapter(
+            activity = this,
+            numItems = profileTabs.size
+        )
+        binding.learningCategoryViewpager.adapter = profileTabsAdapter
+
+        TabLayoutMediator(binding.learningCategoryTabs, binding.learningCategoryViewpager) { tab, position ->
+            tab.text = profileTabs[position]
+        }.attach()
     }
 
     override fun startActivityForResult(intent: Intent?, requestCode: Int) {

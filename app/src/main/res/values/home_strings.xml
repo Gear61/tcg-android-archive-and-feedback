@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="interviewing">Interviewing</string>
+    <string name="resume">Resume</string>
+
+    <string-array name="learning_category_options">
+        <item>@string/interviewing</item>
+        <item>@string/resume</item>
+    </string-array>
+</resources>
