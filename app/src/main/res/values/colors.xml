@@ -4,7 +4,6 @@
     <color name="status_bar_color">#388E3C</color>
     <color name="accent_color">@color/green</color>
     <color name="black_50_alpha">#80000000</color>
-    <color name="indicator_circle_color">#BDBDBD</color>
     <color name="navigation_bar_color">@color/black</color>
 
     <color name="skeleton_start">#F5F5F5</color>
@@ -22,8 +21,7 @@
 
     <color name="red">#F44336</color>
     <color name="green">#4CAF50</color>
-    <color name="accent_green">#00C853</color>
-    <color name="yellow">#FFEB3B</color>
+    <color name="accent_green">#69F0AE</color>
 
     <color name="bottom_navigation_item_color">#616161</color>
     <color name="screen_background">@color/white</color>

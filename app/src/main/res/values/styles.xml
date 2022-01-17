@@ -4,8 +4,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/app_core_color</item>
-        <item name="tabGravity">fill</item>
-        <item name="tabMode">fixed</item>
+        <item name="tabMode">scrollable</item>
         <item name="tabMaxWidth">0dp</item>
         <item name="tabIndicatorColor">@color/accent_green</item>
         <item name="tabIndicatorHeight">4dp</item>
