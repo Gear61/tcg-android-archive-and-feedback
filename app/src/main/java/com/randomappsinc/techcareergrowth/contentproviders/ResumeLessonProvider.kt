@@ -1,12 +1,16 @@
 package com.randomappsinc.techcareergrowth.contentproviders
 
+import android.content.Context
 import com.randomappsinc.techcareergrowth.models.Lesson
 
 object ResumeLessonProvider {
 
-    val lessons: List<Lesson>
+    private var lessons: MutableList<Lesson>? = null
 
-    init {
-        lessons = mutableListOf()
+    fun getLessons(context: Context): List<Lesson> {
+        if (lessons == null) {
+            lessons = mutableListOf()
+        }
+        return lessons!!
     }
 }

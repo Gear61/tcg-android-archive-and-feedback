@@ -19,4 +19,12 @@ class PreferencesManager(context: Context?) {
         set(newThemeMode) {
             prefs.edit().putInt(THEME_MODE, newThemeMode).apply()
         }
+
+    fun getLessonCompletionStatus(lessonId: String): Boolean {
+        return prefs.getBoolean(lessonId, false)
+    }
+
+    fun onLessonCompleted(lessonId: String) {
+        prefs.edit().putBoolean(lessonId, true).apply()
+    }
 }

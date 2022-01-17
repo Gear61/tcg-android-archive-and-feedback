@@ -8,4 +8,8 @@
 
     <string name="true_option">True</string>
     <string name="false_option">False</string>
+    <string-array name="true_false_options">
+        <item>@string/true_option</item>
+        <item>@string/false_option</item>
+    </string-array>
 </resources>

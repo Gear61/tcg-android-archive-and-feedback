@@ -11,6 +11,12 @@
     <string name="interviewing_1_question_1_option_2">Patterns</string>
     <string name="interviewing_1_question_1_option_3">Code</string>
     <string name="interviewing_1_question_1_option_4">Trees</string>
+    <string-array name="interviewing_1_question_1_options">
+        <item>@string/interviewing_1_question_1_option_1</item>
+        <item>@string/interviewing_1_question_1_option_2</item>
+        <item>@string/interviewing_1_question_1_option_3</item>
+        <item>@string/interviewing_1_question_1_option_4</item>
+    </string-array>
 
     <string name="interviewing_1_question_2">
         True or false: The most effective way to be prepared for data structures and algorithms interview problems
