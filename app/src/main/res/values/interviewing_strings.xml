@@ -3,7 +3,6 @@
 
     <!-- LESSON ONE -->
     <string name="interviewing_lesson_1_name">Effectively Learning Data Structures And Algorithms</string>
-
     <string name="interviewing_1_question_1">
         Which of these is the core building block of data structures and algorithms problems?
     </string>
@@ -59,6 +58,47 @@
 
     <!-- LESSON TWO -->
     <string name="interviewing_lesson_2_name">Having The Proper Mindset</string>
+    <string name="interviewing_2_question_1">
+        True or false: You need to care a lot about your Big Tech interview, because passing it will drastically improve your life.
+        The more prominent it is in your brain, the more likely you are to pass.
+    </string>
+
+    <string name="interviewing_2_question_2">
+        How should you view interviews?
+    </string>
+    <string name="interviewing_2_question_2_option_1">Make or break opportunities</string>
+    <string name="interviewing_2_question_2_option_2">Lottery tickets to make a lot more money</string>
+    <string name="interviewing_2_question_2_option_3">Opportunities to hang out with some talented tech people</string>
+    <string name="interviewing_2_question_2_option_4">Big tests, similar to final exams in school</string>
+    <string-array name="interviewing_2_question_2_options">
+        <item>@string/interviewing_2_question_2_option_1</item>
+        <item>@string/interviewing_2_question_2_option_2</item>
+        <item>@string/interviewing_2_question_2_option_3</item>
+        <item>@string/interviewing_2_question_2_option_4</item>
+    </string-array>
+
+    <string name="interviewing_2_question_3">
+        True or false: Your input is much more important than the output and results you achieve.
+    </string>
+
+    <string name="interviewing_2_question_4">
+        Why should you view interviews as a test?
+    </string>
+    <string name="interviewing_2_question_4_option_1">Because they aren\'t</string>
+    <string name="interviewing_2_question_4_option_2">To reduce your anxiety and care less about the result</string>
+    <string name="interviewing_2_question_4_option_3">So they don\'t remind you of school</string>
+    <string name="interviewing_2_question_4_option_4">It takes too much mental capacity</string>
+    <string-array name="interviewing_2_question_4_options">
+        <item>@string/interviewing_2_question_4_option_1</item>
+        <item>@string/interviewing_2_question_4_option_2</item>
+        <item>@string/interviewing_2_question_4_option_3</item>
+        <item>@string/interviewing_2_question_4_option_4</item>
+    </string-array>
+
+    <string name="interviewing_2_question_5">
+        True or false: You shouldn\'t take any breaks when studying for interviews,
+        because the relentless focus will help you learn the material better.
+    </string>
 
     <!-- LESSON THREE -->
     <string name="interviewing_lesson_3_name">
