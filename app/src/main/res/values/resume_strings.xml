@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LESSON ONE -->
+    <string name="resume_lesson_1_name">Understanding The Resume Review Process And Formats</string>
+
+    <string name="resume_1_question_1">
+        True or false: As long as you have basic proficiency with everything on a job posting,
+        you will get an interview for that job.
+    </string>
+
+    <string name="resume_1_question_2">
+        How much time does a recruiter spend reading a resume, on average?
+    </string>
+    <string name="resume_1_question_2_option_1">Less than 10 seconds</string>
+    <string name="resume_1_question_2_option_2">Around 2 minutes</string>
+    <string name="resume_1_question_2_option_3">Just 5 minutes</string>
+    <string name="resume_1_question_2_option_4">15+ minutes, resumes are complex and important</string>
+    <string-array name="resume_1_question_2_options">
+        <item>@string/resume_1_question_2_option_1</item>
+        <item>@string/resume_1_question_2_option_2</item>
+        <item>@string/resume_1_question_2_option_3</item>
+        <item>@string/resume_1_question_2_option_4</item>
+    </string-array>
+
+    <!-- LESSON TWO -->
+    <string name="resume_lesson_2_name">Explaining Your Experience In A Meaningful Way</string>
+
+    <!-- LESSON THREE -->
+    <string name="resume_lesson_3_name">
+        How To Supercharge Your Resume As A Junior Engineer
+    </string>
+</resources>
