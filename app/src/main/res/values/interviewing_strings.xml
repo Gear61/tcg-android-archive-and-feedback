@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LESSON ONE -->
+    <string name="interviewing_lesson_1_name">Effectively Learning Data Structures And Algorithms</string>
+
+    <string name="interviewing_1_question_1">
+        Which of these is the core building block of data structures and algorithms problems?
+    </string>
+    <string name="interviewing_1_question_1_option_1">Graphs</string>
+    <string name="interviewing_1_question_1_option_2">Patterns</string>
+    <string name="interviewing_1_question_1_option_3">Code</string>
+    <string name="interviewing_1_question_1_option_4">Trees</string>
+
+    <string name="interviewing_1_question_2">
+        True or false: The most effective way to be prepared for data structures and algorithms interview problems
+        is to memorize the code of each problem\'s solution line by line.
+    </string>
+
+    <string name="interviewing_1_question_3">
+        Why should you comment your solutions to data structures and algorithms problems?
+    </string>
+    <string name="interviewing_1_question_3_option_1">To explain what every line of code does</string>
+    <string name="interviewing_1_question_3_option_2">Because comments make good code</string>
+    <string name="interviewing_1_question_3_option_3">It makes the code faster</string>
+    <string name="interviewing_1_question_3_option_4">
+        To capture the core insight behind the problem and the high level approach
+    </string>
+
+    <string name="interviewing_1_question_4">
+        True or false: When you are completely stuck, you should just look at the entire solution in order to learn it.
+    </string>
+
+    <string name="interviewing_1_question_5">
+        Why is it healthy to struggle on data structures and algorithms problems?
+    </string>
+    <string name="interviewing_1_question_5_option_1">That\'s just how data structures and algorithms are</string>
+    <string name="interviewing_1_question_5_option_2">You can tell your interviewer about it so they go easier on you</string>
+    <string name="interviewing_1_question_5_option_3">Because that\'s when your mind is able to do true learning</string>
+    <string name="interviewing_1_question_5_option_4">So you can complain about it on LinkedIn</string>
+</resources>

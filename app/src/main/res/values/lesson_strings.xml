@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="watch_content_preface">
+        To learn the contents of this lesson, watch the video below.
+        After you are done, click the [Quiz Me!] button to see if you have truly mastered the content.
+        Happy learning!
+    </string>
+
+    <string name="true_option">True</string>
+    <string name="false_option">False</string>
+</resources>
