@@ -3,6 +3,7 @@
 
     <!-- LESSON ONE -->
     <string name="interviewing_lesson_1_name">Effectively Learning Data Structures And Algorithms</string>
+
     <string name="interviewing_1_question_1">
         Which of these is the core building block of data structures and algorithms problems?
     </string>
@@ -58,6 +59,7 @@
 
     <!-- LESSON TWO -->
     <string name="interviewing_lesson_2_name">Having The Proper Mindset</string>
+
     <string name="interviewing_2_question_1">
         True or false: You need to care a lot about your Big Tech interview, because passing it will drastically improve your life.
         The more prominent it is in your brain, the more likely you are to pass.
@@ -103,5 +105,51 @@
     <!-- LESSON THREE -->
     <string name="interviewing_lesson_3_name">
         How To Mentally Prepare For Interviews With Data Structures And Algorithms
+    </string>
+
+    <string name="interviewing_3_question_1">
+        True or false: Interviewing is all about how much you know. As long as you study a lot and understand enough material,
+        you will pass the interview.
+    </string>
+
+    <string name="interviewing_3_question_2">
+        For almost everyone, what does the learning curve look like for data structures and algorithms?
+    </string>
+    <string name="interviewing_3_question_2_option_1">Linear</string>
+    <string name="interviewing_3_question_2_option_2">Logarithmic</string>
+    <string name="interviewing_3_question_2_option_3">Quadratic</string>
+    <string name="interviewing_3_question_2_option_4">Exponential</string>
+    <string-array name="interviewing_3_question_2_options">
+        <item>@string/interviewing_3_question_2_option_1</item>
+        <item>@string/interviewing_3_question_2_option_2</item>
+        <item>@string/interviewing_3_question_2_option_3</item>
+        <item>@string/interviewing_3_question_2_option_4</item>
+    </string-array>
+
+    <string name="interviewing_3_question_3">
+        True or false: It\'s completely normal and even a good sign
+        when you feel dumb while studying data structures and algorithms.
+    </string>
+
+    <string name="interviewing_3_question_4">
+        What\'s the most important piece when you\'re learning data structures and algorithms material?
+    </string>
+    <string name="interviewing_3_question_4_option_1">How many GitHub green boxes you can get</string>
+    <string name="interviewing_3_question_4_option_2">The quality of your learning system</string>
+    <string name="interviewing_3_question_4_option_3">How often you post to LinkedIn about your progress</string>
+    <string name="interviewing_3_question_4_option_4">
+        The specs of your computer as many problems require a lot of compute and RAM
+    </string>
+    <string-array name="interviewing_3_question_4_options">
+        <item>@string/interviewing_3_question_4_option_1</item>
+        <item>@string/interviewing_3_question_4_option_2</item>
+        <item>@string/interviewing_3_question_4_option_3</item>
+        <item>@string/interviewing_3_question_4_option_4</item>
+    </string-array>
+
+    <string name="interviewing_3_question_5">
+        True or false: If you aren\'t making progress on data structures and algorithms after 2 months,
+        your mind probably just isn\'t geared to understand them. At that point, you should be practical
+        and just look for interviews that don\'t have these kinds of problems.
     </string>
 </resources>
