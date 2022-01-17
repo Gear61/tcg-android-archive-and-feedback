@@ -9,7 +9,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.joanzapata.iconify.fonts.IoniconsIcons
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
-import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.SettingsActivity
 import com.randomappsinc.techcareergrowth.util.UIUtil
 

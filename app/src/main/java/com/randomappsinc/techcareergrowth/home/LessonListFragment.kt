@@ -13,7 +13,6 @@ import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonListBinding
 import com.randomappsinc.techcareergrowth.learning.LessonActivity
 import com.randomappsinc.techcareergrowth.models.LessonType
-import com.randomappsinc.techcareergrowth.settings.SettingsAdapter
 
 class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
 

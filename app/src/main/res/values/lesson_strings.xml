@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="lesson_title">%s Lesson</string>
+
     <string name="watch_content_preface">
         To learn the contents of this lesson, watch the video below.
         After you are done, click the [Quiz Me!] button to see if you have truly mastered the content.
