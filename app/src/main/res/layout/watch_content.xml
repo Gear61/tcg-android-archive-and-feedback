@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/screen_background"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/screen_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,19 +16,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/watch_content_preface"
-            android:textSize="15sp"
+            android:textSize="17sp"
             android:textColor="@color/text_normal"
             />
 
-        <WebView
-            android:id="@+id/youtube_web_view"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            />
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="4dp"
+            >
+
+            <WebView
+                android:id="@+id/youtube_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/take_quiz_button"
             android:text="@string/quiz_me"
+            android:layout_marginTop="16dp"
             style="@style/rounded_button"
             />
     </LinearLayout>

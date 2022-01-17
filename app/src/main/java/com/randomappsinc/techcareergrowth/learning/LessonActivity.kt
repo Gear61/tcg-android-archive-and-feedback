@@ -15,6 +15,7 @@ class LessonActivity: AppCompatActivity() {
     }
 
     private lateinit var lesson: Lesson
+    private lateinit var fragmentController: LearningFragmentController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,12 @@ class LessonActivity: AppCompatActivity() {
         lesson = intent.getParcelableExtra(LESSON_KEY)!!
         val lessonType = getString(lesson.type.lessonLabelId)
         title = (getString(R.string.lesson_title, lessonType))
+
+        fragmentController = LearningFragmentController(
+            fragmentManager = supportFragmentManager,
+            containerId = R.id.container
+        )
+        fragmentController.onStateChange(newState = LearningState.WATCH_CONTENT)
     }
 
     override fun finish() {
