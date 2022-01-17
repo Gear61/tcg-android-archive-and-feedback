@@ -6,7 +6,8 @@ class Lesson(
     val id: String,
     @StringRes val nameResId: Int,
     val youtubeVideoId: String,
-    val questions: List<Question>
+    val questions: List<Question>,
+    var isCompleted: Boolean
 ) {
 
     fun getYouTubeEmbedUrl(): String {
