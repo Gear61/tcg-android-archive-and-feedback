@@ -32,6 +32,12 @@
     <string name="interviewing_1_question_3_option_4">
         To capture the core insight behind the problem and the high level approach
     </string>
+    <string-array name="interviewing_1_question_3_options">
+        <item>@string/interviewing_1_question_3_option_1</item>
+        <item>@string/interviewing_1_question_3_option_2</item>
+        <item>@string/interviewing_1_question_3_option_3</item>
+        <item>@string/interviewing_1_question_3_option_4</item>
+    </string-array>
 
     <string name="interviewing_1_question_4">
         True or false: When you are completely stuck, you should just look at the entire solution in order to learn it.
@@ -44,6 +50,12 @@
     <string name="interviewing_1_question_5_option_2">You can tell your interviewer about it so they go easier on you</string>
     <string name="interviewing_1_question_5_option_3">Because that\'s when your mind is able to do true learning</string>
     <string name="interviewing_1_question_5_option_4">So you can complain about it on LinkedIn</string>
+    <string-array name="interviewing_1_question_5_options">
+        <item>@string/interviewing_1_question_5_option_1</item>
+        <item>@string/interviewing_1_question_5_option_2</item>
+        <item>@string/interviewing_1_question_5_option_3</item>
+        <item>@string/interviewing_1_question_5_option_4</item>
+    </string-array>
 
     <!-- LESSON TWO -->
     <string name="interviewing_lesson_2_name">Having The Proper Mindset</string>
