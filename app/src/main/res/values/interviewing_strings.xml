@@ -38,4 +38,12 @@
     <string name="interviewing_1_question_5_option_2">You can tell your interviewer about it so they go easier on you</string>
     <string name="interviewing_1_question_5_option_3">Because that\'s when your mind is able to do true learning</string>
     <string name="interviewing_1_question_5_option_4">So you can complain about it on LinkedIn</string>
+
+    <!-- LESSON TWO -->
+    <string name="interviewing_lesson_2_name">Having The Proper Mindset</string>
+
+    <!-- LESSON THREE -->
+    <string name="interviewing_lesson_3_name">
+        How To Mentally Prepare For Interviews With Data Structures And Algorithms
+    </string>
 </resources>
