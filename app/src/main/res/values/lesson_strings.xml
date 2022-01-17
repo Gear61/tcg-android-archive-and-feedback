@@ -7,6 +7,7 @@
         After you are done, click the [Quiz Me!] button to see if you have truly mastered the content.
         Happy learning!
     </string>
+    <string name="quiz_me">Quiz Me!</string>
 
     <string name="true_option">True</string>
     <string name="false_option">False</string>
