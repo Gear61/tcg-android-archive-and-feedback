@@ -4,11 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import com.randomappsinc.techcareergrowth.R
+import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonListBinding
 import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.settings.SettingsAdapter
 
-class LessonListFragment: Fragment() {
+class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
 
     companion object {
 
@@ -34,7 +39,23 @@ class LessonListFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val lessonType = requireArguments().getSerializable(LESSON_TYPE_KEY)
-        // Do binding stuff here
+        val lessonType: LessonType = requireArguments().getSerializable(LESSON_TYPE_KEY) as LessonType
+        val lessons = LessonProvider.getLessonList(
+            type = lessonType,
+            context = requireContext()
+        )
+
+        val itemDecorator = DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
+        itemDecorator.setDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.line_divider)!!)
+        binding.lessonList.addItemDecoration(itemDecorator)
+        val lessonsAdapter = LessonsAdapter(
+            lessons = lessons,
+            selectionListener = this
+        )
+        binding.lessonList.adapter = lessonsAdapter
+    }
+
+    override fun onLessonClicked(position: Int) {
+
     }
 }
