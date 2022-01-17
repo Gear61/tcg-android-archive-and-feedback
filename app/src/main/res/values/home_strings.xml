@@ -7,4 +7,7 @@
         <item>@string/interviewing</item>
         <item>@string/resume</item>
     </string-array>
+
+    <string name="green_check_icon">{ion-checkmark @color/green}</string>
+    <string name="red_x_icon">{ion-android-close @color/red}</string>
 </resources>
