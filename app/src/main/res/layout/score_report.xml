@@ -31,5 +31,26 @@
             android:textSize="33sp"
             android:textColor="@color/text_title"
             />
+
+        <TextView
+            android:id="@+id/retake_quiz_button"
+            android:layout_marginTop="16dp"
+            android:text="@string/retake_quiz"
+            style="@style/rounded_button"
+            />
+
+        <TextView
+            android:id="@+id/relearn_content_button"
+            android:layout_marginTop="16dp"
+            android:text="@string/relearn_content"
+            style="@style/rounded_button"
+            />
+
+        <TextView
+            android:id="@+id/exit_button"
+            android:layout_marginTop="16dp"
+            android:text="@string/exit"
+            style="@style/rounded_button"
+            />
     </LinearLayout>
 </ScrollView>

@@ -25,4 +25,8 @@
     <string name="c_grade_message">Better luck next time! Your score was:</string>
 
     <string name="score_text_template">%1$s for %2$s</string>
+
+    <string name="retake_quiz">Retake Quiz</string>
+    <string name="relearn_content">Relearn Content</string>
+    <string name="exit">Exit</string>
 </resources>

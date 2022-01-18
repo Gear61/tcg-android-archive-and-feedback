@@ -34,5 +34,25 @@ class ScoreReportFragment: Fragment() {
         val activity = requireActivity() as LessonActivity
         binding.scoreMessage.text = activity.viewState.scoreMessage
         binding.scoreText.text = activity.viewState.scoreText
+
+        binding.retakeQuizButton.setOnClickListener {
+
+        }
+
+        binding.relearnContentButton.setOnClickListener {
+
+        }
+
+        binding.exitButton.setOnClickListener {
+
+        }
+
+        if (activity.viewState.gotPerfectScore) {
+            binding.retakeQuizButton.visibility = View.GONE
+            binding.relearnContentButton.visibility = View.GONE
+        } else {
+            binding.retakeQuizButton.visibility = View.VISIBLE
+            binding.relearnContentButton.visibility = View.VISIBLE
+        }
     }
 }

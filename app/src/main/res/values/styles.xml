@@ -24,4 +24,8 @@
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
         <item name="android:background">@color/green</item>
     </style>
+
+    <style name="rounded_button" parent="button">
+        <item name="android:background">@drawable/rounded_button_background</item>
+    </style>
 </resources>
