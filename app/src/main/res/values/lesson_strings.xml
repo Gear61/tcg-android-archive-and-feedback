@@ -17,4 +17,6 @@
     </string-array>
 
     <string name="submit">Submit</string>
+
+    <string name="no_option_selected"></string>
 </resources>

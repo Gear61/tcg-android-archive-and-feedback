@@ -60,7 +60,7 @@ class BetterRadioButton @JvmOverloads constructor(
         UIUtil.setCheckedImmediately(radioButton, false)
     }
 
-    var text: String?
+    var text: String
         get() = textView.text.toString()
         set(text) {
             textView.text = text

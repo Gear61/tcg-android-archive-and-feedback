@@ -3,6 +3,7 @@ package com.randomappsinc.techcareergrowth.views
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
+import androidx.core.view.allViews
 import com.randomappsinc.techcareergrowth.R
 import java.util.*
 
@@ -18,6 +19,12 @@ class BetterRadioGroup @JvmOverloads constructor(
     }
 
     fun setSize(numButtons: Int) {
+        for (button in radioButtons) {
+            button.setListener(null)
+        }
+        radioButtons.clear()
+        removeAllViews()
+
         for (i in 0 until numButtons) {
             val radioButton = BetterRadioButton(context)
             val params = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.QuizBinding
+import com.randomappsinc.techcareergrowth.util.UIUtil
 
 class QuizFragment : Fragment() {
 
@@ -35,10 +36,22 @@ class QuizFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         animationLength = resources.getInteger(R.integer.shorter_anim_length).toLong()
         loadCurrentQuestionIntoView()
+
+        binding.submitButton.setOnClickListener {
+            val checkedButton = binding.questionOptions.checkedButton
+            if (checkedButton == null) {
+                UIUtil.showLongToast(R.string.no_option_selected, requireContext())
+                return@setOnClickListener
+            }
+            val activity = requireActivity() as LessonActivity
+            activity.viewState.submitAnswer(checkedButton.text)
+            animateQuestionOut()
+        }
     }
 
     private fun loadCurrentQuestionIntoView() {
         val radioGroup = binding.questionOptions
+        radioGroup.clearAllChecks()
 
         val activity = requireActivity() as LessonActivity
         val question = activity.viewState.getCurrentQuestion()
