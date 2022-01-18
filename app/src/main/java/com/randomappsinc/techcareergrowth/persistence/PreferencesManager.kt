@@ -10,6 +10,9 @@ class PreferencesManager(context: Context?) {
     companion object {
 
         const val THEME_MODE = "KEY_THEME_MODE"
+        const val NUM_APP_OPENS = "NUM_APP_OPENS"
+
+        const val APP_OPENS_FOR_RATING_UPSELL = 5
     }
 
     private val prefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -26,5 +29,11 @@ class PreferencesManager(context: Context?) {
 
     fun onLessonCompleted(lessonId: String) {
         prefs.edit().putBoolean(lessonId, true).apply()
+    }
+
+    fun logAppOpenAndCheckForRatingUpsell(): Boolean {
+        val currentAppOpens = prefs.getInt(NUM_APP_OPENS, 0) + 1
+        prefs.edit().putInt(NUM_APP_OPENS, currentAppOpens).apply()
+        return currentAppOpens == APP_OPENS_FOR_RATING_UPSELL
     }
 }
