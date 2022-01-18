@@ -23,6 +23,30 @@
         <item>@string/resume_1_question_2_option_4</item>
     </string-array>
 
+    <string name="resume_1_question_3">
+        True or false: Your resume should be boring and straightforward, especially with its format.
+    </string>
+
+    <string name="resume_1_question_4">
+        What\'s the main reason you should avoid the paid flashy resume formats you find online?
+    </string>
+    <string name="resume_1_question_4_option_1">To save money</string>
+    <string name="resume_1_question_4_option_2">The format will probably make your resume harder to read</string>
+    <string name="resume_1_question_4_option_3">To protect your privacy</string>
+    <string name="resume_1_question_4_option_4">Other people have probably bought and used those formats already</string>
+    <string-array name="resume_1_question_4_options">
+        <item>@string/resume_1_question_4_option_1</item>
+        <item>@string/resume_1_question_4_option_2</item>
+        <item>@string/resume_1_question_4_option_3</item>
+        <item>@string/resume_1_question_4_option_4</item>
+    </string-array>
+
+    <string name="resume_1_question_5">
+        True or false: In order to stand out from other applicants,
+        you can use a very unique format to make your resume more memorable to the recruiter,
+        thus increasing your chances.
+    </string>
+
     <!-- LESSON TWO -->
     <string name="resume_lesson_2_name">Explaining Your Experience In A Meaningful Way</string>
 

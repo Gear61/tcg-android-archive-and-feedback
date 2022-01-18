@@ -35,6 +35,27 @@ object ResumeLessonProvider {
                 correctAnswerId = R.string.resume_1_question_2_option_1
             )
         )
+        questions.add(
+            Question(
+                textResId = R.string.resume_1_question_3,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_1_question_4,
+                optionsListResId = R.array.resume_1_question_4_options,
+                correctAnswerId = R.string.resume_1_question_4_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_1_question_5,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
 
         val lessonId = "resume_1"
         return Lesson(
