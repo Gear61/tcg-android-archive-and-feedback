@@ -15,4 +15,6 @@
         <item>@string/true_option</item>
         <item>@string/false_option</item>
     </string-array>
+
+    <string name="submit">Submit</string>
 </resources>
