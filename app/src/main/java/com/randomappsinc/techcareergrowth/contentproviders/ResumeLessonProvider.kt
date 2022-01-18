@@ -24,14 +24,14 @@ object ResumeLessonProvider {
         questions.add(
             Question(
                 textResId = R.string.resume_1_question_1,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.resume_1_question_2,
-                optionsTextIds = R.array.resume_1_question_2_options,
+                optionsListResId = R.array.resume_1_question_2_options,
                 correctAnswerId = R.string.resume_1_question_2_option_1
             )
         )

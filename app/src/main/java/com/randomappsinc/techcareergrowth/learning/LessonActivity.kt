@@ -37,6 +37,10 @@ class LessonActivity: AppCompatActivity() {
         fragmentController.onStateChange(newState = LearningState.WATCH_CONTENT)
     }
 
+    fun takeQuiz() {
+        fragmentController.onStateChange(LearningState.QUIZ)
+    }
+
     override fun finish() {
         super.finish()
         overridePendingTransition(R.anim.slide_right_out, R.anim.slide_right_in)

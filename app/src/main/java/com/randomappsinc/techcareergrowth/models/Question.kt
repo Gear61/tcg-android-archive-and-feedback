@@ -8,6 +8,6 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Question(
     @StringRes val textResId: Int,
-    @ArrayRes val optionsTextIds: Int,
+    @ArrayRes val optionsListResId: Int,
     @StringRes val correctAnswerId: Int
 ) : Parcelable

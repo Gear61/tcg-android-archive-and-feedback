@@ -7,21 +7,33 @@ internal class LearningFragmentController(
     private val fragmentManager: FragmentManager,
     private val containerId: Int
 ) {
+
     private var watchContentFragment: WatchContentFragment? = null
+    private var quizFragment: QuizFragment? = null
 
     fun onStateChange(newState: LearningState) {
         when (newState) {
             LearningState.WATCH_CONTENT -> {
+                if (quizFragment != null) {
+                    hideFragment(quizFragment!!)
+                }
                 if (watchContentFragment == null) {
                     watchContentFragment = WatchContentFragment.getInstance()
                     addFragment(watchContentFragment)
                 } else {
                     showFragment(watchContentFragment!!)
                 }
-                // Hide other fragments
             }
             LearningState.QUIZ -> {
-
+                if (watchContentFragment != null) {
+                    hideFragment(watchContentFragment!!)
+                }
+                if (quizFragment == null) {
+                    quizFragment = QuizFragment.getInstance()
+                    addFragment(quizFragment)
+                } else {
+                    showFragment(quizFragment!!)
+                }
             }
             LearningState.SCORE_REPORT -> {
             }
@@ -45,6 +57,8 @@ internal class LearningFragmentController(
             val fragmentName = fragment.javaClass.simpleName
             if (WatchContentFragment::class.java.simpleName.equals(fragmentName)) {
                 watchContentFragment = fragment as WatchContentFragment
+            } else if (QuizFragment::class.java.simpleName.equals(fragmentName)) {
+                quizFragment = fragment as QuizFragment
             }
         }
     }

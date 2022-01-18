@@ -26,6 +26,9 @@ class BetterRadioButton @JvmOverloads constructor(
 
     init {
         inflate(getContext(), R.layout.better_radio_button, this)
+        radioButton = findViewById(R.id.radio_button)
+        textView = findViewById(R.id.radio_button_text)
+
         orientation = HORIZONTAL
         gravity = Gravity.CENTER_VERTICAL
         setBackgroundResource(R.drawable.non_selected_radio_button)
@@ -33,9 +36,6 @@ class BetterRadioButton @JvmOverloads constructor(
         setPadding(0, padding, padding, padding)
         setBackground()
         setOnClickListener(this)
-
-        radioButton = findViewById(R.id.radio_button)
-        textView = findViewById(R.id.radio_button_text)
         radioButton.setOnCheckedChangeListener(this)
     }
 

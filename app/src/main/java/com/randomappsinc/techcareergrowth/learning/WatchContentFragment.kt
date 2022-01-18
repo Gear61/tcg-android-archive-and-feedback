@@ -58,5 +58,9 @@ class WatchContentFragment: Fragment() {
         val lesson = activity.lesson
         binding.lessonTitle.setText(lesson.nameResId)
         youtubeWebView.loadUrl(lesson.getYouTubeEmbedUrl())
+
+        binding.takeQuizButton.setOnClickListener {
+            activity.takeQuiz()
+        }
     }
 }

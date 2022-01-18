@@ -26,35 +26,35 @@ object InterviewingLessonProvider {
         questions.add(
             Question(
                 textResId = R.string.interviewing_1_question_1,
-                optionsTextIds = R.array.interviewing_1_question_1_options,
+                optionsListResId = R.array.interviewing_1_question_1_options,
                 correctAnswerId = R.string.interviewing_1_question_1_option_2
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_1_question_2,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_1_question_3,
-                optionsTextIds = R.array.interviewing_1_question_3_options,
+                optionsListResId = R.array.interviewing_1_question_3_options,
                 correctAnswerId = R.string.interviewing_1_question_3_option_4
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_1_question_4,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_1_question_5,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
@@ -75,35 +75,35 @@ object InterviewingLessonProvider {
         questions.add(
             Question(
                 textResId = R.string.interviewing_3_question_1,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_3_question_2,
-                optionsTextIds = R.array.interviewing_3_question_2_options,
+                optionsListResId = R.array.interviewing_3_question_2_options,
                 correctAnswerId = R.string.interviewing_3_question_2_option_4
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_3_question_3,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.true_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_3_question_4,
-                optionsTextIds = R.array.interviewing_3_question_4_options,
+                optionsListResId = R.array.interviewing_3_question_4_options,
                 correctAnswerId = R.string.interviewing_3_question_4_option_2
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_3_question_5,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
@@ -124,35 +124,35 @@ object InterviewingLessonProvider {
         questions.add(
             Question(
                 textResId = R.string.interviewing_2_question_1,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_2_question_2,
-                optionsTextIds = R.array.interviewing_2_question_2_options,
+                optionsListResId = R.array.interviewing_2_question_2_options,
                 correctAnswerId = R.string.interviewing_2_question_2_option_3
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_2_question_3,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.true_option
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_2_question_4,
-                optionsTextIds = R.array.interviewing_2_question_4_options,
+                optionsListResId = R.array.interviewing_2_question_4_options,
                 correctAnswerId = R.string.interviewing_2_question_4_option_2
             )
         )
         questions.add(
             Question(
                 textResId = R.string.interviewing_2_question_5,
-                optionsTextIds = R.array.true_false_options,
+                optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )

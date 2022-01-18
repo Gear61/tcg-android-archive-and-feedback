@@ -1,23 +1,13 @@
 package com.randomappsinc.techcareergrowth.learning
 
 import android.animation.Animator
-import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.ScrollView
-import android.widget.TextView
-import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.QuizBinding
-import com.randomappsinc.techcareergrowth.databinding.WatchContentBinding
-import java.util.*
 
 
 class QuizFragment : Fragment() {
@@ -49,7 +39,17 @@ class QuizFragment : Fragment() {
     }
 
     private fun loadCurrentQuestionIntoView() {
+        val radioGroup = binding.questionOptions
 
+        val activity = requireActivity() as LessonActivity
+        val question = activity.viewState.getCurrentQuestion()
+        val options = resources.getStringArray(question.optionsListResId)
+
+        radioGroup.setSize(options.size)
+        for ((index, option) in options.withIndex()) {
+            val radioButton = radioGroup.getRadioButton(index)
+            radioButton.text = option
+        }
     }
 
     private fun animateQuestionOut() {
