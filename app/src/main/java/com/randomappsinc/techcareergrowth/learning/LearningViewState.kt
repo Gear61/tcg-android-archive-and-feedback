@@ -4,6 +4,7 @@ import android.content.Context
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.Question
+import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
 class LearningViewState(
     val listener: Listener,
@@ -12,6 +13,7 @@ class LearningViewState(
     var scoreMessage: String = "",
     var scoreText: String = "",
     var gotPerfectScore: Boolean = false,
+    var completedForFirstTime: Boolean = false,
     private val questionAnswers: MutableList<String> = mutableListOf()
 ) {
 
@@ -34,7 +36,13 @@ class LearningViewState(
                 }
             }
             val percentCorrect = (numCorrect.toFloat() / questionAnswers.size.toFloat()) * 100.0f
-            gotPerfectScore = percentCorrect == 100.0f
+            if (percentCorrect == 100.0f) {
+                gotPerfectScore = true
+                if (!lesson.isCompleted) {
+                    completedForFirstTime = true
+                    PreferencesManager(context).onLessonCompleted(lesson.id)
+                }
+            }
             scoreMessage = if (percentCorrect == 100.0f) {
                 context.getString(R.string.perfect_score_message)
             } else if (percentCorrect >= 80.0f) {

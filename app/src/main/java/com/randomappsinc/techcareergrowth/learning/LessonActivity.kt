@@ -5,6 +5,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.LessonBinding
+import com.randomappsinc.techcareergrowth.home.LessonListFragment
 import com.randomappsinc.techcareergrowth.models.Lesson
 
 class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
@@ -49,6 +50,9 @@ class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
     }
 
     override fun finish() {
+        if (viewState.completedForFirstTime){
+            setResult(LessonListFragment.FIRST_TIME_COMPLETION_CODE)
+        }
         super.finish()
         overridePendingTransition(R.anim.slide_right_out, R.anim.slide_right_in)
     }

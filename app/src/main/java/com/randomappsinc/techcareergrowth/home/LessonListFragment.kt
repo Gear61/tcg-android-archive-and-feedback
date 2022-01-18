@@ -19,6 +19,7 @@ class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
     companion object {
 
         private const val LESSON_TYPE_KEY = "lesson_type"
+        const val FIRST_TIME_COMPLETION_CODE = 420
 
         fun getInstance(lessonType: LessonType): LessonListFragment {
             val bundle = Bundle()
@@ -64,6 +65,14 @@ class LessonListFragment: Fragment(), LessonsAdapter.SelectionListener {
         val activity = requireActivity()
         val intent = Intent(activity, LessonActivity::class.java)
         intent.putExtra(LessonActivity.LESSON_KEY, lessonsAdapter.lessons[position])
-        activity.startActivity(intent)
+        startActivityForResult(intent, 1)
+        requireActivity().overridePendingTransition(R.anim.slide_left_out, R.anim.slide_left_in)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == FIRST_TIME_COMPLETION_CODE) {
+            lessonsAdapter.onLessonCompleted(lessonPosition = clickedPosition)
+        }
     }
 }
