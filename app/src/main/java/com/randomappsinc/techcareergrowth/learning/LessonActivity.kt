@@ -45,7 +45,7 @@ class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
     }
 
     override fun onQuizComplete() {
-        fragmentController.onStateChange(LearningState.QUIZ)
+        fragmentController.onStateChange(LearningState.SCORE_REPORT)
     }
 
     override fun finish() {

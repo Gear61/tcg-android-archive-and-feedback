@@ -54,8 +54,8 @@ object InterviewingLessonProvider {
         questions.add(
             Question(
                 textResId = R.string.interviewing_1_question_5,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.false_option
+                optionsListResId = R.array.interviewing_1_question_5_options,
+                correctAnswerId = R.string.interviewing_1_question_5_option_3
             )
         )
 

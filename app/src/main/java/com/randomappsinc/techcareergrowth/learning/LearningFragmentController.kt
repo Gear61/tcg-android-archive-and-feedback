@@ -10,12 +10,16 @@ internal class LearningFragmentController(
 
     private var watchContentFragment: WatchContentFragment? = null
     private var quizFragment: QuizFragment? = null
+    private var scoreReportFragment: ScoreReportFragment? = null
 
     fun onStateChange(newState: LearningState) {
         when (newState) {
             LearningState.WATCH_CONTENT -> {
                 if (quizFragment != null) {
                     hideFragment(quizFragment!!)
+                }
+                if (scoreReportFragment != null) {
+                    hideFragment(scoreReportFragment!!)
                 }
                 if (watchContentFragment == null) {
                     watchContentFragment = WatchContentFragment.getInstance()
@@ -27,6 +31,9 @@ internal class LearningFragmentController(
             LearningState.QUIZ -> {
                 if (watchContentFragment != null) {
                     hideFragment(watchContentFragment!!)
+                }
+                if (scoreReportFragment != null) {
+                    hideFragment(scoreReportFragment!!)
                 }
                 if (quizFragment == null) {
                     quizFragment = QuizFragment.getInstance()
@@ -41,6 +48,12 @@ internal class LearningFragmentController(
                 }
                 if (quizFragment != null) {
                     hideFragment(quizFragment!!)
+                }
+                if (scoreReportFragment == null) {
+                    scoreReportFragment = ScoreReportFragment.getInstance()
+                    addFragment(scoreReportFragment)
+                } else {
+                    showFragment(scoreReportFragment!!)
                 }
             }
         }
