@@ -56,6 +56,7 @@ class WatchContentFragment: Fragment() {
 
         val activity = requireActivity() as LessonActivity
         val lesson = activity.lesson
+        binding.lessonTitle.setText(lesson.nameResId)
         youtubeWebView.loadUrl(lesson.getYouTubeEmbedUrl())
     }
 }
