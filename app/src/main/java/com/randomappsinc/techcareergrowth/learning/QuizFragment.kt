@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.QuizBinding
 
-
 class QuizFragment : Fragment() {
 
     companion object {
@@ -43,8 +42,9 @@ class QuizFragment : Fragment() {
 
         val activity = requireActivity() as LessonActivity
         val question = activity.viewState.getCurrentQuestion()
-        val options = resources.getStringArray(question.optionsListResId)
 
+        binding.questionText.setText(question.textResId)
+        val options = resources.getStringArray(question.optionsListResId)
         radioGroup.setSize(options.size)
         for ((index, option) in options.withIndex()) {
             val radioButton = radioGroup.getRadioButton(index)

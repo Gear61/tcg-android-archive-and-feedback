@@ -25,7 +25,8 @@
                 android:id="@+id/question_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="17sp"
+                android:layout_marginBottom="8dp"
+                android:textSize="19sp"
                 android:textColor="@color/text_normal"
                 />
 
