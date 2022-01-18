@@ -15,6 +15,7 @@ object ResumeLessonProvider {
         if (lessons == null) {
             lessons = mutableListOf()
             lessons!!.add(getLesson1(context = context))
+            lessons!!.add(getLesson2(context = context))
         }
         return lessons!!
     }
@@ -63,6 +64,55 @@ object ResumeLessonProvider {
             type = LessonType.RESUME,
             nameResId = R.string.resume_lesson_1_name,
             youtubeVideoId = "MByD2CTwfmM",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson2(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.resume_2_question_1,
+                optionsListResId = R.array.yes_no_options,
+                correctAnswerId = R.string.no
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_2_question_2,
+                optionsListResId = R.array.resume_2_question_2_options,
+                correctAnswerId = R.string.resume_2_question_2_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_2_question_3,
+                optionsListResId = R.array.yes_no_options,
+                correctAnswerId = R.string.yes
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_2_question_4,
+                optionsListResId = R.array.resume_2_question_4_options,
+                correctAnswerId = R.string.resume_2_question_4_option_1
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_2_question_5,
+                optionsListResId = R.array.yes_no_options,
+                correctAnswerId = R.string.no
+            )
+        )
+
+        val lessonId = "resume_2"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.RESUME,
+            nameResId = R.string.resume_lesson_2_name,
+            youtubeVideoId = "sDbK84GEE94",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

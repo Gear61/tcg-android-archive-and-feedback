@@ -50,6 +50,48 @@
     <!-- LESSON TWO -->
     <string name="resume_lesson_2_name">Explaining Your Experience In A Meaningful Way</string>
 
+    <string name="resume_2_question_1">
+        Is this a good resume snippet: Worked on the SIVAD systesm, using Room, AndroidX, Activities, and Java
+    </string>
+
+    <string name="resume_2_question_2">
+        How do you make the experience portions of your resume stand out!
+    </string>
+    <string name="resume_2_question_2_option_1">Mention all the technologies you used</string>
+    <string name="resume_2_question_2_option_2">Highlighting the business impact</string>
+    <string name="resume_2_question_2_option_3">Using flashy formatting</string>
+    <string name="resume_2_question_2_option_4">Point out that you built within cutting edge product spaces like NFTs</string>
+    <string-array name="resume_2_question_2_options">
+        <item>@string/resume_2_question_2_option_1</item>
+        <item>@string/resume_2_question_2_option_2</item>
+        <item>@string/resume_2_question_2_option_3</item>
+        <item>@string/resume_2_question_2_option_4</item>
+    </string-array>
+
+    <string name="resume_2_question_3">
+        Is this a good resume snippet: Champion for unit test coverage for Cool Company\'s iOS app,
+        increasing it by 20% and reducing the amount of new iOS user issues by 10%
+    </string>
+
+    <string name="resume_2_question_4">
+        What is the main way people struggle with their resumes?
+    </string>
+    <string name="resume_2_question_4_option_1">Telling instead of showing</string>
+    <string name="resume_2_question_4_option_2">Formatting</string>
+    <string name="resume_2_question_4_option_3">Length</string>
+    <string name="resume_2_question_4_option_4">Getting past the ATS</string>
+    <string-array name="resume_2_question_4_options">
+        <item>@string/resume_2_question_4_option_1</item>
+        <item>@string/resume_2_question_4_option_2</item>
+        <item>@string/resume_2_question_4_option_3</item>
+        <item>@string/resume_2_question_4_option_4</item>
+    </string-array>
+
+    <string name="resume_2_question_5">
+        Is this a good resume snippet: Led the JavaScript migration effort with strong
+        communication, architectural, and code quality skills
+    </string>
+
     <!-- LESSON THREE -->
     <string name="resume_lesson_3_name">
         How To Supercharge Your Resume As A Junior Engineer

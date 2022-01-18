@@ -16,6 +16,13 @@
         <item>@string/false_option</item>
     </string-array>
 
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string-array name="yes_no_options">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
     <string name="submit">Submit</string>
 
     <string name="no_option_selected">You need to select an option.</string>
