@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.randomappsinc.techcareergrowth"
     >
 
@@ -14,12 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        tools:ignore="LockedOrientationActivity"
         >
 
         <activity
             android:name=".init.SplashActivity"
             android:theme="@style/SplashTheme"
             android:exported="true"
+            android:screenOrientation="portrait"
             >
 
             <intent-filter>
@@ -33,22 +36,26 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/full_app_name"
             android:exported="true"
+            android:screenOrientation="portrait"
             />
 
         <activity
             android:name=".settings.SettingsActivity"
             android:label="@string/settings"
             android:exported="false"
+            android:screenOrientation="portrait"
             />
 
         <activity
             android:name=".web.WebActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             />
 
         <activity
             android:name=".learning.LessonActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             />
     </application>
 </manifest>
