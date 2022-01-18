@@ -27,10 +27,17 @@
             app:cardCornerRadius="4dp"
             >
 
+            <com.randomappsinc.techcareergrowth.views.SkeletonView
+                android:id="@+id/web_view_skeleton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
             <WebView
                 android:id="@+id/youtube_web_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:visibility="gone"
                 />
         </androidx.cardview.widget.CardView>
 

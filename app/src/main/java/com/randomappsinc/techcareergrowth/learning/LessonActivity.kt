@@ -14,7 +14,7 @@ class LessonActivity: AppCompatActivity() {
         const val LESSON_KEY = "lesson"
     }
 
-    private lateinit var lesson: Lesson
+    lateinit var lesson: Lesson
     private lateinit var fragmentController: LearningFragmentController
 
     override fun onCreate(savedInstanceState: Bundle?) {

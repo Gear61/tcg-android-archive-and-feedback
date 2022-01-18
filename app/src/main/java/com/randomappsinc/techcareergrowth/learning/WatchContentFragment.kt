@@ -1,5 +1,6 @@
 package com.randomappsinc.techcareergrowth.learning
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,13 @@ import com.randomappsinc.techcareergrowth.databinding.WatchContentBinding
 import com.randomappsinc.techcareergrowth.home.LessonListFragment
 import com.randomappsinc.techcareergrowth.home.LessonsAdapter
 import com.randomappsinc.techcareergrowth.models.LessonType
+import android.webkit.WebSettings
+import android.webkit.WebView
+
+import android.webkit.WebViewClient
+
+
+
 
 class WatchContentFragment: Fragment() {
 
@@ -36,9 +44,30 @@ class WatchContentFragment: Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val youtubeWebView = binding.youtubeWebView
+        youtubeWebView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                return false
+            }
 
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                binding.webViewSkeleton.visibility = View.GONE
+                youtubeWebView.visibility = View.VISIBLE
+            }
+        }
+
+        val webSettings: WebSettings = youtubeWebView.settings
+        webSettings.javaScriptEnabled = true
+        webSettings.loadWithOverviewMode = true
+        webSettings.useWideViewPort = true
+
+        val activity = requireActivity() as LessonActivity
+        val lesson = activity.lesson
+        youtubeWebView.loadUrl(lesson.getYouTubeEmbedUrl())
     }
 }
