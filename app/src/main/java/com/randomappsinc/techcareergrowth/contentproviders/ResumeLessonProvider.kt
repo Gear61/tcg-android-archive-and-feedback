@@ -16,6 +16,7 @@ object ResumeLessonProvider {
             lessons = mutableListOf()
             lessons!!.add(getLesson1(context = context))
             lessons!!.add(getLesson2(context = context))
+            lessons!!.add(getLesson3(context = context))
         }
         return lessons!!
     }
@@ -113,6 +114,48 @@ object ResumeLessonProvider {
             type = LessonType.RESUME,
             nameResId = R.string.resume_lesson_2_name,
             youtubeVideoId = "sDbK84GEE94",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson3(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.resume_3_question_1,
+                optionsListResId = R.array.resume_3_question_1_options,
+                correctAnswerId = R.string.resume_3_question_1_option_3
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_3_question_2,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_3_question_3,
+                optionsListResId = R.array.resume_3_question_3_options,
+                correctAnswerId = R.string.resume_3_question_3_option_4
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.resume_3_question_4,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+
+        val lessonId = "resume_3"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.RESUME,
+            nameResId = R.string.resume_lesson_3_name,
+            youtubeVideoId = "9Wb-gHEO9ug",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

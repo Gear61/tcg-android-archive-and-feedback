@@ -96,4 +96,44 @@
     <string name="resume_lesson_3_name">
         How To Supercharge Your Resume As A Junior Engineer
     </string>
+
+    <string name="resume_3_question_1">
+        What\'s the best way to juice up your resume after you have gotten the basics?
+    </string>
+    <string name="resume_3_question_1_option_1">Certifications</string>
+    <string name="resume_3_question_1_option_2">Competitive Programming</string>
+    <string name="resume_3_question_1_option_3">Serious Side Projects</string>
+    <string name="resume_3_question_1_option_4">Building Clones Of Popular Products</string>
+    <string-array name="resume_3_question_1_options">
+        <item>@string/resume_3_question_1_option_1</item>
+        <item>@string/resume_3_question_1_option_2</item>
+        <item>@string/resume_3_question_1_option_3</item>
+        <item>@string/resume_3_question_1_option_4</item>
+    </string-array>
+
+    <string name="resume_3_question_2">
+        True or false: As long as you can code and have a polished resume,
+        that is enough to comfortably find a job.
+    </string>
+
+    <string name="resume_3_question_3">
+        Why are side projects such an effective tactic?
+    </string>
+    <string name="resume_3_question_3_option_1">
+        There\'s a lot of technology now that makes publicly deploying and sharing projects very easy
+    </string>
+    <string name="resume_3_question_3_option_2">They build up important non-coding skills that make you a more complete engineer</string>
+    <string name="resume_3_question_3_option_3">They\'re extremely cheap and in most cases, free</string>
+    <string name="resume_3_question_3_option_4">All of the above</string>
+    <string-array name="resume_3_question_3_options">
+        <item>@string/resume_3_question_3_option_1</item>
+        <item>@string/resume_3_question_3_option_2</item>
+        <item>@string/resume_3_question_3_option_3</item>
+        <item>@string/resume_3_question_3_option_4</item>
+    </string-array>
+
+    <string name="resume_3_question_4">
+        True or false: You can get something extremely close to work experience without having a formal job,
+        all from the comfort of your own home.
+    </string>
 </resources>
