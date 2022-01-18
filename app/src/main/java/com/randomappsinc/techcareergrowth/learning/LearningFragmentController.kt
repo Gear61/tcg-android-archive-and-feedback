@@ -36,6 +36,12 @@ internal class LearningFragmentController(
                 }
             }
             LearningState.SCORE_REPORT -> {
+                if (watchContentFragment != null) {
+                    hideFragment(watchContentFragment!!)
+                }
+                if (quizFragment != null) {
+                    hideFragment(quizFragment!!)
+                }
             }
         }
     }
@@ -50,16 +56,5 @@ internal class LearningFragmentController(
 
     private fun hideFragment(fragment: Fragment) {
         fragmentManager.beginTransaction().hide(fragment).commit()
-    }
-
-    fun restoreFragments() {
-        for (fragment in fragmentManager.fragments) {
-            val fragmentName = fragment.javaClass.simpleName
-            if (WatchContentFragment::class.java.simpleName.equals(fragmentName)) {
-                watchContentFragment = fragment as WatchContentFragment
-            } else if (QuizFragment::class.java.simpleName.equals(fragmentName)) {
-                quizFragment = fragment as QuizFragment
-            }
-        }
     }
 }

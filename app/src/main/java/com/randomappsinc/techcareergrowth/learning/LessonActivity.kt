@@ -7,7 +7,7 @@ import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.LessonBinding
 import com.randomappsinc.techcareergrowth.models.Lesson
 
-class LessonActivity: AppCompatActivity() {
+class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
 
     companion object {
 
@@ -28,7 +28,10 @@ class LessonActivity: AppCompatActivity() {
         val lessonType = getString(lesson.type.lessonLabelId)
         title = (getString(R.string.lesson_title, lessonType))
 
-        viewState = LearningViewState(lesson = lesson)
+        viewState = LearningViewState(
+            listener = this,
+            lesson = lesson
+        )
 
         fragmentController = LearningFragmentController(
             fragmentManager = supportFragmentManager,
@@ -38,6 +41,10 @@ class LessonActivity: AppCompatActivity() {
     }
 
     fun takeQuiz() {
+        fragmentController.onStateChange(LearningState.QUIZ)
+    }
+
+    override fun onQuizComplete() {
         fragmentController.onStateChange(LearningState.QUIZ)
     }
 

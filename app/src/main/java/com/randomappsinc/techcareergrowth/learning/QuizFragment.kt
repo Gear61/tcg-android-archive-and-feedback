@@ -44,7 +44,10 @@ class QuizFragment : Fragment() {
                 return@setOnClickListener
             }
             val activity = requireActivity() as LessonActivity
-            activity.viewState.submitAnswer(checkedButton.text)
+            activity.viewState.submitAnswer(
+                answer = checkedButton.text,
+                context = requireContext()
+            )
             animateQuestionOut()
         }
     }

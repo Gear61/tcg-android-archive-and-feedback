@@ -3,7 +3,6 @@ package com.randomappsinc.techcareergrowth.views
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
-import androidx.core.view.allViews
 import com.randomappsinc.techcareergrowth.R
 import java.util.*
 
