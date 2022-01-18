@@ -40,6 +40,7 @@ internal class LearningFragmentController(
                     addFragment(quizFragment)
                 } else {
                     showFragment(quizFragment!!)
+                    quizFragment!!.loadCurrentQuestionIntoView()
                 }
             }
             LearningState.SCORE_REPORT -> {

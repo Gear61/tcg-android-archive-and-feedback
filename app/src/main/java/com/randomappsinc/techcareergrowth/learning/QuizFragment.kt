@@ -52,7 +52,7 @@ class QuizFragment : Fragment() {
         }
     }
 
-    private fun loadCurrentQuestionIntoView() {
+    fun loadCurrentQuestionIntoView() {
         val radioGroup = binding.questionOptions
         radioGroup.clearAllChecks()
 

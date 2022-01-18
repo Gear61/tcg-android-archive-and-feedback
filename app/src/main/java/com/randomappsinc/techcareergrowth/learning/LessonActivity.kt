@@ -45,6 +45,16 @@ class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
         fragmentController.onStateChange(LearningState.QUIZ)
     }
 
+    fun retakeQuiz() {
+        viewState.resetQuiz()
+        fragmentController.onStateChange(LearningState.QUIZ)
+    }
+
+    fun relearnContent() {
+        viewState.resetQuiz()
+        fragmentController.onStateChange(LearningState.WATCH_CONTENT)
+    }
+
     override fun onQuizComplete() {
         fragmentController.onStateChange(LearningState.SCORE_REPORT)
     }

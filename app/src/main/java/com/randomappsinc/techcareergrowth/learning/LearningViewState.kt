@@ -61,7 +61,7 @@ class LearningViewState(
         }
     }
 
-    fun retakeQuiz() {
+    fun resetQuiz() {
         questionAnswers.clear()
         currentQuestionIndex = 0
     }

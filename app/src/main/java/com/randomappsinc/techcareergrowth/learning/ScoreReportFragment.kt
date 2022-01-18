@@ -36,15 +36,15 @@ class ScoreReportFragment: Fragment() {
         binding.scoreText.text = activity.viewState.scoreText
 
         binding.retakeQuizButton.setOnClickListener {
-
+            activity.retakeQuiz()
         }
 
         binding.relearnContentButton.setOnClickListener {
-
+            activity.relearnContent()
         }
 
         binding.exitButton.setOnClickListener {
-
+            activity.finish()
         }
 
         if (activity.viewState.gotPerfectScore) {
