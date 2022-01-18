@@ -11,6 +11,7 @@ class LearningViewState(
     var currentQuestionIndex: Int = 0,
     var scoreMessage: String = "",
     var scoreText: String = "",
+    var gotPerfectScore: Boolean = false,
     private val questionAnswers: MutableList<String> = mutableListOf()
 ) {
 
@@ -33,6 +34,7 @@ class LearningViewState(
                 }
             }
             val percentCorrect = (numCorrect.toFloat() / questionAnswers.size.toFloat()) * 100.0f
+            gotPerfectScore = percentCorrect == 100.0f
             scoreMessage = if (percentCorrect == 100.0f) {
                 context.getString(R.string.perfect_score_message)
             } else if (percentCorrect >= 80.0f) {
@@ -40,6 +42,11 @@ class LearningViewState(
             } else {
                 context.getString(R.string.c_grade_message)
             }
+
+            val fractionText = numCorrect.toString() + "/" + questionAnswers.size.toString()
+            val percentText = String.format("%.2f", percentCorrect) + "%"
+            scoreText = context.getString(R.string.score_text_template, fractionText, percentText)
+
             listener.onQuizComplete()
         } else {
             currentQuestionIndex++

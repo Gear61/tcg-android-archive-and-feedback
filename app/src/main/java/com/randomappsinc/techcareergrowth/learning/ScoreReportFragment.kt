@@ -33,5 +33,6 @@ class ScoreReportFragment: Fragment() {
 
         val activity = requireActivity() as LessonActivity
         binding.scoreMessage.text = activity.viewState.scoreMessage
+        binding.scoreText.text = activity.viewState.scoreText
     }
 }

@@ -23,4 +23,6 @@
     <string name="perfect_score_message">Congratulations! Your score was:</string>
     <string name="b_grade_message">Not bad! Your score was:</string>
     <string name="c_grade_message">Better luck next time! Your score was:</string>
+
+    <string name="score_text_template">%1$s for %2$s</string>
 </resources>
