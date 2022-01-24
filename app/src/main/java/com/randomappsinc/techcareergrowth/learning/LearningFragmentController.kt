@@ -55,6 +55,7 @@ internal class LearningFragmentController(
                     addFragment(scoreReportFragment)
                 } else {
                     showFragment(scoreReportFragment!!)
+                    scoreReportFragment!!.bindView()
                 }
             }
         }

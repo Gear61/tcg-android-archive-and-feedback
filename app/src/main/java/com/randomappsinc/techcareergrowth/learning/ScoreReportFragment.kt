@@ -30,7 +30,10 @@ class ScoreReportFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        bindView()
+    }
 
+    fun bindView() {
         val activity = requireActivity() as LessonActivity
         binding.scoreMessage.text = activity.viewState.scoreMessage
         binding.scoreText.text = activity.viewState.scoreText
