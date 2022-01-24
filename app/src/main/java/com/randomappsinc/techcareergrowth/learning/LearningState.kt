@@ -4,5 +4,6 @@ enum class LearningState {
 
     WATCH_CONTENT,
     QUIZ,
-    SCORE_REPORT
+    SCORE_REPORT,
+    NONE
 }
