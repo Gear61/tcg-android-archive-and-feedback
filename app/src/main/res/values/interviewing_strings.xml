@@ -158,14 +158,13 @@
         Truly Mastering A Data Structures And Algorithms Problem - 2 Sum Example
     </string>
 
-    <string name="interviewing_4_question_1">
-        Why is the following not a good way to remember the solution to 2 Sum?"
-        \n\ndef twoSum(self, nums, target):" +
-        \n    required = {} " +
-        \n    for i in range(len(nums)):" +
-        \n        if target - nums[i] in required: " +
-        \n            return [required[target - nums[i]],i]" +
-        \n        else:" +
-        \n            required[nums[i]] = i",
+    <string name="interviewing_4_question_1">Why is the following not a good way to remember the solution to 2 Sum?"
+        \ndef twoSum(self, nums, target):
+    required = {}
+    for i in range(len(nums)):
+        if target - nums[i] in required:
+            return [required[target - nums[i]],i]
+        else:
+            required[nums[i]] = i"
     </string>
 </resources>
