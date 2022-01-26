@@ -174,36 +174,22 @@ object InterviewingLessonProvider {
         questions.add(
             Question(
                 textResId = R.string.interviewing_4_question_1,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.false_option
+                optionsListResId = R.array.interviewing_4_question_1_options,
+                correctAnswerId = R.string.interviewing_4_question_1_option_3
             )
         )
         questions.add(
             Question(
-                textResId = R.string.interviewing_2_question_2,
-                optionsListResId = R.array.interviewing_2_question_2_options,
-                correctAnswerId = R.string.interviewing_2_question_2_option_3
+                textResId = R.string.interviewing_4_question_2,
+                optionsListResId = R.array.interviewing_4_question_2_options,
+                correctAnswerId = R.string.interviewing_4_question_2_option_4
             )
         )
         questions.add(
             Question(
-                textResId = R.string.interviewing_2_question_3,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.true_option
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.interviewing_2_question_4,
-                optionsListResId = R.array.interviewing_2_question_4_options,
-                correctAnswerId = R.string.interviewing_2_question_4_option_2
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.interviewing_2_question_5,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.false_option
+                textResId = R.string.interviewing_4_question_3,
+                optionsListResId = R.array.interviewing_4_question_3_options,
+                correctAnswerId = R.string.interviewing_4_question_3_option_2
             )
         )
 

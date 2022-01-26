@@ -167,4 +167,43 @@
         else:
             required[nums[i]] = i"
     </string>
+    <string name="interviewing_4_question_1_option_1">It\'s written in Python, which isn\'t a good interviewing language.</string>
+    <string name="interviewing_4_question_1_option_2">The space usage isn\'t optimal</string>
+    <string name="interviewing_4_question_1_option_3">It\'s inefficient; humans don\'t naturally think in terms of code</string>
+    <string name="interviewing_4_question_1_option_4">The solution is incomplete</string>
+    <string-array name="interviewing_4_question_1_options">
+        <item>@string/interviewing_4_question_1_option_1</item>
+        <item>@string/interviewing_4_question_1_option_2</item>
+        <item>@string/interviewing_4_question_1_option_3</item>
+        <item>@string/interviewing_4_question_1_option_4</item>
+    </string-array>
+
+    <string name="interviewing_4_question_2">
+        Why is [Look for the difference and use a HashSet] a great way to remember the solution to 2 Sum?
+    </string>
+    <string name="interviewing_4_question_2_option_1">It is compact</string>
+    <string name="interviewing_4_question_2_option_2">It trains your brain to convert high-level ideas into implementation</string>
+    <string name="interviewing_4_question_2_option_3">It captures the core of the problem</string>
+    <string name="interviewing_4_question_2_option_4">All of the above</string>
+    <string-array name="interviewing_4_question_2_options">
+        <item>@string/interviewing_4_question_2_option_1</item>
+        <item>@string/interviewing_4_question_2_option_2</item>
+        <item>@string/interviewing_4_question_2_option_3</item>
+        <item>@string/interviewing_4_question_2_option_4</item>
+    </string-array>
+
+    <string name="interviewing_4_question_3">
+        What more general higher-level learning principles is also exercised alongside the proper mastery
+        of data structures and algorithms problems?
+    </string>
+    <string name="interviewing_4_question_3_option_1">Memorization</string>
+    <string name="interviewing_4_question_3_option_2">Thinking in terms of abstractions</string>
+    <string name="interviewing_4_question_3_option_3">Perseverance</string>
+    <string name="interviewing_4_question_3_option_4">Repetition</string>
+    <string-array name="interviewing_4_question_3_options">
+        <item>@string/interviewing_4_question_3_option_1</item>
+        <item>@string/interviewing_4_question_3_option_2</item>
+        <item>@string/interviewing_4_question_3_option_3</item>
+        <item>@string/interviewing_4_question_3_option_4</item>
+    </string-array>
 </resources>
