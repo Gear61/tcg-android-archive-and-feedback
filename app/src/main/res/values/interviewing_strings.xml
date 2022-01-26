@@ -84,7 +84,7 @@
     </string>
 
     <string name="interviewing_2_question_4">
-        Why should you view interviews as a test?
+        Why should you not view interviews as a test?
     </string>
     <string name="interviewing_2_question_4_option_1">Because they aren\'t</string>
     <string name="interviewing_2_question_4_option_2">To reduce your anxiety and care less about the result</string>
@@ -151,5 +151,21 @@
         True or false: If you aren\'t making progress on data structures and algorithms after 2 months,
         your mind probably just isn\'t geared to understand them. At that point, you should be practical
         and just look for interviews that don\'t have these kinds of problems.
+    </string>
+
+    <!-- LESSON FOUR -->
+    <string name="interviewing_lesson_4_name">
+        Truly Mastering A Data Structures And Algorithms Problem - 2 Sum Example
+    </string>
+
+    <string name="interviewing_4_question_1">
+        Why is the following not a good way to remember the solution to 2 Sum?"
+        \n\ndef twoSum(self, nums, target):" +
+        \n    required = {} " +
+        \n    for i in range(len(nums)):" +
+        \n        if target - nums[i] in required: " +
+        \n            return [required[target - nums[i]],i]" +
+        \n        else:" +
+        \n            required[nums[i]] = i",
     </string>
 </resources>

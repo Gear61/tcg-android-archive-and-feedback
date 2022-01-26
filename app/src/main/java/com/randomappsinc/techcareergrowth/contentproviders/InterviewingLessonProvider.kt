@@ -17,6 +17,7 @@ object InterviewingLessonProvider {
             lessons!!.add(getLesson1(context = context))
             lessons!!.add(getLesson2(context = context))
             lessons!!.add(getLesson3(context = context))
+            lessons!!.add(getLesson4(context = context))
         }
         return lessons!!
     }
@@ -74,55 +75,6 @@ object InterviewingLessonProvider {
         val questions: MutableList<Question> = mutableListOf()
         questions.add(
             Question(
-                textResId = R.string.interviewing_3_question_1,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.false_option
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.interviewing_3_question_2,
-                optionsListResId = R.array.interviewing_3_question_2_options,
-                correctAnswerId = R.string.interviewing_3_question_2_option_4
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.interviewing_3_question_3,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.true_option
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.interviewing_3_question_4,
-                optionsListResId = R.array.interviewing_3_question_4_options,
-                correctAnswerId = R.string.interviewing_3_question_4_option_2
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.interviewing_3_question_5,
-                optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.false_option
-            )
-        )
-
-        val lessonId = "interviewing_2"
-        return Lesson(
-            id = lessonId,
-            type = LessonType.INTERVIEWING,
-            nameResId = R.string.interviewing_lesson_2_name,
-            youtubeVideoId = "guxFTl_qIRg",
-            questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
-        )
-    }
-
-    private fun getLesson3(context: Context): Lesson {
-        val questions: MutableList<Question> = mutableListOf()
-        questions.add(
-            Question(
                 textResId = R.string.interviewing_2_question_1,
                 optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
@@ -157,12 +109,110 @@ object InterviewingLessonProvider {
             )
         )
 
+        val lessonId = "interviewing_2"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.INTERVIEWING,
+            nameResId = R.string.interviewing_lesson_2_name,
+            youtubeVideoId = "guxFTl_qIRg",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson3(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_3_question_1,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_3_question_2,
+                optionsListResId = R.array.interviewing_3_question_2_options,
+                correctAnswerId = R.string.interviewing_3_question_2_option_4
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_3_question_3,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_3_question_4,
+                optionsListResId = R.array.interviewing_3_question_4_options,
+                correctAnswerId = R.string.interviewing_3_question_4_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_3_question_5,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+
         val lessonId = "interviewing_3"
         return Lesson(
             id = lessonId,
             type = LessonType.INTERVIEWING,
             nameResId = R.string.interviewing_lesson_3_name,
             youtubeVideoId = "LSLyly2GJo4",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson4(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_4_question_1,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_2_question_2,
+                optionsListResId = R.array.interviewing_2_question_2_options,
+                correctAnswerId = R.string.interviewing_2_question_2_option_3
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_2_question_3,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_2_question_4,
+                optionsListResId = R.array.interviewing_2_question_4_options,
+                correctAnswerId = R.string.interviewing_2_question_4_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.interviewing_2_question_5,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+
+        val lessonId = "interviewing_4"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.INTERVIEWING,
+            nameResId = R.string.interviewing_lesson_4_name,
+            youtubeVideoId = "tfqPGGdS8Tk",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )
