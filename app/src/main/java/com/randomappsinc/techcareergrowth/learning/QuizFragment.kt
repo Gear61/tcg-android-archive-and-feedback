@@ -56,6 +56,10 @@ class QuizFragment : Fragment() {
     }
 
     fun loadCurrentQuestionIntoView() {
+        if (!isAdded) {
+            return
+        }
+
         val radioGroup = binding.questionOptions
         val question = viewState.getCurrentQuestion()
 
