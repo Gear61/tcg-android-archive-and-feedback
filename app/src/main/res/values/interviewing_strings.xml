@@ -266,4 +266,53 @@
         <item>@string/interviewing_5_question_5_option_3</item>
         <item>@string/interviewing_5_question_5_option_4</item>
     </string-array>
+
+    <!-- LESSON SIX -->
+    <string name="interviewing_lesson_6_name">
+        Inventing The API And Analyzing Your Solution
+    </string>
+
+    <string name="interviewing_6_question_1">
+        True or false: You should tackle the easiest, most trivial parts of a data structures and algorithms problem first,
+        just to get it out of the way and boost your confidence.
+    </string>
+
+    <string name="interviewing_6_question_2">
+        What does it mean to [Invent the API]?
+    </string>
+    <string name="interviewing_6_question_2_option_1">Describing what AWS server you would host your solution on</string>
+    <string name="interviewing_6_question_2_option_2">Talking about the REST interface your endpoint will have</string>
+    <string name="interviewing_6_question_2_option_3">Figuring out the run-time and space complexity of your code</string>
+    <string name="interviewing_6_question_2_option_4">
+        Creating a method that you assume accomplishes some very straightforward piece of logic you need
+    </string>
+    <string-array name="interviewing_6_question_2_options">
+        <item>@string/interviewing_6_question_2_option_1</item>
+        <item>@string/interviewing_6_question_2_option_2</item>
+        <item>@string/interviewing_6_question_2_option_3</item>
+        <item>@string/interviewing_6_question_2_option_4</item>
+    </string-array>
+
+    <string name="interviewing_6_question_3">
+        True or false: A lot of the time, the interviewer won\'t care if you don\'t code out every single piece of the entire solution.
+    </string>
+
+    <string name="interviewing_6_question_4">
+        Why shouldn\'t you prioritize writing the simple utility methods your overall solution needs?
+    </string>
+    <string name="interviewing_6_question_4_option_1">To save time</string>
+    <string name="interviewing_6_question_4_option_2">The interviewer doesn\'t get much signal watching you code these</string>
+    <string name="interviewing_6_question_4_option_3">So you can tackle the essence of the problem first instead</string>
+    <string name="interviewing_6_question_4_option_4">All of the above</string>
+    <string-array name="interviewing_6_question_4_options">
+        <item>@string/interviewing_6_question_4_option_1</item>
+        <item>@string/interviewing_6_question_4_option_2</item>
+        <item>@string/interviewing_6_question_4_option_4</item>
+        <item>@string/interviewing_6_question_4_option_4</item>
+    </string-array>
+
+    <string name="interviewing_6_question_5">
+        True or false: If you are 100% confident that your solution doesn\'t have bugs, just tell your interviewer
+        you are done and kick the conversation back to them to save time and move on to the next problem.
+    </string>
 </resources>
