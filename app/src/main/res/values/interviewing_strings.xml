@@ -104,7 +104,7 @@
 
     <!-- LESSON THREE -->
     <string name="interviewing_lesson_3_name">
-        How To Mentally Prepare For Interviews With Data Structures And Algorithms
+        Mentally Preparing For Interviews With Data Structures And Algorithms
     </string>
 
     <string name="interviewing_3_question_1">
@@ -205,5 +205,65 @@
         <item>@string/interviewing_4_question_3_option_2</item>
         <item>@string/interviewing_4_question_3_option_3</item>
         <item>@string/interviewing_4_question_3_option_4</item>
+    </string-array>
+
+    <!-- LESSON FIVE -->
+    <string name="interviewing_lesson_5_name">
+        How Big Tech Judges Interview Performance Differently
+    </string>
+
+    <string name="interviewing_5_question_1">
+        What is the main extra axis that Big Tech companies will grade interview candidates on?
+    </string>
+    <string name="interviewing_5_question_1_option_1">Space complexity</string>
+    <string name="interviewing_5_question_1_option_2">Cleanliness of the code</string>
+    <string name="interviewing_5_question_1_option_3">Communication skills</string>
+    <string name="interviewing_5_question_1_option_4">Programming language choice</string>
+    <string-array name="interviewing_5_question_1_options">
+        <item>@string/interviewing_5_question_1_option_1</item>
+        <item>@string/interviewing_5_question_1_option_2</item>
+        <item>@string/interviewing_5_question_1_option_3</item>
+        <item>@string/interviewing_5_question_1_option_4</item>
+    </string-array>
+
+    <string name="interviewing_5_question_2">
+        As long as you get a correct, optimal solution, that is enough to pass a Big Tech interview round.
+    </string>
+
+    <string name="interviewing_5_question_3">
+        Why is communication so important in Big Tech companies?
+    </string>
+    <string name="interviewing_5_question_3_option_1">
+        There are a lot more stakeholders on every project, making the relevant audience at every point quite large
+    </string>
+    <string name="interviewing_5_question_3_option_2">
+        Their internal architecture is very custom, making your ability to learn new things much more important
+    </string>
+    <string name="interviewing_5_question_3_option_3">
+        Software engineers there are expected to be much more well-rounded and not just coding all the time
+    </string>
+    <string name="interviewing_5_question_3_option_4">All of the above</string>
+    <string-array name="interviewing_5_question_3_options">
+        <item>@string/interviewing_5_question_3_option_1</item>
+        <item>@string/interviewing_5_question_3_option_2</item>
+        <item>@string/interviewing_5_question_3_option_3</item>
+        <item>@string/interviewing_5_question_3_option_4</item>
+    </string-array>
+
+    <string name="interviewing_5_question_4">
+        True or false: Big Tech companies don\'t really care about what specific technologies
+        and programming languages you have worked with
+    </string>
+
+    <string name="interviewing_5_question_5">What\'s the core high-level asset Big Tech interviewers look for?</string>
+    <string name="interviewing_5_question_5_option_1">Years of experience</string>
+    <string name="interviewing_5_question_5_option_2">Open-source contributions</string>
+    <string name="interviewing_5_question_5_option_3">Fundamentals</string>
+    <string name="interviewing_5_question_5_option_4">Usage of modern programming languages and frameworks</string>
+    <string-array name="interviewing_5_question_5_options">
+        <item>@string/interviewing_5_question_5_option_1</item>
+        <item>@string/interviewing_5_question_5_option_2</item>
+        <item>@string/interviewing_5_question_5_option_3</item>
+        <item>@string/interviewing_5_question_5_option_4</item>
     </string-array>
 </resources>
