@@ -22,6 +22,7 @@ class QuizFragment : Fragment() {
     private var _binding: QuizBinding? = null
     private val binding get() = _binding!!
     private var animationLength: Long = 0
+    private lateinit var viewState: LearningViewState
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,6 +36,9 @@ class QuizFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         animationLength = resources.getInteger(R.integer.shorter_anim_length).toLong()
+
+        val activity = requireActivity() as LessonActivity
+        viewState = activity.viewState
         loadCurrentQuestionIntoView()
 
         binding.submitButton.setOnClickListener {
@@ -43,8 +47,7 @@ class QuizFragment : Fragment() {
                 UIUtil.showLongToast(R.string.no_option_selected, requireContext())
                 return@setOnClickListener
             }
-            val activity = requireActivity() as LessonActivity
-            activity.viewState.submitAnswer(
+            viewState.submitAnswer(
                 answer = checkedButton.text,
                 context = requireContext()
             )
@@ -54,10 +57,7 @@ class QuizFragment : Fragment() {
 
     fun loadCurrentQuestionIntoView() {
         val radioGroup = binding.questionOptions
-        radioGroup.clearAllChecks()
-
-        val activity = requireActivity() as LessonActivity
-        val question = activity.viewState.getCurrentQuestion()
+        val question = viewState.getCurrentQuestion()
 
         binding.questionText.setText(question.textResId)
         val options = resources.getStringArray(question.optionsListResId)
