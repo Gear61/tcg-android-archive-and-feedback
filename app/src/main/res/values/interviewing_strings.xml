@@ -252,7 +252,7 @@
 
     <string name="interviewing_5_question_4">
         True or false: Big Tech companies don\'t really care about what specific technologies
-        and programming languages you have worked with
+        and programming languages you have worked with.
     </string>
 
     <string name="interviewing_5_question_5">What\'s the core high-level asset Big Tech interviewers look for?</string>
@@ -307,7 +307,7 @@
     <string-array name="interviewing_6_question_4_options">
         <item>@string/interviewing_6_question_4_option_1</item>
         <item>@string/interviewing_6_question_4_option_2</item>
-        <item>@string/interviewing_6_question_4_option_4</item>
+        <item>@string/interviewing_6_question_4_option_3</item>
         <item>@string/interviewing_6_question_4_option_4</item>
     </string-array>
 
