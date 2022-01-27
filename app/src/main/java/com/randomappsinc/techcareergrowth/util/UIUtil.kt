@@ -14,18 +14,6 @@ import com.randomappsinc.techcareergrowth.R
 
 object UIUtil {
 
-    fun hideKeyboard(activity: Activity) {
-        val inputMethodManager =
-            activity.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-        // Find the currently focused view, so we can grab the correct window token from it.
-        var view = activity.currentFocus
-        // If no view currently has focus, create a new one, just so we can grab a window token from it
-        if (view == null) {
-            view = View(activity)
-        }
-        inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
-    }
-
     fun loadMenuIcon(menu: Menu, itemId: Int, icon: Icon?, context: Context?) {
         menu.findItem(itemId).icon = IconDrawable(context, icon)
             .colorRes(R.color.white)
@@ -47,13 +35,5 @@ object UIUtil {
 
     private fun showToast(@StringRes stringId: Int, duration: Int, context: Context) {
         Toast.makeText(context, stringId, duration).show()
-    }
-
-    fun showLongToast(text: String, context: Context?) {
-        showToast(text, Toast.LENGTH_LONG, context!!)
-    }
-
-    private fun showToast(text: String, duration: Int, context: Context) {
-        Toast.makeText(context, text, duration).show()
     }
 }
