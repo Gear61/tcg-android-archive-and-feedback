@@ -22,7 +22,7 @@ class QuizFragment : Fragment() {
     private var _binding: QuizBinding? = null
     private val binding get() = _binding!!
     private var animationLength: Long = 0
-    private lateinit var viewState: LearningViewState
+    private var viewState: LearningViewState? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,7 +47,7 @@ class QuizFragment : Fragment() {
                 UIUtil.showLongToast(R.string.no_option_selected, requireContext())
                 return@setOnClickListener
             }
-            viewState.submitAnswer(
+            viewState!!.submitAnswer(
                 answer = checkedButton.text,
                 context = requireContext()
             )
@@ -56,12 +56,12 @@ class QuizFragment : Fragment() {
     }
 
     fun loadCurrentQuestionIntoView() {
-        if (!isAdded) {
+        if (!isAdded || viewState == null) {
             return
         }
 
         val radioGroup = binding.questionOptions
-        val question = viewState.getCurrentQuestion()
+        val question = viewState!!.getCurrentQuestion()
 
         binding.questionText.setText(question.textResId)
         val options = resources.getStringArray(question.optionsListResId)
@@ -110,5 +110,10 @@ class QuizFragment : Fragment() {
                 override fun onAnimationCancel(animation: Animator) {}
                 override fun onAnimationRepeat(animation: Animator) {}
             })
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        viewState = null
     }
 }

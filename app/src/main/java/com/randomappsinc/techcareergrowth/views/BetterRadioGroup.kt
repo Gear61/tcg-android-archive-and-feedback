@@ -4,7 +4,6 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
 import com.randomappsinc.techcareergrowth.R
-import java.util.*
 
 class BetterRadioGroup @JvmOverloads constructor(
     context: Context?,
