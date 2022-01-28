@@ -19,6 +19,16 @@
             >
 
             <TextView
+                android:id="@+id/emoji_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textSize="69sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
                 android:id="@+id/score_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

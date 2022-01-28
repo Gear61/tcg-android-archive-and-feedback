@@ -36,4 +36,8 @@
     <string name="retake_quiz">Retake Quiz</string>
     <string name="relearn_content">Relearn Content</string>
     <string name="exit">Exit</string>
+
+    <string name="sad_emoji">&#128546;</string>
+    <string name="slight_smile_emoji">&#128578;</string>
+    <string name="party_emoji">&#129395;</string>
 </resources>

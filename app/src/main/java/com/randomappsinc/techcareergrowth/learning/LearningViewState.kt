@@ -1,6 +1,7 @@
 package com.randomappsinc.techcareergrowth.learning
 
 import android.content.Context
+import androidx.annotation.StringRes
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.Question
@@ -14,6 +15,7 @@ class LearningViewState(
     var scoreText: String = "",
     var gotPerfectScore: Boolean = false,
     var completedForFirstTime: Boolean = false,
+    @StringRes var resultEmojiId: Int = R.string.sad_emoji,
     private val questionAnswers: MutableList<String> = mutableListOf()
 ) {
 
@@ -43,12 +45,15 @@ class LearningViewState(
                     PreferencesManager(context).onLessonCompleted(lesson.id)
                 }
             }
-            scoreMessage = if (percentCorrect == 100.0f) {
-                context.getString(R.string.perfect_score_message)
+            if (percentCorrect == 100.0f) {
+                scoreMessage = context.getString(R.string.perfect_score_message)
+                resultEmojiId = R.string.party_emoji
             } else if (percentCorrect >= 80.0f) {
-                context.getString(R.string.b_grade_message)
+                scoreMessage = context.getString(R.string.b_grade_message)
+                resultEmojiId = R.string.slight_smile_emoji
             } else {
-                context.getString(R.string.c_grade_message)
+                scoreMessage = context.getString(R.string.c_grade_message)
+                resultEmojiId = R.string.sad_emoji
             }
 
             val fractionText = numCorrect.toString() + "/" + questionAnswers.size.toString()

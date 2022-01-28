@@ -19,6 +19,15 @@ class ScoreReportFragment: Fragment() {
         fun getInstance(): ScoreReportFragment {
             return ScoreReportFragment()
         }
+
+        const val CONFETTI_ANIMATION_LENGTH_MS = 5000L
+        const val NUM_CONFETTI_SHOWN = 1500
+
+        // 1 is constraining them to a straight line, 360 for a full circle
+        const val CONFETTI_SPREAD_ANGLE = 90
+
+        // 0 is to the right, making 270 straight up
+        const val CONFETTI_TRAVEL_ANGLE = 270
     }
 
     private var _binding: ScoreReportBinding? = null
@@ -37,6 +46,7 @@ class ScoreReportFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val activity = requireActivity() as LessonActivity
+        binding.emojiText.setText(activity.viewState.resultEmojiId)
         binding.scoreMessage.text = activity.viewState.scoreMessage
         binding.scoreText.text = activity.viewState.scoreText
 
@@ -57,13 +67,13 @@ class ScoreReportFragment: Fragment() {
             binding.relearnContentButton.visibility = View.GONE
 
             val party = Party(
-                angle = 270,
+                angle = CONFETTI_TRAVEL_ANGLE,
                 speed = 0f,
                 maxSpeed = 175f,
                 damping = 0.9f,
-                spread = 90,
+                spread = CONFETTI_SPREAD_ANGLE,
                 colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
-                emitter = Emitter(duration = 5000, TimeUnit.MILLISECONDS).max(1500),
+                emitter = Emitter(duration = CONFETTI_ANIMATION_LENGTH_MS, TimeUnit.MILLISECONDS).max(NUM_CONFETTI_SHOWN),
                 position = Position.Relative(0.5, 1.0),
                 rotation = Rotation.enabled()
             )
