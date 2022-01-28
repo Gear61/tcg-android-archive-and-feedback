@@ -46,6 +46,7 @@ class ScoreReportFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val activity = requireActivity() as LessonActivity
+        binding.lessonTitle.setText(activity.viewState.lesson.nameResId)
         binding.emojiText.setText(activity.viewState.resultEmojiId)
         binding.scoreMessage.text = activity.viewState.scoreMessage
         binding.scoreText.text = activity.viewState.scoreText

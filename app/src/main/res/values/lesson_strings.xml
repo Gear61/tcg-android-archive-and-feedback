@@ -27,7 +27,7 @@
 
     <string name="no_option_selected">You need to select an option.</string>
 
-    <string name="perfect_score_message">Congratulations! Your score was:</string>
+    <string name="perfect_score_message">Congratulations on mastering the lesson! Your score was:</string>
     <string name="b_grade_message">Not bad! Your score was:</string>
     <string name="c_grade_message">Better luck next time! Your score was:</string>
 
