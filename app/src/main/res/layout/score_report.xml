@@ -1,56 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/screen_background"
     >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background"
         >
 
-        <TextView
-            android:id="@+id/score_message"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:gravity="center_horizontal"
-            android:textSize="19sp"
-            android:textColor="@color/text_normal"
-            />
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
 
-        <TextView
-            android:id="@+id/score_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="33sp"
-            android:textColor="@color/text_title"
-            />
+            <TextView
+                android:id="@+id/score_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:textSize="19sp"
+                android:textColor="@color/text_normal"
+                />
 
-        <TextView
-            android:id="@+id/retake_quiz_button"
-            android:layout_marginTop="16dp"
-            android:text="@string/retake_quiz"
-            style="@style/rounded_button"
-            />
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="33sp"
+                android:textColor="@color/text_title"
+                />
 
-        <TextView
-            android:id="@+id/relearn_content_button"
-            android:layout_marginTop="16dp"
-            android:text="@string/relearn_content"
-            style="@style/rounded_button"
-            />
+            <TextView
+                android:id="@+id/retake_quiz_button"
+                android:layout_marginTop="16dp"
+                android:text="@string/retake_quiz"
+                style="@style/rounded_button"
+                />
 
-        <TextView
-            android:id="@+id/exit_button"
-            android:layout_marginTop="16dp"
-            android:text="@string/exit"
-            style="@style/rounded_button"
-            />
-    </LinearLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/relearn_content_button"
+                android:layout_marginTop="16dp"
+                android:text="@string/relearn_content"
+                style="@style/rounded_button"
+                />
+
+            <TextView
+                android:id="@+id/exit_button"
+                android:layout_marginTop="16dp"
+                android:text="@string/exit"
+                style="@style/rounded_button"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfetti_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</FrameLayout>
