@@ -2,8 +2,8 @@
 <resources>
 
     <!-- LESSON ONE -->
-    <string name="productivity_lesson_1_name">
-        Setting Up Your Mindset For Long-Term Success And What Separates The Top Engineers And Tech Companies From The Rest
+    <string name="productivity_lesson_1_name">0
+        Setting Up Your Mindset For Long-Term Success And What Separates The Top Engineers From The Rest
     </string>
 
     <string name="productivity_1_question_1">
@@ -28,12 +28,10 @@
     <string name="productivity_1_question_3">
         Which one of these is the enemy of productivity?
     </string>
-    <string name="productivity_1_question_3_option_1">To explain what every line of code does</string>
-    <string name="productivity_1_question_3_option_2">Because comments make good code</string>
-    <string name="productivity_1_question_3_option_3">It makes the code faster</string>
-    <string name="productivity_1_question_3_option_4">
-        To capture the core insight behind the problem and the high level approach
-    </string>
+    <string name="productivity_1_question_3_option_1">JavaScript</string>
+    <string name="productivity_1_question_3_option_2">Time</string>
+    <string name="productivity_1_question_3_option_3">Ambiguity</string>
+    <string name="productivity_1_question_3_option_4">Music</string>
     <string-array name="productivity_1_question_3_options">
         <item>@string/productivity_1_question_3_option_1</item>
         <item>@string/productivity_1_question_3_option_2</item>
@@ -42,14 +40,14 @@
     </string-array>
 
     <string name="productivity_1_question_4">
-        True or false: A lot of senior engineers will write less code compared to when they were a junior engineer.
+        True or false: A lot of senior engineers write very little code, adding value in other ways.
     </string>
 
     <string name="productivity_1_question_5">
         Why is it important to break problems down?
     </string>
     <string name="productivity_1_question_5_option_1">So that your brain registers wins more often</string>
-    <string name="productivity_1_question_5_option_2">To make projects easier to understand</string>
+    <string name="productivity_1_question_5_option_2">To make projects more concrete and easier to understand</string>
     <string name="productivity_1_question_5_option_3">To allow work to be done in parallel when you have a team</string>
     <string name="productivity_1_question_5_option_4">All of the above</string>
     <string-array name="productivity_1_question_5_options">

@@ -23,37 +23,37 @@ object ProductivityLessonProvider {
         val questions: MutableList<Question> = mutableListOf()
         questions.add(
             Question(
-                textResId = R.string.interviewing_1_question_1,
-                optionsListResId = R.array.interviewing_1_question_1_options,
-                correctAnswerId = R.string.interviewing_1_question_1_option_2
+                textResId = R.string.productivity_1_question_1,
+                optionsListResId = R.array.productivity_1_question_1_options,
+                correctAnswerId = R.string.productivity_1_question_1_option_2
             )
         )
         questions.add(
             Question(
-                textResId = R.string.interviewing_1_question_2,
+                textResId = R.string.productivity_1_question_2,
                 optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
-                textResId = R.string.interviewing_1_question_3,
-                optionsListResId = R.array.interviewing_1_question_3_options,
-                correctAnswerId = R.string.interviewing_1_question_3_option_4
+                textResId = R.string.productivity_1_question_3,
+                optionsListResId = R.array.productivity_1_question_3_options,
+                correctAnswerId = R.string.productivity_1_question_3_option_3
             )
         )
         questions.add(
             Question(
-                textResId = R.string.interviewing_1_question_4,
+                textResId = R.string.productivity_1_question_4,
                 optionsListResId = R.array.true_false_options,
-                correctAnswerId = R.string.false_option
+                correctAnswerId = R.string.true_option
             )
         )
         questions.add(
             Question(
-                textResId = R.string.interviewing_1_question_5,
-                optionsListResId = R.array.interviewing_1_question_5_options,
-                correctAnswerId = R.string.interviewing_1_question_5_option_3
+                textResId = R.string.productivity_1_question_5,
+                optionsListResId = R.array.productivity_1_question_5_options,
+                correctAnswerId = R.string.productivity_1_question_5_option_4
             )
         )
 
@@ -61,7 +61,7 @@ object ProductivityLessonProvider {
         return Lesson(
             id = lessonId,
             type = LessonType.PRODUCTIVITY,
-            nameResId = R.string.interviewing_lesson_1_name,
+            nameResId = R.string.productivity_lesson_1_name,
             youtubeVideoId = "XqBA2fkvUTg",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
