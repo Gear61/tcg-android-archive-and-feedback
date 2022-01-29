@@ -9,6 +9,8 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
+import androidx.transition.TransitionInflater
+import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.WatchContentBinding
 
 class WatchContentFragment: Fragment() {
@@ -22,6 +24,12 @@ class WatchContentFragment: Fragment() {
 
     private var _binding: WatchContentBinding? = null
     private val binding get() = _binding!!
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val inflater = TransitionInflater.from(requireContext())
+        enterTransition = inflater.inflateTransition(R.transition.fade)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
