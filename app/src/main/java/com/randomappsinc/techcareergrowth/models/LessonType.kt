@@ -6,5 +6,6 @@ import com.randomappsinc.techcareergrowth.R
 enum class LessonType(@StringRes val lessonLabelId: Int) {
 
     INTERVIEWING(R.string.interviewing),
-    RESUME(R.string.resume)
+    RESUME(R.string.resume),
+    PRODUCTIVITY(R.string.productivity)
 }

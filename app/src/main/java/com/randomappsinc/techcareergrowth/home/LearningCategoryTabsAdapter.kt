@@ -16,7 +16,8 @@ class LearningCategoryTabsAdapter(
         return when (position) {
             0 -> LessonListFragment.getInstance(LessonType.INTERVIEWING)
             1 -> LessonListFragment.getInstance(LessonType.RESUME)
-            else -> throw IllegalArgumentException("There should only be 2 tabs!")
+            2 -> LessonListFragment.getInstance(LessonType.PRODUCTIVITY)
+            else -> throw IllegalArgumentException("There should only be 3 tabs!")
         }
     }
 }

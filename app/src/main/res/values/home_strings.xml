@@ -2,10 +2,12 @@
 <resources>
     <string name="interviewing">Interviewing</string>
     <string name="resume">Resume</string>
+    <string name="productivity">Productivity</string>
 
     <string-array name="learning_category_options">
         <item>@string/interviewing</item>
         <item>@string/resume</item>
+        <item>@string/productivity</item>
     </string-array>
 
     <string name="green_check_icon">{ion-checkmark @color/green}</string>

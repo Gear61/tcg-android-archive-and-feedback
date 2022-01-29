@@ -10,6 +10,7 @@ object LessonProvider {
         return when (type) {
             LessonType.INTERVIEWING -> InterviewingLessonProvider.getLessons(context = context)
             LessonType.RESUME -> ResumeLessonProvider.getLessons(context = context)
+            LessonType.PRODUCTIVITY -> ProductivityLessonProvider.getLessons(context = context)
         }
     }
 }
