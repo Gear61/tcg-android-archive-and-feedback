@@ -56,4 +56,60 @@
         <item>@string/productivity_1_question_5_option_3</item>
         <item>@string/productivity_1_question_5_option_4</item>
     </string-array>
+
+    <!-- LESSON TWO -->
+    <string name="productivity_lesson_2_name">
+        How To Accomplish Something Every Single Day
+    </string>
+
+    <string name="productivity_2_question_1">
+        How do you make every one of your days productive?
+    </string>
+    <string name="productivity_2_question_1_option_1">Drinking lots of coffee</string>
+    <string name="productivity_2_question_1_option_2">Buying a faster computer</string>
+    <string name="productivity_2_question_1_option_3">Waking up at 4:30AM</string>
+    <string name="productivity_2_question_1_option_4">Having a focused, singular goal</string>
+    <string-array name="productivity_2_question_1_options">
+        <item>@string/productivity_2_question_1_option_1</item>
+        <item>@string/productivity_2_question_1_option_2</item>
+        <item>@string/productivity_2_question_1_option_3</item>
+        <item>@string/productivity_2_question_1_option_4</item>
+    </string-array>
+
+    <string name="productivity_2_question_2">
+        True or false: People overestimate what they can do in 1 day while underestimating what they can accomplish in 1 year.
+    </string>
+
+    <string name="productivity_2_question_3">
+        Which of these attributes should your singular daily goal have?
+    </string>
+    <string name="productivity_2_question_3_option_1">It should be relatively small, maybe even scoped down</string>
+    <string name="productivity_2_question_3_option_2">It should be flashy and exciting</string>
+    <string name="productivity_2_question_3_option_3">It should be something you can share on social media</string>
+    <string name="productivity_2_question_3_option_4">All of the above</string>
+    <string-array name="productivity_2_question_3_options">
+        <item>@string/productivity_2_question_3_option_1</item>
+        <item>@string/productivity_2_question_3_option_2</item>
+        <item>@string/productivity_2_question_3_option_3</item>
+        <item>@string/productivity_2_question_3_option_4</item>
+    </string-array>
+
+    <string name="productivity_2_question_4">
+        True or false: You should try to keep your goals purely inside your head instead of writing them down.
+        This saves you time and prevents you from overloading yourself with too many notes.
+    </string>
+
+    <string name="productivity_2_question_5">
+        Which of these helps lead to action?
+    </string>
+    <string name="productivity_2_question_5_option_1">Caffeine</string>
+    <string name="productivity_2_question_5_option_2">Clarity</string>
+    <string name="productivity_2_question_5_option_3">Pressure</string>
+    <string name="productivity_2_question_5_option_4">All of the above</string>
+    <string-array name="productivity_2_question_5_options">
+        <item>@string/productivity_2_question_5_option_1</item>
+        <item>@string/productivity_2_question_5_option_2</item>
+        <item>@string/productivity_2_question_5_option_3</item>
+        <item>@string/productivity_2_question_5_option_4</item>
+    </string-array>
 </resources>
