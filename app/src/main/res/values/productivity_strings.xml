@@ -112,4 +112,41 @@
         <item>@string/productivity_2_question_5_option_3</item>
         <item>@string/productivity_2_question_5_option_4</item>
     </string-array>
+
+    <!-- LESSON THREE -->
+    <string name="productivity_lesson_3_name">
+        Why Time Is 100x More Valuable Than Money In Tech
+    </string>
+
+    <string name="productivity_3_question_1">
+        Which one of these is a crucial skill working in a top tech company?
+    </string>
+    <string name="productivity_3_question_1_option_1">Writing JIRA tickets</string>
+    <string name="productivity_3_question_1_option_2">Time management</string>
+    <string name="productivity_3_question_1_option_3">Attending meetings</string>
+    <string name="productivity_3_question_1_option_4">All of the above</string>
+    <string-array name="productivity_3_question_1_options">
+        <item>@string/productivity_3_question_1_option_1</item>
+        <item>@string/productivity_3_question_1_option_2</item>
+        <item>@string/productivity_3_question_1_option_3</item>
+        <item>@string/productivity_3_question_1_option_4</item>
+    </string-array>
+
+    <string name="productivity_3_question_2">
+        True or false: Time is an overpowered, often underappreciated resource.
+    </string>
+
+    <string name="productivity_3_question_3">
+        Why is time such a valuable resource?
+    </string>
+    <string name="productivity_3_question_3_option_1">It can be converted into almost every other resource</string>
+    <string name="productivity_3_question_3_option_2">You can\'t really acquire more of it, at least not easily</string>
+    <string name="productivity_3_question_3_option_3">You need it to accomplish everything you do</string>
+    <string name="productivity_3_question_3_option_4">All of the above</string>
+    <string-array name="productivity_3_question_3_options">
+        <item>@string/productivity_3_question_3_option_1</item>
+        <item>@string/productivity_3_question_3_option_2</item>
+        <item>@string/productivity_3_question_3_option_3</item>
+        <item>@string/productivity_3_question_3_option_4</item>
+    </string-array>
 </resources>
