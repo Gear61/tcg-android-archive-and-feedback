@@ -17,6 +17,7 @@ object ProductivityLessonProvider {
             lessons!!.add(getLesson1(context = context))
             lessons!!.add(getLesson2(context = context))
             lessons!!.add(getLesson3(context = context))
+            lessons!!.add(getLesson4(context = context))
         }
         return lessons!!
     }
@@ -149,6 +150,55 @@ object ProductivityLessonProvider {
             type = LessonType.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_3_name,
             youtubeVideoId = "7VwKfMZUFxk",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson4(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.productivity_4_question_1,
+                optionsListResId = R.array.productivity_4_question_1_options,
+                correctAnswerId = R.string.productivity_4_question_1_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.productivity_4_question_2,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.productivity_4_question_3,
+                optionsListResId = R.array.productivity_4_question_3_options,
+                correctAnswerId = R.string.productivity_4_question_3_option_1
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.productivity_4_question_4,
+                optionsListResId = R.array.productivity_4_question_4_options,
+                correctAnswerId = R.string.productivity_4_question_4_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.productivity_4_question_5,
+                optionsListResId = R.array.productivity_4_question_5_options,
+                correctAnswerId = R.string.productivity_4_question_5_option_1
+            )
+        )
+
+        val lessonId = "productivity_4"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.PRODUCTIVITY,
+            nameResId = R.string.productivity_lesson_4_name,
+            youtubeVideoId = "L8a4Sc17DLw",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

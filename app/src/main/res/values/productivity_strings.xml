@@ -149,4 +149,66 @@
         <item>@string/productivity_3_question_3_option_3</item>
         <item>@string/productivity_3_question_3_option_4</item>
     </string-array>
+
+    <!-- LESSON FOUR -->
+    <string name="productivity_lesson_4_name">
+        The Best Gift You Can Give Yourself
+    </string>
+
+    <string name="productivity_4_question_1">
+        Which of these is the best gift you can give yourself when it comes to productivity?
+    </string>
+    <string name="productivity_4_question_1_option_1">Coffee</string>
+    <string name="productivity_4_question_1_option_2">Uninterrupted focus time</string>
+    <string name="productivity_4_question_1_option_3">Extra time from sleeping less</string>
+    <string name="productivity_4_question_1_option_4">Getting encouragement from social media</string>
+    <string-array name="productivity_4_question_1_options">
+        <item>@string/productivity_4_question_1_option_1</item>
+        <item>@string/productivity_4_question_1_option_2</item>
+        <item>@string/productivity_4_question_1_option_3</item>
+        <item>@string/productivity_4_question_1_option_4</item>
+    </string-array>
+
+    <string name="productivity_4_question_2">
+        True or false: Phones are great productivity tools as they allow us to accomplish almost anything in a really convenient way.
+        This is why we should make sure that we always have our phones close by as we are working.
+    </string>
+
+    <string name="productivity_4_question_3">
+        What is deep work?
+    </string>
+    <string name="productivity_4_question_3_option_1">The ability to focus without distraction on a cognitively demanding task</string>
+    <string name="productivity_4_question_3_option_2">Working on a very complex problem with modern technologies</string>
+    <string name="productivity_4_question_3_option_3">Debugging a very tricky bug</string>
+    <string name="productivity_4_question_3_option_4">Getting lots of certifications within just 1 tech stack</string>
+    <string-array name="productivity_4_question_3_options">
+        <item>@string/productivity_4_question_3_option_1</item>
+        <item>@string/productivity_4_question_3_option_2</item>
+        <item>@string/productivity_4_question_3_option_3</item>
+        <item>@string/productivity_4_question_3_option_4</item>
+    </string-array>
+
+    <string name="productivity_4_question_4">
+        Where should you have your phone when you are trying to do deep work?
+    </string>
+    <string name="productivity_4_question_4_option_1">In your pocket</string>
+    <string name="productivity_4_question_4_option_2">An inconvenient distance away outside of arm\'s reach, like another room</string>
+    <string name="productivity_4_question_4_option_3">On the table where you are working</string>
+    <string name="productivity_4_question_4_option_4">On the ground</string>
+    <string-array name="productivity_4_question_4_options">
+        <item>@string/productivity_4_question_4_option_1</item>
+        <item>@string/productivity_4_question_4_option_2</item>
+        <item>@string/productivity_4_question_4_option_3</item>
+        <item>@string/productivity_4_question_4_option_4</item>
+    </string-array>
+
+    <string name="productivity_4_question_5">
+        Between flow state and context switching, which is the safer option to invest into to make yourself more productive?
+    </string>
+    <string name="productivity_4_question_5_option_1">Flow state</string>
+    <string name="productivity_4_question_5_option_2">Context switching</string>
+    <string-array name="productivity_4_question_5_options">
+        <item>@string/productivity_4_question_5_option_1</item>
+        <item>@string/productivity_4_question_5_option_2</item>
+    </string-array>
 </resources>
