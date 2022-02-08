@@ -95,28 +95,35 @@ object PromotionLessonProvider {
         val questions: MutableList<Question> = mutableListOf()
         questions.add(
             Question(
-                textResId = R.string.resume_3_question_1,
-                optionsListResId = R.array.resume_3_question_1_options,
-                correctAnswerId = R.string.resume_3_question_1_option_3
-            )
-        )
-        questions.add(
-            Question(
-                textResId = R.string.resume_3_question_2,
+                textResId = R.string.promotion_3_question_1,
                 optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
-                textResId = R.string.resume_3_question_3,
-                optionsListResId = R.array.resume_3_question_3_options,
-                correctAnswerId = R.string.resume_3_question_3_option_4
+                textResId = R.string.promotion_3_question_2,
+                optionsListResId = R.array.promotion_3_question_2_options,
+                correctAnswerId = R.string.promotion_3_question_2_option_3
             )
         )
         questions.add(
             Question(
-                textResId = R.string.resume_3_question_4,
+                textResId = R.string.promotion_3_question_3,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.promotion_3_question_4,
+                optionsListResId = R.array.promotion_3_question_4_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.promotion_3_question_5,
                 optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.true_option
             )
@@ -126,8 +133,8 @@ object PromotionLessonProvider {
         return Lesson(
             id = lessonId,
             type = LessonType.PROMOTION,
-            nameResId = R.string.resume_lesson_3_name,
-            youtubeVideoId = "9Wb-gHEO9ug",
+            nameResId = R.string.promotion_lesson_3_name,
+            youtubeVideoId = "wgCDDE_WAJ8",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

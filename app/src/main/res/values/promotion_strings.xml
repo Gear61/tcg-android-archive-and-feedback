@@ -91,4 +91,67 @@
         <item>@string/promotion_2_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON THREE -->
+    <string name="promotion_lesson_3_name">
+        How To Learn From The Rockstar Engineers You Work With
+    </string>
+
+    <string name="promotion_3_question_1">
+        True or false: What is built by a very senior engineer
+        is more important than how they built it.
+    </string>
+
+    <string name="promotion_3_question_2">
+        When observing very senior engineers,
+        what should you look for to properly learn from them?
+    </string>
+    <string name="promotion_3_question_2_option_1">
+        How many lines of code they write
+    </string>
+    <string name="promotion_3_question_2_option_2">
+        The number of monitors they have
+    </string>
+    <string name="promotion_3_question_2_option_3">
+        The decisions they make and the behaviors they exhibit to achieve impact
+    </string>
+    <string-array name="promotion_3_question_2_options">
+        <item>@string/promotion_3_question_2_option_1</item>
+        <item>@string/promotion_3_question_2_option_2</item>
+        <item>@string/promotion_3_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_3_question_3">
+        True or false: At the top tech companies,
+        the very senior engineers make 5-10x more than their
+        very junior counterparts because they work 5-10x harder than they do.
+    </string>
+
+    <string name="promotion_3_question_4">
+        Which are good examples of questions you can
+        ask when understanding a very senior engineer\'s behavior?
+    </string>
+    <string name="promotion_3_question_4_option_1">
+        Why did they choose the specific projects they are building?
+    </string>
+    <string name="promotion_3_question_4_option_2">
+        What did they do to get the entire team behind their idea?
+    </string>
+    <string name="promotion_3_question_4_option_3">
+        How did they convert the initial idea into a fully functional product?
+    </string>
+    <string-array name="promotion_3_question_4_options">
+        <item>@string/promotion_3_question_4_option_1</item>
+        <item>@string/promotion_3_question_4_option_2</item>
+        <item>@string/promotion_3_question_4_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_3_question_5">
+        True or false: At the top tech companies,
+        you are told less and less what to do as you grow more senior,
+        working on more ambiguous projects while having greater freedom
+        to choose what you work on.
+    </string>
 </resources>
