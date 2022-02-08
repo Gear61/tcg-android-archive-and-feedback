@@ -3,11 +3,13 @@
     <string name="interviewing">Interviewing</string>
     <string name="resume">Resume</string>
     <string name="productivity">Productivity</string>
+    <string name="promotion">Promotion</string>
 
     <string-array name="learning_category_options">
         <item>@string/interviewing</item>
         <item>@string/resume</item>
         <item>@string/productivity</item>
+        <item>@string/promotion</item>
     </string-array>
 
     <string name="green_check_icon">{ion-checkmark @color/green}</string>

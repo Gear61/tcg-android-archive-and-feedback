@@ -11,6 +11,7 @@ object LessonProvider {
             LessonType.INTERVIEWING -> InterviewingLessonProvider.getLessons(context = context)
             LessonType.RESUME -> ResumeLessonProvider.getLessons(context = context)
             LessonType.PRODUCTIVITY -> ProductivityLessonProvider.getLessons(context = context)
+            LessonType.PROMOTION -> PromotionLessonProvider.getLessons(context = context)
         }
     }
 }

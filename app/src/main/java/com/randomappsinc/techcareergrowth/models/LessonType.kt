@@ -7,5 +7,6 @@ enum class LessonType(@StringRes val lessonLabelId: Int) {
 
     INTERVIEWING(R.string.interviewing),
     RESUME(R.string.resume),
-    PRODUCTIVITY(R.string.productivity)
+    PRODUCTIVITY(R.string.productivity),
+    PROMOTION(R.string.promotion)
 }
