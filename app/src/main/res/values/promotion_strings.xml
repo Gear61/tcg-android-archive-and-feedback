@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LESSON ONE -->
+    <string name="promotion_lesson_1_name">
+        The One Thing You Need To Know About Promotion In Tech
+    </string>
+
+    <string name="promotion_1_question_1">
+        What is promotion fundamentally about?
+    </string>
+    <string name="promotion_1_question_1_option_1">Output</string>
+    <string name="promotion_1_question_1_option_2">Behavior</string>
+    <string name="promotion_1_question_1_option_3">Playing politics</string>
+    <string-array name="promotion_1_question_1_options">
+        <item>@string/promotion_1_question_1_option_1</item>
+        <item>@string/promotion_1_question_1_option_2</item>
+        <item>@string/promotion_1_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_1_question_2">
+        True or false: To get to very senior engineering levels,
+        you need to write thousands of lines of code per day.
+    </string>
+
+    <string name="promotion_1_question_3">
+        Why is output not as important for promotion?
+    </string>
+
+    <string name="promotion_1_question_3_option_1">It\'s not physically scalable</string>
+    <string name="promotion_1_question_3_option_2">
+        It\'s really hard to have a lot of influence just writing code
+    </string>
+    <string name="promotion_1_question_3_option_3">
+        Becoming more senior is more about empowering others to write code
+    </string>
+    <string-array name="promotion_1_question_3_options">
+        <item>@string/promotion_1_question_3_option_1</item>
+        <item>@string/promotion_1_question_3_option_2</item>
+        <item>@string/promotion_1_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+</resources>
