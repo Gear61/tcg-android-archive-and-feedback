@@ -23,6 +23,12 @@ class LearningViewState(
         fun onQuizComplete()
     }
 
+    fun getQuestionNumberText(context: Context): String {
+        val firstNumber = (currentQuestionIndex + 1).toString()
+        val totalNumber = lesson.questions.size.toString()
+        return context.getString(R.string.question_header, firstNumber, totalNumber)
+    }
+
     fun getCurrentQuestion(): Question {
         return lesson.questions[currentQuestionIndex]
     }

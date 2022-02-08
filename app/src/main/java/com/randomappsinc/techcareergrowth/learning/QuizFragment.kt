@@ -71,7 +71,9 @@ class QuizFragment : Fragment() {
         val radioGroup = binding.questionOptions
         val question = viewState!!.getCurrentQuestion()
 
+        binding.questionNumber.text = viewState!!.getQuestionNumberText(requireContext())
         binding.questionText.setText(question.textResId)
+
         val options = resources.getStringArray(question.optionsListResId)
         radioGroup.setSize(options.size)
         for ((index, option) in options.withIndex()) {

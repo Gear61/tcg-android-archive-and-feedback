@@ -22,6 +22,16 @@
             >
 
             <TextView
+                android:id="@+id/question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="21sp"
+                android:textColor="@color/text_title"
+                android:textStyle="bold"
+                />
+
+            <TextView
                 android:id="@+id/question_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

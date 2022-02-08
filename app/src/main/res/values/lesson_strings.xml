@@ -9,6 +9,8 @@
     </string>
     <string name="quiz_me">Quiz Me!</string>
 
+    <string name="question_header">Question %1$s of %2$s</string>
+
     <string name="true_option">True</string>
     <string name="false_option">False</string>
     <string-array name="true_false_options">
