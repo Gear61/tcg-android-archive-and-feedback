@@ -41,4 +41,54 @@
         <item>@string/promotion_1_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON TWO -->
+    <string name="promotion_lesson_2_name">
+        Understanding The Differences Between Engineering Levels
+    </string>
+
+    <string name="promotion_2_question_1">
+        True or false: Very senior engineers are at their levels because they act
+        and operate in a fundamentally different way from their more junior peers.
+    </string>
+
+    <string name="promotion_2_question_2">
+        How can you properly tell the more senior engineers from the others?
+    </string>
+    <string name="promotion_2_question_2_option_1">
+        The large amount of people they are able to influence and work through
+    </string>
+    <string name="promotion_2_question_2_option_2">
+        How they act (i.e. their behavior)
+    </string>
+    <string name="promotion_2_question_2_option_3">
+        The team naturally gravitating around them for insight and support
+    </string>
+    <string-array name="promotion_2_question_2_options">
+        <item>@string/promotion_2_question_2_option_1</item>
+        <item>@string/promotion_2_question_2_option_2</item>
+        <item>@string/promotion_2_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_2_question_3">
+        Which one of these is a core example of what a very senior
+        (i.e. Staff or above) engineer would do?
+    </string>
+
+    <string name="promotion_2_question_3_option_1">
+        Talking the loudest and the most in meetings
+    </string>
+    <string name="promotion_2_question_3_option_2">
+        Coming in earlier and then leaving later than everyone else
+    </string>
+    <string name="promotion_2_question_3_option_3">
+        Setting the vision for the team
+    </string>
+    <string-array name="promotion_2_question_3_options">
+        <item>@string/promotion_2_question_3_option_1</item>
+        <item>@string/promotion_2_question_3_option_2</item>
+        <item>@string/promotion_2_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
