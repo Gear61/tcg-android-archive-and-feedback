@@ -154,4 +154,54 @@
         working on more ambiguous projects while having greater freedom
         to choose what you work on.
     </string>
+
+    <!-- LESSON FOUR -->
+    <string name="promotion_lesson_4_name">
+        Junior Engineers, Avoid This Fake Growth Trap
+    </string>
+
+    <string name="promotion_4_question_1">
+        What\'s the main change in expectations when growing into senior engineering levels?
+    </string>
+    <string name="promotion_4_question_1_option_1">
+        You need to become full-stack instead of only knowing 1 thing
+    </string>
+    <string name="promotion_4_question_1_option_2">
+        Your proficiency in coding becomes far less important
+    </string>
+    <string name="promotion_4_question_1_option_3">
+        You need to spend more time in meetings
+    </string>
+    <string-array name="promotion_4_question_1_options">
+        <item>@string/promotion_4_question_1_option_1</item>
+        <item>@string/promotion_4_question_1_option_2</item>
+        <item>@string/promotion_4_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_4_question_2">
+        True or false: Hustling (i.e. working extremely hard) is a common, healthy way to get promoted.
+    </string>
+
+    <string name="promotion_4_question_3">
+        Why is it bad if you are able to get promoted to senior levels
+        through sheer ultra-hard work and very high raw productivity?
+    </string>
+
+    <string name="promotion_4_question_3_option_1">
+        It is not sustainable; you will eventually burn out.
+    </string>
+    <string name="promotion_4_question_3_option_2">
+        It creates a very awkward situation once you start missing expectations,
+        and you are likely to be put on a PIP or let go.
+    </string>
+    <string name="promotion_4_question_3_option_3">
+        You are not truly operating at the next level doing this.
+    </string>
+    <string-array name="promotion_4_question_3_options">
+        <item>@string/promotion_4_question_3_option_1</item>
+        <item>@string/promotion_4_question_3_option_2</item>
+        <item>@string/promotion_4_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>

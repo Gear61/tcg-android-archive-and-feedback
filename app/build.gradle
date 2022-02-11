@@ -11,8 +11,8 @@ android {
         applicationId "com.randomappsinc.techcareergrowth"
         minSdk 21
         targetSdk 31
-        versionCode 12
-        versionName "1.0.11"
+        versionCode 13
+        versionName "1.0.12"
     }
 
     androidExtensions {
