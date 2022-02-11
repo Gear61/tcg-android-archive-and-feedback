@@ -204,4 +204,102 @@
         <item>@string/promotion_4_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON FOUR -->
+    <string name="promotion_lesson_5_name">
+        This Is How Engineers Are Measured For Promotion
+    </string>
+
+    <string name="promotion_5_question_1">
+       What does additive value look like for a software engineer?
+    </string>
+    <string name="promotion_5_question_1_option_1">
+        Code that meets the requirements of a fairly well-defined problem
+    </string>
+    <string name="promotion_5_question_1_option_2">
+        Work that is only directly applicable to 1 person in the company, the person doing it
+    </string>
+    <string name="promotion_5_question_1_option_3">
+        A one-off implementation on a project
+    </string>
+    <string-array name="promotion_5_question_1_options">
+        <item>@string/promotion_5_question_1_option_1</item>
+        <item>@string/promotion_5_question_1_option_2</item>
+        <item>@string/promotion_5_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_5_question_2">
+        What\'s the main metric used to evaluate engineers for promotion and their overall seniority?
+    </string>
+    <string name="promotion_5_question_2_option_1">
+        Years of experience at the company and overall
+    </string>
+    <string name="promotion_5_question_2_option_2">
+        Lines of code written
+    </string>
+    <string name="promotion_5_question_2_option_3">
+        Scope
+    </string>
+    <string name="promotion_5_question_2_option_4">
+        Hours worked
+    </string>
+    <string-array name="promotion_5_question_2_options">
+        <item>@string/promotion_5_question_2_option_1</item>
+        <item>@string/promotion_5_question_2_option_2</item>
+        <item>@string/promotion_5_question_2_option_3</item>
+        <item>@string/promotion_5_question_2_option_4</item>
+    </string-array>
+
+    <string name="promotion_5_question_3">
+        How does a person\'s scope become larger?
+    </string>
+    <string name="promotion_5_question_3_option_1">
+        They have more meetings with company executives
+    </string>
+    <string name="promotion_5_question_3_option_2">
+        More decisions need to be approved by them
+    </string>
+    <string name="promotion_5_question_3_option_3">
+        Their work has a positive impact on more employees within the company
+    </string>
+    <string-array name="promotion_5_question_3_options">
+        <item>@string/promotion_5_question_3_option_1</item>
+        <item>@string/promotion_5_question_3_option_2</item>
+        <item>@string/promotion_5_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_5_question_4">
+        What kind of value is the following:
+        Creating a team-wide initiative to write more unit tests,
+        organizing regular hackathons to write hundreds of tests at once
+        alongside creating a dashboard to measure which tests catch the most bugs.
+    </string>
+
+    <string name="promotion_5_question_5">
+        What kind of value is the following:
+        Helping the company\'s ambitious hiring goal for web engineers by interviewing
+        dozens of React developers in just a few weeks.
+    </string>
+
+    <string name="promotion_5_question_6">
+        What kind of value is the following:
+        Taking an incredibly vague product idea and refining it into a well-defined product spec
+        by bringing together dozens of engineers, product managers, data scientists, and designers
+        and getting alignment on what the value proposition is and how that manifests as a product experience.
+    </string>
+
+    <string name="promotion_5_question_7">
+        What kind of value is the following:
+        Building out the iOS portion of adding Twitter login to onboarding flow for your company\'s core app
+        after getting high-quality mocks and requirements for it.
+    </string>
+
+    <string name="additive_value">Additive value</string>
+    <string name="multiplicative_value">Multiplicative value</string>
+    <string-array name="value_options">
+        <item>@string/additive_value</item>
+        <item>@string/multiplicative_value</item>
+    </string-array>
 </resources>
