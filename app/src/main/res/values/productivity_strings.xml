@@ -211,4 +211,53 @@
         <item>@string/productivity_4_question_5_option_1</item>
         <item>@string/productivity_4_question_5_option_2</item>
     </string-array>
+
+    <!-- LESSON FOUR -->
+    <string name="productivity_lesson_5_name">
+        The Importance of Reflection With Time Management
+    </string>
+
+    <string name="productivity_5_question_1">
+        Why is reflection important when it comes to productivity?
+    </string>
+    <string name="productivity_5_question_1_option_1">
+        It helps you debug your unproductive periods of time
+    </string>
+    <string name="productivity_5_question_1_option_2">
+        It allows you to learn more about yourself
+    </string>
+    <string name="productivity_5_question_1_option_3">
+        It forces you to dig deep into the problems you faced and figure out what you can learn
+        to become more efficient solving those problems
+    </string>
+    <string-array name="productivity_5_question_1_options">
+        <item>@string/productivity_5_question_1_option_1</item>
+        <item>@string/productivity_5_question_1_option_2</item>
+        <item>@string/productivity_5_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="productivity_5_question_2">
+        True or false: If you aren\'t getting as much done as you want,
+        you should just work harder.
+    </string>
+
+    <string name="productivity_5_question_3">
+        Which one of these is a concrete tactic you can use to shore up your reflection?
+    </string>
+    <string name="productivity_5_question_3_option_1">
+        Making a post on LinkedIn whenever you have a bad day
+    </string>
+    <string name="productivity_5_question_3_option_2">
+        Scheduling a recurring meeting with yourself
+    </string>
+    <string name="productivity_5_question_3_option_3">
+        Adding more comments to your code
+    </string>
+    <string-array name="productivity_5_question_3_options">
+        <item>@string/productivity_5_question_3_option_1</item>
+        <item>@string/productivity_5_question_3_option_2</item>
+        <item>@string/productivity_5_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
