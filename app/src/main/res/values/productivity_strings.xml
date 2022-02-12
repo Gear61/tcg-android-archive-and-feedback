@@ -312,4 +312,56 @@
         <item>@string/productivity_6_question_3_option_3</item>
         <item>@string/productivity_6_question_3_option_4</item>
     </string-array>
+
+    <!-- LESSON SEVEN -->
+    <string name="productivity_lesson_7_name">
+        Eat The Frog
+    </string>
+
+    <string name="productivity_7_question_1">
+        When it comes to productivity, what is eating the frog?
+    </string>
+    <string name="productivity_7_question_1_option_1">
+        Having a healthy breakfast
+    </string>
+    <string name="productivity_7_question_1_option_2">
+        Doing the hardest part of your main task at the start of your day
+    </string>
+    <string name="productivity_7_question_1_option_3">
+        Responding to all your emails and messages
+    </string>
+    <string name="productivity_7_question_4_option_3">
+        Attending daily stand-up
+    </string>
+    <string-array name="productivity_7_question_1_options">
+        <item>@string/productivity_7_question_1_option_1</item>
+        <item>@string/productivity_7_question_1_option_2</item>
+        <item>@string/productivity_7_question_1_option_3</item>
+        <item>@string/productivity_7_question_4_option_3</item>
+    </string-array>
+
+    <string name="productivity_7_question_2">
+        True or false: To ease into your day,
+        the best thing to do when you wake up is something easy and fun
+        like checking your Instagram.
+    </string>
+
+    <string name="productivity_7_question_3">
+        Why is it important to eat the frog?
+    </string>
+    <string name="productivity_7_question_3_option_1">
+        It makes you write higher quality code
+    </string>
+    <string name="productivity_7_question_3_option_2">
+        It puts you immediately into a proactive mindset instead of a reactive one
+    </string>
+    <string name="productivity_7_question_3_option_3">
+        It helps maintain work/life balance
+    </string>
+    <string-array name="productivity_7_question_3_options">
+        <item>@string/productivity_7_question_3_option_1</item>
+        <item>@string/productivity_7_question_3_option_2</item>
+        <item>@string/productivity_7_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
