@@ -212,7 +212,7 @@
         <item>@string/productivity_4_question_5_option_2</item>
     </string-array>
 
-    <!-- LESSON FOUR -->
+    <!-- LESSON FIVE -->
     <string name="productivity_lesson_5_name">
         The Importance of Reflection With Time Management
     </string>
@@ -259,5 +259,57 @@
         <item>@string/productivity_5_question_3_option_2</item>
         <item>@string/productivity_5_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <!-- LESSON SIX -->
+    <string name="productivity_lesson_6_name">
+        Easy Tactics You Can Apply Today To Increase Your Focus
+    </string>
+
+    <string name="productivity_6_question_1">
+        Which of these are valid tactics to minimize the distraction from your phone?
+    </string>
+    <string name="productivity_6_question_1_option_1">
+        Turning off notifications
+    </string>
+    <string name="productivity_6_question_1_option_2">
+        Having a dedicated time where you go through all your app updates at once
+    </string>
+    <string name="productivity_6_question_1_option_3">
+        Moving it out of arm\'s reach
+    </string>
+    <string-array name="productivity_6_question_1_options">
+        <item>@string/productivity_6_question_1_option_1</item>
+        <item>@string/productivity_6_question_1_option_2</item>
+        <item>@string/productivity_6_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="productivity_6_question_2">
+        True or false: As an engineer, it is important for you to attend every
+        possible meeting so you can know everything that is going on, therefore
+        empowering your productivity.
+    </string>
+
+    <string name="productivity_6_question_3">
+        As a software engineer, why is it crucial to reject meetings when possible?
+    </string>
+    <string name="productivity_6_question_3_option_1">
+        Software engineers are generally makers, so they need uninterrupted focus time
+    </string>
+    <string name="productivity_6_question_3_option_2">
+        Because all meetings are a waste of time
+    </string>
+    <string name="productivity_6_question_3_option_3">
+        So you can spend more time writing documentation, reducing the need for meetings
+    </string>
+    <string name="productivity_6_question_3_option_4">
+        To show that your time is valuable, it is important to turn down meeting requests sometimes
+    </string>
+    <string-array name="productivity_6_question_3_options">
+        <item>@string/productivity_6_question_3_option_1</item>
+        <item>@string/productivity_6_question_3_option_2</item>
+        <item>@string/productivity_6_question_3_option_3</item>
+        <item>@string/productivity_6_question_3_option_4</item>
     </string-array>
 </resources>
