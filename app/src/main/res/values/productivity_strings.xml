@@ -364,4 +364,51 @@
         <item>@string/productivity_7_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON EIGHT -->
+    <string name="productivity_lesson_8_name">
+        Accountability Partners
+    </string>
+
+    <string name="productivity_8_question_1">
+        Why are accountability partners so helpful when it comes to productivity?
+    </string>
+    <string name="productivity_8_question_1_option_1">
+        They can unblock you when you are stuck
+    </string>
+    <string name="productivity_8_question_1_option_2">
+        They provide an outside perspective on how you work
+    </string>
+    <string name="productivity_8_question_1_option_3">
+        The social pressure is great for motivation
+    </string>
+    <string-array name="productivity_8_question_1_options">
+        <item>@string/productivity_8_question_1_option_1</item>
+        <item>@string/productivity_8_question_1_option_2</item>
+        <item>@string/productivity_8_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="productivity_8_question_2">
+        True or false: A good accountability partner is willing to shame you a bit sometimes.
+    </string>
+
+    <string name="productivity_8_question_3">
+        How do good accountability partners help with excuses?
+    </string>
+    <string name="productivity_8_question_3_option_1">
+        They force you to say them out loud
+    </string>
+    <string name="productivity_8_question_3_option_2">
+        They call them out for being excuses
+    </string>
+    <string name="productivity_8_question_3_option_3">
+        They make you see past the excuses and focus back on the work
+    </string>
+    <string-array name="productivity_8_question_3_options">
+        <item>@string/productivity_8_question_3_option_1</item>
+        <item>@string/productivity_8_question_3_option_2</item>
+        <item>@string/productivity_8_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>

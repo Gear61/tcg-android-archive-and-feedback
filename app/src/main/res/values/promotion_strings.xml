@@ -218,7 +218,8 @@
         Code that meets the requirements of a fairly well-defined problem
     </string>
     <string name="promotion_5_question_1_option_2">
-        Work that is only directly applicable to 1 person in the company, the person doing it
+        Work that is only directly applicable to 1 person in the company,
+        the person doing it
     </string>
     <string name="promotion_5_question_1_option_3">
         A one-off implementation on a project
@@ -231,7 +232,8 @@
     </string-array>
 
     <string name="promotion_5_question_2">
-        What\'s the main metric used to evaluate engineers for promotion and their overall seniority?
+        What\'s the main metric used to evaluate engineers for promotion
+        and their overall seniority?
     </string>
     <string name="promotion_5_question_2_option_1">
         Years of experience at the company and overall
