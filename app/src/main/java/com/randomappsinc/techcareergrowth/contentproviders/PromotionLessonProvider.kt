@@ -234,7 +234,7 @@ object PromotionLessonProvider {
             id = lessonId,
             type = LessonType.PROMOTION,
             nameResId = R.string.promotion_lesson_5_name,
-            youtubeVideoId = "6ss9oQWn2K8",
+            youtubeVideoId = "nHwHnNwN6to",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )
