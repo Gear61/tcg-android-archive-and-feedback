@@ -411,4 +411,57 @@
         <item>@string/productivity_8_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON NINE -->
+    <string name="productivity_lesson_9_name">
+        The 2 Ways To Become 100x More Productive That Nobody Does
+    </string>
+
+    <string name="productivity_9_question_1">
+        What are the 2 underutilized but straightforward ways of becoming far more productive?
+    </string>
+    <string name="productivity_9_question_1_option_1">
+        High-end computer and LinkedIn usage
+    </string>
+    <string name="productivity_9_question_1_option_2">
+        Performance coach and meditation
+    </string>
+    <string name="productivity_9_question_1_option_3">
+        Good sleep and regular exercise
+    </string>
+    <string name="productivity_9_question_1_option_4">
+        Competitive programming and reading architecture blogs
+    </string>
+    <string-array name="productivity_9_question_1_options">
+        <item>@string/productivity_9_question_1_option_1</item>
+        <item>@string/productivity_9_question_1_option_2</item>
+        <item>@string/productivity_9_question_1_option_3</item>
+        <item>@string/productivity_9_question_1_option_4</item>
+    </string-array>
+
+    <string name="productivity_9_question_2">
+        True or false: Often times you should sacrifice sleep and exercise
+        in order to get more hours, thereby becoming more productive.
+    </string>
+
+    <string name="productivity_9_question_3">
+        Why is it absolutely necessary to get in good sleep and regular exercise no matter what?
+    </string>
+    <string name="productivity_9_question_3_option_1">
+        They are the foundation to having a healthy physical core,
+        which is necessary for longevity
+    </string>
+    <string name="productivity_9_question_3_option_2">
+        Your productivity severely deteriorates without them,
+        cancelling out any gained hours from sacrificing them
+    </string>
+    <string name="productivity_9_question_3_option_3">
+        They are habits that you need to make time for
+    </string>
+    <string-array name="productivity_9_question_3_options">
+        <item>@string/productivity_9_question_3_option_1</item>
+        <item>@string/productivity_9_question_3_option_2</item>
+        <item>@string/productivity_9_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
