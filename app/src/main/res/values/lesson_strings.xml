@@ -19,6 +19,7 @@
     </string-array>
 
     <string name="all_of_the_above">All of the above</string>
+    <string name="none_of_the_above">None of the above</string>
 
     <string name="yes">Yes</string>
     <string name="no">No</string>

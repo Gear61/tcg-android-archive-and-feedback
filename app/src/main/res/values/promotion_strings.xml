@@ -206,7 +206,7 @@
         <item>@string/all_of_the_above</item>
     </string-array>
 
-    <!-- LESSON FOUR -->
+    <!-- LESSON FIVE -->
     <string name="promotion_lesson_5_name">
         This Is How Engineers Are Measured For Promotion
     </string>
@@ -304,5 +304,56 @@
     <string-array name="value_options">
         <item>@string/additive_value</item>
         <item>@string/multiplicative_value</item>
+    </string-array>
+
+    <!-- LESSON SIX -->
+    <string name="promotion_lesson_6_name">
+       The Resource You Need For Promotion That Few Understand
+    </string>
+
+    <string name="promotion_6_question_1">
+        Which of the following is the resource needed for promotion that many engineers
+        don\'t understand or even realize exists, particularly more junior ones?
+    </string>
+    <string name="promotion_6_question_1_option_1">
+        Scroll performance
+    </string>
+    <string name="promotion_6_question_1_option_2">
+        Social capital
+    </string>
+    <string name="promotion_6_question_1_option_3">
+        SLAs
+    </string>
+    <string-array name="promotion_6_question_1_options">
+        <item>@string/promotion_6_question_1_option_1</item>
+        <item>@string/promotion_6_question_1_option_2</item>
+        <item>@string/promotion_6_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_6_question_2">
+        True or false: When you are onboarding as a software engineer,
+        the one and only thing that matters is your ability to understand
+        the codebase and extend it.
+    </string>
+
+    <string name="promotion_6_question_3">
+        Why is social capital important for senior engineers?
+    </string>
+    <string name="promotion_6_question_3_option_1">
+        It is necessary for pushing big decisions and overall leadership
+    </string>
+    <string name="promotion_6_question_3_option_2">
+        It allows them to not be blamed when things go poorly,
+        like during a service outage
+    </string>
+    <string name="promotion_6_question_3_option_3">
+        It lowers their chances of being cut during lay-offs
+    </string>
+    <string-array name="promotion_6_question_3_options">
+        <item>@string/promotion_6_question_3_option_1</item>
+        <item>@string/promotion_6_question_3_option_2</item>
+        <item>@string/promotion_6_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 </resources>
