@@ -21,6 +21,7 @@ object PromotionLessonProvider {
             lessons!!.add(getLesson5(context = context))
             lessons!!.add(getLesson6(context = context))
             lessons!!.add(getLesson7(context = context))
+            lessons!!.add(getLesson8(context = context))
         }
         return lessons!!
     }
@@ -307,6 +308,41 @@ object PromotionLessonProvider {
             type = LessonType.PROMOTION,
             nameResId = R.string.promotion_lesson_7_name,
             youtubeVideoId = "s3Fq2xzZ8E0",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson8(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.promotion_8_question_1,
+                optionsListResId = R.array.promotion_8_question_1_options,
+                correctAnswerId = R.string.promotion_8_question_1_option_3
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.promotion_8_question_2,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.promotion_8_question_3,
+                optionsListResId = R.array.promotion_8_question_3_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+
+        val lessonId = "promotion_8"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.PROMOTION,
+            nameResId = R.string.promotion_lesson_8_name,
+            youtubeVideoId = "_w0VUTA7z2E",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

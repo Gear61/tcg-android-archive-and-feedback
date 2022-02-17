@@ -412,43 +412,43 @@
     </string>
 
     <string name="promotion_8_question_1">
-        Which of the following is the resource needed for promotion that many engineers
-        don\'t understand or even realize exists, particularly more junior ones?
+        On top of doing the work, what else do you need to do in
+        order to get full credit for what you are doing?
     </string>
     <string name="promotion_8_question_1_option_1">
-        Scroll performance
+        Making sure that you have 100% code coverage on whatever code you shipped
     </string>
     <string name="promotion_8_question_1_option_2">
-        Social capital
+        Writing lots of wikis explaining the architecture of your new codebase
     </string>
     <string name="promotion_8_question_1_option_3">
-        SLAs
+        Communicating and selling your work
     </string>
     <string-array name="promotion_8_question_1_options">
-        <item>@string/promotion_7_question_1_option_1</item>
-        <item>@string/promotion_7_question_1_option_2</item>
-        <item>@string/promotion_7_question_1_option_3</item>
+        <item>@string/promotion_8_question_1_option_1</item>
+        <item>@string/promotion_8_question_1_option_2</item>
+        <item>@string/promotion_8_question_1_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
 
     <string name="promotion_8_question_2">
-        True or false: It is good to work in a company
-        where there are constantly too many problems to solve.
+        True or false: It is bad to give more public status updates
+        for your project as it will come across as looking for attention.
     </string>
 
     <string name="promotion_8_question_3">
-        Why is there always a plentiful supply of problems to solve in
-        high-growth tech companies?
+        Why should you not feel icky when you are properly
+        broadcasting the status of your project?
     </string>
     <string name="promotion_8_question_3_option_1">
-        They build products with rough quality, so there are always bugs to fix
+        If your project were truly important, people will want to know how it is going
     </string>
     <string name="promotion_8_question_3_option_2">
-        They do not hire enough people, so not all the necessary work can get done
+        You can use it as a mechanism to thank others who have contributed to the project
     </string>
     <string name="promotion_8_question_3_option_3">
-        Problems naturally crop up as a company grows
-        as what works at a smaller scale often doesn\'t work at a larger one
+        People naturally fall out of sync in high-growth tech companies,
+        so good status updates are a crucial alignment mechanism
     </string>
     <string-array name="promotion_8_question_3_options">
         <item>@string/promotion_8_question_3_option_1</item>
