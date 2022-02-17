@@ -75,7 +75,6 @@
         Which one of these is a core example of what a very senior
         (i.e. Staff or above) engineer would do?
     </string>
-
     <string name="promotion_2_question_3_option_1">
         Talking the loudest and the most in meetings
     </string>
@@ -190,14 +189,14 @@
     </string>
 
     <string name="promotion_4_question_3_option_1">
-        It is not sustainable; you will eventually burn out.
+        It is not sustainable; you will eventually burn out
     </string>
     <string name="promotion_4_question_3_option_2">
         It creates a very awkward situation once you start missing expectations,
-        and you are likely to be put on a PIP or let go.
+        and you are likely to be put on a PIP or let go
     </string>
     <string name="promotion_4_question_3_option_3">
-        You are not truly operating at the next level doing this.
+        You are not truly operating at the next level doing this
     </string>
     <string-array name="promotion_4_question_3_options">
         <item>@string/promotion_4_question_3_option_1</item>
@@ -277,26 +276,26 @@
         What kind of value is the following:
         Creating a team-wide initiative to write more unit tests,
         organizing regular hackathons to write hundreds of tests at once
-        alongside creating a dashboard to measure which tests catch the most bugs.
+        alongside creating a dashboard to measure which tests catch the most bugs
     </string>
 
     <string name="promotion_5_question_5">
         What kind of value is the following:
         Helping the company\'s ambitious hiring goal for web engineers by interviewing
-        dozens of React developers in just a few weeks.
+        dozens of React developers in just a few weeks
     </string>
 
     <string name="promotion_5_question_6">
         What kind of value is the following:
         Taking an incredibly vague product idea and refining it into a well-defined product spec
         by bringing together dozens of engineers, product managers, data scientists, and designers
-        and getting alignment on what the value proposition is and how that manifests as a product experience.
+        and getting alignment on what the value proposition is and how that manifests as a product experience
     </string>
 
     <string name="promotion_5_question_7">
         What kind of value is the following:
         Building out the iOS portion of adding Twitter login to onboarding flow for your company\'s core app
-        after getting high-quality mocks and requirements for it.
+        after getting high-quality mocks and requirements for it
     </string>
 
     <string name="additive_value">Additive value</string>
@@ -354,6 +353,107 @@
         <item>@string/promotion_6_question_3_option_1</item>
         <item>@string/promotion_6_question_3_option_2</item>
         <item>@string/promotion_6_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <!-- LESSON SEVEN -->
+    <string name="promotion_lesson_7_name">
+       What Makes A Good Growth Environment For Promotion
+    </string>
+
+    <string name="promotion_7_question_1">
+        Which of the following is a great way to increase your scope?
+    </string>
+    <string name="promotion_7_question_1_option_1">
+        Attending more meetings
+    </string>
+    <string name="promotion_7_question_1_option_2">
+        Identifying and solving new problems
+    </string>
+    <string name="promotion_7_question_1_option_3">
+        Writing more code
+    </string>
+    <string-array name="promotion_7_question_1_options">
+        <item>@string/promotion_7_question_1_option_1</item>
+        <item>@string/promotion_7_question_1_option_2</item>
+        <item>@string/promotion_7_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_7_question_2">
+        True or false: It is good to work in a company
+        where there are constantly too many problems to solve.
+    </string>
+
+    <string name="promotion_7_question_3">
+        Why is there always a plentiful supply of problems to solve in
+        high-growth tech companies?
+    </string>
+    <string name="promotion_7_question_3_option_1">
+        They build products with rough quality, so there are always bugs to fix
+    </string>
+    <string name="promotion_7_question_3_option_2">
+        They do not hire enough people, so not all the necessary work can get done
+    </string>
+    <string name="promotion_7_question_3_option_3">
+        Problems naturally crop up as a company grows
+        as what works at a smaller scale often doesn\'t work at a larger one
+    </string>
+    <string-array name="promotion_7_question_3_options">
+        <item>@string/promotion_7_question_3_option_1</item>
+        <item>@string/promotion_7_question_3_option_2</item>
+        <item>@string/promotion_7_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <!-- LESSON EIGHT -->
+    <string name="promotion_lesson_8_name">
+       Why Just Doing The Work Isn\’t Enough For Promotion
+    </string>
+
+    <string name="promotion_8_question_1">
+        Which of the following is the resource needed for promotion that many engineers
+        don\'t understand or even realize exists, particularly more junior ones?
+    </string>
+    <string name="promotion_8_question_1_option_1">
+        Scroll performance
+    </string>
+    <string name="promotion_8_question_1_option_2">
+        Social capital
+    </string>
+    <string name="promotion_8_question_1_option_3">
+        SLAs
+    </string>
+    <string-array name="promotion_8_question_1_options">
+        <item>@string/promotion_7_question_1_option_1</item>
+        <item>@string/promotion_7_question_1_option_2</item>
+        <item>@string/promotion_7_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_8_question_2">
+        True or false: It is good to work in a company
+        where there are constantly too many problems to solve.
+    </string>
+
+    <string name="promotion_8_question_3">
+        Why is there always a plentiful supply of problems to solve in
+        high-growth tech companies?
+    </string>
+    <string name="promotion_8_question_3_option_1">
+        They build products with rough quality, so there are always bugs to fix
+    </string>
+    <string name="promotion_8_question_3_option_2">
+        They do not hire enough people, so not all the necessary work can get done
+    </string>
+    <string name="promotion_8_question_3_option_3">
+        Problems naturally crop up as a company grows
+        as what works at a smaller scale often doesn\'t work at a larger one
+    </string>
+    <string-array name="promotion_8_question_3_options">
+        <item>@string/promotion_8_question_3_option_1</item>
+        <item>@string/promotion_8_question_3_option_2</item>
+        <item>@string/promotion_8_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
 </resources>
