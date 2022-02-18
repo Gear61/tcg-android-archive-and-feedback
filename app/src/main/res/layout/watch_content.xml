@@ -1,70 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/screen_background"
-    >
+    android:orientation="vertical">
 
     <ScrollView
         android:id="@+id/nonFullScreenVideo"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_height="@dimen/zero_padding"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
-            >
+            android:padding="@dimen/standard_padding">
 
             <TextView
                 android:id="@+id/lesson_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:textSize="21sp"
+                android:layout_marginBottom="@dimen/standard_padding"
                 android:textColor="@color/text_title"
-                android:textStyle="bold"
-                />
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/watch_content_preface"
-                android:textSize="17sp"
                 android:textColor="@color/text_normal"
-                />
+                android:textSize="17sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                >
+                android:layout_marginTop="@dimen/half_padding">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_width="@dimen/zero_padding"
+                    android:layout_height="@dimen/zero_padding"
                     app:cardCornerRadius="4dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintDimensionRatio="H,16:9"
-                    >
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <com.randomappsinc.techcareergrowth.views.SkeletonView
                         android:id="@+id/web_view_skeleton"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        />
-                    <com.randomappsinc.techcareergrowth.webutils.VideoEnabledWebView
+                        android:layout_height="match_parent" />
+
+                    <WebView
                         android:id="@+id/youtube_web_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent" />
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
@@ -76,12 +68,12 @@
         android:id="@+id/fullScreenVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:orientation="horizontal" />
+        android:orientation="vertical"
+        android:visibility="invisible" />
+
     <TextView
         android:id="@+id/take_quiz_button"
-        android:text="@string/quiz_me"
-        android:layout_marginTop="16dp"
         style="@style/button"
-        />
+        android:layout_marginTop="@dimen/standard_padding"
+        android:text="@string/quiz_me" />
 </LinearLayout>

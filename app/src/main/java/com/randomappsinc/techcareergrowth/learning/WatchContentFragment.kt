@@ -14,7 +14,6 @@ import androidx.transition.TransitionInflater
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.WatchContentBinding
 import com.randomappsinc.techcareergrowth.webutils.VideoEnabledWebChromeClient
-import com.randomappsinc.techcareergrowth.webutils.VideoEnabledWebView
 
 class WatchContentFragment : Fragment() {
 
@@ -27,7 +26,7 @@ class WatchContentFragment : Fragment() {
     private var _mBinding: WatchContentBinding? = null
     private val mBinding get() = _mBinding!!
 
-    private lateinit var mWebView: VideoEnabledWebView
+    private lateinit var mWebView: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

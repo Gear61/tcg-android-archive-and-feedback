@@ -5,4 +5,20 @@
 
     <dimen name="radio_group_button_spacing">4dp</dimen>
     <dimen name="radio_button_padding">8dp</dimen>
+
+    <!-- Standard padding dimens -->
+    <dimen name="x2.5_padding">40dp</dimen>
+    <dimen name="double_padding">32dp</dimen>
+    <dimen name="standard_over_padding">24dp</dimen>
+    <dimen name="standard_padding">16dp</dimen>
+    <dimen name="standard_medium_padding">14dp</dimen>
+    <dimen name="medium_over_padding">13dp</dimen>
+    <dimen name="medium_upper_over_padding">12dp</dimen>
+    <dimen name="medium_padding">10dp</dimen>
+    <dimen name="half_padding">8dp</dimen>
+    <dimen name="mini_half_padding">6dp</dimen>
+    <dimen name="mini_padding">4dp</dimen>
+    <dimen name="micro_padding">2dp</dimen>
+    <dimen name="one_padding">1dp</dimen>
+    <dimen name="zero_padding">0dp</dimen>
 </resources>
