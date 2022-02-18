@@ -1,11 +1,11 @@
 package com.randomappsinc.techcareergrowth.webutils
 
-import android.webkit.WebChromeClient
-import android.media.MediaPlayer.OnPreparedListener
-import android.media.MediaPlayer.OnCompletionListener
 import android.media.MediaPlayer
+import android.media.MediaPlayer.OnCompletionListener
+import android.media.MediaPlayer.OnPreparedListener
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.widget.FrameLayout
 
@@ -60,19 +60,19 @@ class VideoEnabledWebChromeClient
             videoViewCallback = callback
 
             // Hide the non-video view, add the video view, and show it
-            activityNonVideoView!!.visibility = View.INVISIBLE
-            activityVideoView!!.addView(
+            activityNonVideoView?.visibility = View.INVISIBLE
+            activityVideoView?.addView(
                 videoViewContainer,
                 ViewGroup.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT
                 )
             )
-            activityVideoView!!.visibility = View.VISIBLE
+            activityVideoView?.visibility = View.VISIBLE
 
             // Notify full-screen change
             if (toggledFullscreenCallback != null) {
-                toggledFullscreenCallback!!.toggledFullscreen(true)
+                toggledFullscreenCallback?.toggledFullscreen(true)
             }
         }
     }
@@ -82,13 +82,13 @@ class VideoEnabledWebChromeClient
         // This method must be manually called on back key press (from this class' onBackPressed() method).
         if (isVideoFullscreen) {
             // Hide the video view, remove it, and show the non-video view
-            activityVideoView!!.visibility = View.INVISIBLE
-            activityVideoView!!.removeView(videoViewContainer)
-            activityNonVideoView!!.visibility = View.VISIBLE
+            activityVideoView?.visibility = View.INVISIBLE
+            activityVideoView?.removeView(videoViewContainer)
+            activityNonVideoView?.visibility = View.VISIBLE
 
             // Call back (only in API level <19, because in API level 19+ with chromium webview it crashes)
             if (videoViewCallback != null && !videoViewCallback!!.javaClass.name.contains(".chromium.")) {
-                videoViewCallback!!.onCustomViewHidden()
+                videoViewCallback?.onCustomViewHidden()
             }
 
             // Reset video related variables
@@ -98,7 +98,7 @@ class VideoEnabledWebChromeClient
 
             // Notify full-screen change
             if (toggledFullscreenCallback != null) {
-                toggledFullscreenCallback!!.toggledFullscreen(false)
+                toggledFullscreenCallback?.toggledFullscreen(false)
             }
         }
     }
