@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import androidx.transition.TransitionInflater
 import com.randomappsinc.techcareergrowth.R
@@ -27,6 +28,7 @@ class WatchContentFragment : Fragment() {
     private val mBinding get() = _mBinding!!
 
     private lateinit var mWebView: WebView
+    private var mSupportActionBar: ActionBar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +50,7 @@ class WatchContentFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val activity = requireActivity() as LessonActivity
+        mSupportActionBar = activity.supportActionBar
         val lesson = activity.lesson
         mBinding.apply {
             mWebView = youtubeWebView
@@ -69,7 +72,6 @@ class WatchContentFragment : Fragment() {
                     mBinding.webViewSkeleton.visibility = View.GONE
                     mWebView.visibility = View.VISIBLE
                 }
-
             }
 
             val webSettings: WebSettings = settings
@@ -83,8 +85,8 @@ class WatchContentFragment : Fragment() {
         }
     }
 
+
     private fun getFullScreenWebChromeClient(): VideoEnabledWebChromeClient {
-        val activity = requireActivity() as LessonActivity
         val webChromeClient =
             VideoEnabledWebChromeClient(
                 mBinding.nonFullScreenVideo,
@@ -92,15 +94,19 @@ class WatchContentFragment : Fragment() {
                 null,
                 mWebView
             )
-        webChromeClient.setOnToggledFullscreen { fullscreen ->
-            if (fullscreen) {
-                activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-                activity.supportActionBar?.hide()
-            } else {
-                activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
-                activity.supportActionBar?.show()
+
+        webChromeClient.setOnToggledFullscreen(object :
+            VideoEnabledWebChromeClient.ToggledFullscreenCallback {
+            override fun toggledFullscreen(fullscreen: Boolean) {
+                if (fullscreen) {
+                    activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+                    mSupportActionBar?.hide()
+                } else {
+                    activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+                    mSupportActionBar?.show()
+                }
             }
-        }
+        })
         return webChromeClient
     }
 }
