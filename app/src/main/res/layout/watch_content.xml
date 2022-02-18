@@ -9,6 +9,7 @@
     >
 
     <ScrollView
+        android:id="@+id/nonFullScreenVideo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -60,18 +61,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         />
-
-                    <WebView
+                    <com.randomappsinc.techcareergrowth.webutils.VideoEnabledWebView
                         android:id="@+id/youtube_web_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:visibility="gone"
-                        />
+                        android:layout_height="match_parent"/>
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
+
+    <!-- View where the video will be shown when video goes fullscreen -->
+    <RelativeLayout
+        android:id="@+id/fullScreenVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="horizontal" />
     <TextView
         android:id="@+id/take_quiz_button"
         android:text="@string/quiz_me"

@@ -1,6 +1,7 @@
 package com.randomappsinc.techcareergrowth.learning
 
 import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,18 +13,21 @@ import androidx.fragment.app.Fragment
 import androidx.transition.TransitionInflater
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.WatchContentBinding
+import com.randomappsinc.techcareergrowth.webutils.VideoEnabledWebChromeClient
+import com.randomappsinc.techcareergrowth.webutils.VideoEnabledWebView
 
-class WatchContentFragment: Fragment() {
+class WatchContentFragment : Fragment() {
 
     companion object {
-
         fun getInstance(): WatchContentFragment {
             return WatchContentFragment()
         }
     }
 
-    private var _binding: WatchContentBinding? = null
-    private val binding get() = _binding!!
+    private var _mBinding: WatchContentBinding? = null
+    private val mBinding get() = _mBinding!!
+
+    private lateinit var mWebView: VideoEnabledWebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,39 +40,68 @@ class WatchContentFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = WatchContentBinding.inflate(inflater, container, false)
-        return binding.root
+        _mBinding = WatchContentBinding.inflate(inflater, container, false)
+        return mBinding.root
     }
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val youtubeWebView = binding.youtubeWebView
-        youtubeWebView.webViewClient = object : WebViewClient() {
-            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
-                return false
-            }
-
-            override fun onPageFinished(view: WebView?, url: String?) {
-                super.onPageFinished(view, url)
-                binding.webViewSkeleton.visibility = View.GONE
-                youtubeWebView.visibility = View.VISIBLE
-            }
-        }
-
-        val webSettings: WebSettings = youtubeWebView.settings
-        webSettings.javaScriptEnabled = true
-        webSettings.loadWithOverviewMode = true
-        webSettings.useWideViewPort = true
-
         val activity = requireActivity() as LessonActivity
         val lesson = activity.lesson
-        binding.lessonTitle.setText(lesson.nameResId)
-        youtubeWebView.loadUrl(lesson.getYouTubeEmbedUrl())
+        mBinding.apply {
+            mWebView = youtubeWebView
+            lessonTitle.text = getString(lesson.nameResId)
+            takeQuizButton.setOnClickListener {
+                activity.takeQuiz()
+            }
 
-        binding.takeQuizButton.setOnClickListener {
-            activity.takeQuiz()
         }
+
+        mWebView.apply {
+            webViewClient = object : WebViewClient() {
+                override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                    return false
+                }
+
+                override fun onPageFinished(view: WebView?, url: String?) {
+                    super.onPageFinished(view, url)
+                    mBinding.webViewSkeleton.visibility = View.GONE
+                    mWebView.visibility = View.VISIBLE
+                }
+
+            }
+
+            val webSettings: WebSettings = settings
+            webSettings.javaScriptEnabled = true
+            webSettings.loadWithOverviewMode = true
+            webSettings.useWideViewPort = true
+            webSettings.javaScriptCanOpenWindowsAutomatically = true
+
+            webChromeClient = getFullScreenWebChromeClient()
+            loadUrl(lesson.getYouTubeEmbedUrl())
+        }
+    }
+
+    private fun getFullScreenWebChromeClient(): VideoEnabledWebChromeClient {
+        val activity = requireActivity() as LessonActivity
+        val webChromeClient =
+            VideoEnabledWebChromeClient(
+                mBinding.nonFullScreenVideo,
+                mBinding.fullScreenVideo,
+                null,
+                mWebView
+            )
+        webChromeClient.setOnToggledFullscreen { fullscreen ->
+            if (fullscreen) {
+                activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+                activity.supportActionBar?.hide()
+            } else {
+                activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+                activity.supportActionBar?.show()
+            }
+        }
+        return webChromeClient
     }
 }

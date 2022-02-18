@@ -16,6 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:installLocation="auto"
+        android:hardwareAccelerated="true"
         tools:ignore="LockedOrientationActivity"
         >
 
@@ -56,7 +57,7 @@
         <activity
             android:name=".learning.LessonActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
     </application>
 </manifest>
