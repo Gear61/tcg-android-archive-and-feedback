@@ -80,6 +80,11 @@ class QuizFragment : Fragment() {
             val radioButton = radioGroup.getRadioButton(index)
             radioButton.text = option
         }
+
+        viewState?.let {
+            binding.quizProgressBar.progress =
+                (((it.currentQuestionIndex + 1).toFloat() / it.lesson.questions.size.toFloat()) * 100.0).toInt()
+        }
     }
 
     private fun animateQuestionOut() {

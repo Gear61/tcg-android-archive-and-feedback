@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/screen_background"
-    >
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/quizProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:progressBackgroundTint="@color/black_50_alpha"
+        android:progressTint="@color/progress_bar_status_color" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
 
         <LinearLayout
             android:id="@+id/problem_parent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/question_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:textSize="21sp"
                 android:textColor="@color/text_title"
-                android:textStyle="bold"
-                />
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/question_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:textSize="19sp"
                 android:textColor="@color/text_normal"
-                />
+                android:textSize="19sp" />
 
             <com.randomappsinc.techcareergrowth.views.BetterRadioGroup
                 android:id="@+id/question_options"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 
     <TextView
         android:id="@+id/submit_button"
-        android:text="@string/submit"
         style="@style/button"
-        />
+        android:text="@string/submit" />
 </LinearLayout>
