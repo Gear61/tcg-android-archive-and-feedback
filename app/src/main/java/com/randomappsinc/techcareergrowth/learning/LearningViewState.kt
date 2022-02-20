@@ -15,6 +15,7 @@ class LearningViewState(
     var scoreText: String = "",
     var gotPerfectScore: Boolean = false,
     var completedForFirstTime: Boolean = false,
+    var justCompletedQuiz: Boolean = false,
     @StringRes var resultEmojiId: Int = R.string.sad_emoji,
     private val questionAnswers: MutableList<String> = mutableListOf()
 ) {
@@ -37,6 +38,7 @@ class LearningViewState(
         questionAnswers.add(answer)
 
         if (questionAnswers.size == lesson.questions.size) {
+            justCompletedQuiz = true
             var numCorrect = 0
             for ((index, submittedAnswer) in questionAnswers.withIndex()) {
                 val rightAnswer = context.getString(lesson.questions[index].correctAnswerId)
@@ -82,5 +84,6 @@ class LearningViewState(
     fun resetQuiz() {
         questionAnswers.clear()
         currentQuestionIndex = 0
+        justCompletedQuiz = false
     }
 }

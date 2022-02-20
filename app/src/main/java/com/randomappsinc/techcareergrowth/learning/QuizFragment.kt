@@ -60,7 +60,9 @@ class QuizFragment : Fragment() {
                 context = requireContext()
             )
 
-            animateQuestionOut()
+            if (!viewState!!.justCompletedQuiz) {
+                animateQuestionOut()
+            }
         }
     }
 
