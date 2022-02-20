@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.randomappsinc.techcareergrowth.R
-import com.randomappsinc.techcareergrowth.databinding.LessonBinding
+import com.randomappsinc.techcareergrowth.databinding.LessonPageBinding
 import com.randomappsinc.techcareergrowth.home.LessonListFragment
 import com.randomappsinc.techcareergrowth.models.Lesson
 
@@ -21,7 +21,7 @@ class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = LessonBinding.inflate(layoutInflater)
+        val binding = LessonPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
