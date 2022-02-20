@@ -6,7 +6,6 @@ import android.media.MediaPlayer.OnPreparedListener
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebChromeClient
-import android.webkit.WebView
 import android.widget.FrameLayout
 
 /**
@@ -14,11 +13,10 @@ import android.widget.FrameLayout
  * Video will play differently depending on target API level (in-line, fullscreen, or both).
  * Could support having a loading screen when changing orientation if needed in the future
  */
-class VideoEnabledWebChromeClient (
+class VideoEnabledWebChromeClient(
     private var activityNonVideoView: View?,
     private var activityVideoView: ViewGroup?,
-    private var loadingView: View?,
-    private var webView: WebView?
+    private var loadingView: View?
 ) : WebChromeClient(), OnPreparedListener, OnCompletionListener,
     MediaPlayer.OnErrorListener {
 
@@ -78,11 +76,6 @@ class VideoEnabledWebChromeClient (
             activityVideoView?.removeView(videoViewContainer)
             activityNonVideoView?.visibility = View.VISIBLE
 
-            // Call back (only in API level <19, because in API level 19+ with chromium webview it crashes)
-            if (videoViewCallback != null && !videoViewCallback!!.javaClass.name.contains(".chromium.")) {
-                videoViewCallback?.onCustomViewHidden()
-            }
-
             // Reset video related variables
             isVideoFullscreen = false
             videoViewContainer = null
@@ -118,23 +111,7 @@ class VideoEnabledWebChromeClient (
         mp: MediaPlayer,
         what: Int,
         extra: Int
-    ): Boolean // Error while playing video, only called in the case of android.widget.VideoView (typically API level <11)
-    {
+    ): Boolean {
         return false // By returning false, onCompletion() will be called
-    }
-
-    /**
-     * Notifies the class that the back key has been pressed by the user.
-     * This must be called from the Activity's onBackPressed(), and if it returns false, the activity itself should handle it.
-     * Otherwise don't do anything.
-     * @return Returns true if the event was handled, and false if was not (video view is not visible)
-     */
-    fun onBackPressed(): Boolean {
-        return if (isVideoFullscreen) {
-            onHideCustomView()
-            true
-        } else {
-            false
-        }
     }
 }

@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment
 import androidx.transition.TransitionInflater
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.WatchContentBinding
-import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.web.VideoEnabledWebChromeClient
 
 class WatchContentFragment: Fragment() {
@@ -46,7 +45,6 @@ class WatchContentFragment: Fragment() {
         return binding.root
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val activity = requireActivity() as LessonActivity
@@ -87,8 +85,7 @@ class WatchContentFragment: Fragment() {
                 VideoEnabledWebChromeClient(
                     binding.nonFullScreenVideo,
                     binding.fullScreenVideo,
-                    null,
-                    youTubeWebView
+                    null
                 )
 
             videoEnabledChromeClient.setOnToggledFullscreen(object :
