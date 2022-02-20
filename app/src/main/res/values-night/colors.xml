@@ -25,5 +25,6 @@
 
     <color name="screen_background">#363636</color>
 
+    <color name="progress_bar_track_color">#616161</color>
     <color name="progress_bar_status_color">@color/green</color>
 </resources>

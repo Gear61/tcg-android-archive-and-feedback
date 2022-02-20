@@ -12,7 +12,8 @@
         android:id="@+id/quiz_progress_bar"
         android:layout_width="match_parent"
         android:layout_height="8dp"
-        app:trackColor="@color/progress_bar_status_color"
+        app:trackColor="@color/progress_bar_track_color"
+        app:indicatorColor="@color/progress_bar_status_color"
         app:trackCornerRadius="0dp"
         />
 

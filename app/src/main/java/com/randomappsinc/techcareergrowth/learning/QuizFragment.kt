@@ -48,6 +48,7 @@ class QuizFragment : Fragment() {
         val activity = requireActivity() as LessonActivity
         viewState = activity.viewState
         loadCurrentQuestionIntoView()
+        binding.quizProgressBar.setProgressCompat(viewState!!.getProgressPercent(), true)
 
         binding.submitButton.setOnClickListener {
             val checkedButton = binding.questionOptions.checkedButton
@@ -62,6 +63,7 @@ class QuizFragment : Fragment() {
 
             if (!viewState!!.justCompletedQuiz) {
                 animateQuestionOut()
+                binding.quizProgressBar.setProgressCompat(viewState!!.getProgressPercent(), true)
             }
         }
     }
@@ -82,10 +84,6 @@ class QuizFragment : Fragment() {
         for ((index, option) in options.withIndex()) {
             val radioButton = radioGroup.getRadioButton(index)
             radioButton.text = option
-        }
-
-        if (viewState!!.getProgressPercent() < 100) {
-            binding.quizProgressBar.progress = viewState!!.getProgressPercent()
         }
     }
 
