@@ -35,6 +35,7 @@ class LearningViewState(
 
     fun submitAnswer(answer: String, context: Context) {
         questionAnswers.add(answer)
+
         if (questionAnswers.size == lesson.questions.size) {
             var numCorrect = 0
             for ((index, submittedAnswer) in questionAnswers.withIndex()) {
@@ -70,6 +71,12 @@ class LearningViewState(
         } else {
             currentQuestionIndex++
         }
+    }
+
+    fun getProgressPercent(): Int {
+        val questionNumberFloat = (currentQuestionIndex).toFloat() + 1
+        val numQuestionsFloat = lesson.questions.size.toFloat()
+        return ((questionNumberFloat / numQuestionsFloat) * 100.0).toInt()
     }
 
     fun resetQuiz() {

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.transition.TransitionInflater
 import com.randomappsinc.techcareergrowth.R
-import com.randomappsinc.techcareergrowth.databinding.QuizBinding
+import com.randomappsinc.techcareergrowth.databinding.QuizPageBinding
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
 class QuizFragment : Fragment() {
@@ -20,7 +20,7 @@ class QuizFragment : Fragment() {
         }
     }
 
-    private var _binding: QuizBinding? = null
+    private var _binding: QuizPageBinding? = null
     private val binding get() = _binding!!
     private var animationLength: Long = 0
     private var viewState: LearningViewState? = null
@@ -37,7 +37,7 @@ class QuizFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = QuizBinding.inflate(inflater, container, false)
+        _binding = QuizPageBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -59,6 +59,7 @@ class QuizFragment : Fragment() {
                 answer = checkedButton.text,
                 context = requireContext()
             )
+
             animateQuestionOut()
         }
     }
@@ -79,6 +80,10 @@ class QuizFragment : Fragment() {
         for ((index, option) in options.withIndex()) {
             val radioButton = radioGroup.getRadioButton(index)
             radioButton.text = option
+        }
+
+        if (viewState!!.getProgressPercent() < 100) {
+            binding.quizProgressBar.progress = viewState!!.getProgressPercent()
         }
     }
 
