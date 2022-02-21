@@ -12,6 +12,7 @@ object LessonProvider {
             LessonType.RESUME -> ResumeLessonProvider.getLessons(context = context)
             LessonType.PRODUCTIVITY -> ProductivityLessonProvider.getLessons(context = context)
             LessonType.PROMOTION -> PromotionLessonProvider.getLessons(context = context)
+            LessonType.LEARNING_QUICKLY -> LearningQuicklyContentProvider.getLessons(context = context)
         }
         verifyLessonList(lessons)
         return lessons
@@ -26,6 +27,7 @@ object LessonProvider {
                 LessonType.RESUME -> "resume"
                 LessonType.PRODUCTIVITY -> "productivity"
                 LessonType.PROMOTION -> "promotion"
+                LessonType.LEARNING_QUICKLY -> "learning_quickly"
             }
             val lessonNumber = (index + 1).toString()
             val expectedLessonId = idPrefix + "_" + lessonNumber

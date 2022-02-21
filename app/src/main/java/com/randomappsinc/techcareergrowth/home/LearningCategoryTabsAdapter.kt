@@ -18,6 +18,7 @@ class LearningCategoryTabsAdapter(
             1 -> LessonListFragment.getInstance(LessonType.RESUME)
             2 -> LessonListFragment.getInstance(LessonType.PRODUCTIVITY)
             3 -> LessonListFragment.getInstance(LessonType.PROMOTION)
+            4 -> LessonListFragment.getInstance(LessonType.LEARNING_QUICKLY)
             else -> throw IllegalArgumentException("There should only be 4 tabs!")
         }
     }

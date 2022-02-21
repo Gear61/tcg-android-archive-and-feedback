@@ -8,5 +8,6 @@ enum class LessonType(@StringRes val lessonLabelId: Int) {
     INTERVIEWING(R.string.interviewing),
     RESUME(R.string.resume),
     PRODUCTIVITY(R.string.productivity),
-    PROMOTION(R.string.promotion)
+    PROMOTION(R.string.promotion),
+    LEARNING_QUICKLY(R.string.promotion)
 }
