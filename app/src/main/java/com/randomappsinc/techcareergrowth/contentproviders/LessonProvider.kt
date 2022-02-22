@@ -14,11 +14,14 @@ object LessonProvider {
             LessonType.PROMOTION -> PromotionLessonProvider.getLessons(context = context)
             LessonType.LEARNING_QUICKLY -> LearningQuicklyContentProvider.getLessons(context = context)
         }
-        verifyLessonList(lessons)
+        verifyLessonList(
+            lessons = lessons,
+            context = context
+        )
         return lessons
     }
 
-    private fun verifyLessonList(lessons: List<Lesson>) {
+    private fun verifyLessonList(lessons: List<Lesson>, context: Context) {
         val seenYouTubeIds = mutableSetOf<String>()
 
         for ((index, lesson) in lessons.iterator().withIndex()) {
@@ -36,6 +39,15 @@ object LessonProvider {
             }
             if (seenYouTubeIds.contains(lesson.youtubeVideoId)) {
                 error("Duplicate YouTube video ID of " + lesson.youtubeVideoId + " || Lesson ID: " + lesson.id)
+            }
+
+            for (question in lesson.questions) {
+                val options = context.resources.getStringArray(question.optionsListResId)
+                if (context.getString(question.correctAnswerId) !in options) {
+                    val questionText = context.getString(question.textResId)
+                    error("There is no correct answer for the question ["
+                            + questionText + "] || Lesson ID: " + lesson.id)
+                }
             }
             seenYouTubeIds.add(lesson.youtubeVideoId)
         }
