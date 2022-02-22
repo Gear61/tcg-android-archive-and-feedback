@@ -7,24 +7,72 @@
     </string>
 
     <string name="learning_quickly_question_1">
-        What are the 2 underutilized but straightforward ways of becoming far more productive?
+        What is a good amount of time to be stuck before asking a question?
     </string>
     <string name="learning_quickly_question_1_option_1">
-        High-end computer and LinkedIn usage
+        1 - 2 minutes
     </string>
     <string name="learning_quickly_question_1_option_2">
-        Performance coach and meditation
+        15 - 20 minutes
     </string>
     <string name="learning_quickly_question_1_option_3">
-        Good sleep and regular exercise
+        3 - 4 hours
     </string>
     <string name="learning_quickly_question_1_option_4">
-        Competitive programming and reading architecture blogs
+        1 - 2 days
     </string>
     <string-array name="learning_quickly_question_1_options">
-        <item>@string/productivity_9_question_1_option_1</item>
-        <item>@string/productivity_9_question_1_option_2</item>
-        <item>@string/productivity_9_question_1_option_3</item>
-        <item>@string/productivity_9_question_1_option_4</item>
+        <item>@string/learning_quickly_question_1_option_1</item>
+        <item>@string/learning_quickly_question_1_option_2</item>
+        <item>@string/learning_quickly_question_1_option_3</item>
+        <item>@string/learning_quickly_question_1_option_4</item>
+    </string-array>
+
+    <string name="learning_quickly_question_2">
+        True or false: To prove that you are a good engineer when joining a new team,
+        you should ask as few questions as possible.
+    </string>
+
+    <string name="learning_quickly_question_3">
+        What is the optimal amount of questions to ask per week as a junior engineer?
+    </string>
+    <string name="learning_quickly_question_3_option_1">
+        1 - 2
+    </string>
+    <string name="learning_quickly_question_3_option_2">
+        3 - 5
+    </string>
+    <string name="learning_quickly_question_3_option_3">
+        10 - 15
+    </string>
+    <string-array name="learning_quickly_question_3_options">
+        <item>@string/learning_quickly_question_3_option_1</item>
+        <item>@string/learning_quickly_question_3_option_2</item>
+        <item>@string/learning_quickly_question_3_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_question_4">
+        True or false: Asking a lot of questions can help other people
+        in your company and increase your respect within your team.
+    </string>
+
+    <string name="learning_quickly_question_5">
+        What are the benefits of asking a lot of good questions?
+    </string>
+    <string name="learning_quickly_question_5_option_1">
+        You learn faster
+    </string>
+    <string name="learning_quickly_question_5_option_2">
+        You help other people who have the same question
+    </string>
+    <string name="learning_quickly_question_5_option_3">
+        You are creating a useful piece of content via your question and answer pair
+    </string>
+    <string-array name="learning_quickly_question_5_options">
+        <item>@string/learning_quickly_question_5_option_1</item>
+        <item>@string/learning_quickly_question_5_option_2</item>
+        <item>@string/learning_quickly_question_5_option_3</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 </resources>

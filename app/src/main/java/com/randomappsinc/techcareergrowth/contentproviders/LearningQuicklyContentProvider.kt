@@ -23,36 +23,36 @@ object LearningQuicklyContentProvider {
         val questions: MutableList<Question> = mutableListOf()
         questions.add(
             Question(
-                textResId = R.string.productivity_1_question_1,
-                optionsListResId = R.array.productivity_1_question_1_options,
-                correctAnswerId = R.string.productivity_1_question_1_option_2
+                textResId = R.string.learning_quickly_question_1,
+                optionsListResId = R.array.learning_quickly_question_1_options,
+                correctAnswerId = R.string.learning_quickly_question_1_option_2
             )
         )
         questions.add(
             Question(
-                textResId = R.string.productivity_1_question_2,
+                textResId = R.string.learning_quickly_question_2,
                 optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.false_option
             )
         )
         questions.add(
             Question(
-                textResId = R.string.productivity_1_question_3,
-                optionsListResId = R.array.productivity_1_question_3_options,
-                correctAnswerId = R.string.productivity_1_question_3_option_3
+                textResId = R.string.learning_quickly_question_3,
+                optionsListResId = R.array.learning_quickly_question_3_options,
+                correctAnswerId = R.string.none_of_the_above
             )
         )
         questions.add(
             Question(
-                textResId = R.string.productivity_1_question_4,
+                textResId = R.string.learning_quickly_question_4,
                 optionsListResId = R.array.true_false_options,
                 correctAnswerId = R.string.true_option
             )
         )
         questions.add(
             Question(
-                textResId = R.string.productivity_1_question_5,
-                optionsListResId = R.array.productivity_1_question_5_options,
+                textResId = R.string.learning_quickly_question_5,
+                optionsListResId = R.array.learning_quickly_question_5_options,
                 correctAnswerId = R.string.all_of_the_above
             )
         )
