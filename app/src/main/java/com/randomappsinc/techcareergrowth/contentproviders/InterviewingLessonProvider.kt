@@ -184,7 +184,7 @@ object InterviewingLessonProvider {
             Question(
                 textResId = R.string.interviewing_4_question_2,
                 optionsListResId = R.array.interviewing_4_question_2_options,
-                correctAnswerId = R.string.interviewing_4_question_2_option_4
+                correctAnswerId = R.string.all_of_the_above
             )
         )
         questions.add(
@@ -226,7 +226,7 @@ object InterviewingLessonProvider {
             Question(
                 textResId = R.string.interviewing_5_question_3,
                 optionsListResId = R.array.interviewing_5_question_3_options,
-                correctAnswerId = R.string.interviewing_5_question_3_option_4
+                correctAnswerId = R.string.all_of_the_above
             )
         )
         questions.add(
@@ -282,7 +282,7 @@ object InterviewingLessonProvider {
             Question(
                 textResId = R.string.interviewing_6_question_4,
                 optionsListResId = R.array.interviewing_6_question_4_options,
-                correctAnswerId = R.string.interviewing_6_question_4_option_4
+                correctAnswerId = R.string.all_of_the_above
             )
         )
         questions.add(

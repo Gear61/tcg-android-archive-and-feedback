@@ -124,12 +124,11 @@
     </string>
     <string name="resume_3_question_3_option_2">They build up important non-coding skills that make you a more complete engineer</string>
     <string name="resume_3_question_3_option_3">They\'re extremely cheap and in most cases, free</string>
-    <string name="resume_3_question_3_option_4">All of the above</string>
     <string-array name="resume_3_question_3_options">
         <item>@string/resume_3_question_3_option_1</item>
         <item>@string/resume_3_question_3_option_2</item>
         <item>@string/resume_3_question_3_option_3</item>
-        <item>@string/resume_3_question_3_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="resume_3_question_4">

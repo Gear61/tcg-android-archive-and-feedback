@@ -61,7 +61,7 @@ object ProductivityLessonProvider {
             Question(
                 textResId = R.string.productivity_1_question_5,
                 optionsListResId = R.array.productivity_1_question_5_options,
-                correctAnswerId = R.string.productivity_1_question_5_option_4
+                correctAnswerId = R.string.all_of_the_above
             )
         )
 
@@ -145,7 +145,7 @@ object ProductivityLessonProvider {
             Question(
                 textResId = R.string.productivity_3_question_3,
                 optionsListResId = R.array.productivity_3_question_3_options,
-                correctAnswerId = R.string.productivity_3_question_3_option_4
+                correctAnswerId = R.string.all_of_the_above
             )
         )
 

@@ -139,7 +139,7 @@ object ResumeLessonProvider {
             Question(
                 textResId = R.string.resume_3_question_3,
                 optionsListResId = R.array.resume_3_question_3_options,
-                correctAnswerId = R.string.resume_3_question_3_option_4
+                correctAnswerId = R.string.all_of_the_above
             )
         )
         questions.add(

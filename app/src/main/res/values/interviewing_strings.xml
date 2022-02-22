@@ -184,12 +184,11 @@
     <string name="interviewing_4_question_2_option_1">It is compact</string>
     <string name="interviewing_4_question_2_option_2">It trains your brain to convert high-level ideas into implementation</string>
     <string name="interviewing_4_question_2_option_3">It captures the core of the problem</string>
-    <string name="interviewing_4_question_2_option_4">All of the above</string>
     <string-array name="interviewing_4_question_2_options">
         <item>@string/interviewing_4_question_2_option_1</item>
         <item>@string/interviewing_4_question_2_option_2</item>
         <item>@string/interviewing_4_question_2_option_3</item>
-        <item>@string/interviewing_4_question_2_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="interviewing_4_question_3">
@@ -242,12 +241,11 @@
     <string name="interviewing_5_question_3_option_3">
         Software engineers there are expected to be much more well-rounded and not just coding all the time
     </string>
-    <string name="interviewing_5_question_3_option_4">All of the above</string>
     <string-array name="interviewing_5_question_3_options">
         <item>@string/interviewing_5_question_3_option_1</item>
         <item>@string/interviewing_5_question_3_option_2</item>
         <item>@string/interviewing_5_question_3_option_3</item>
-        <item>@string/interviewing_5_question_3_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="interviewing_5_question_4">
@@ -303,12 +301,11 @@
     <string name="interviewing_6_question_4_option_1">To save time</string>
     <string name="interviewing_6_question_4_option_2">The interviewer doesn\'t get much signal watching you code these</string>
     <string name="interviewing_6_question_4_option_3">So you can tackle the essence of the problem first instead</string>
-    <string name="interviewing_6_question_4_option_4">All of the above</string>
     <string-array name="interviewing_6_question_4_options">
         <item>@string/interviewing_6_question_4_option_1</item>
         <item>@string/interviewing_6_question_4_option_2</item>
         <item>@string/interviewing_6_question_4_option_3</item>
-        <item>@string/interviewing_6_question_4_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="interviewing_6_question_5">

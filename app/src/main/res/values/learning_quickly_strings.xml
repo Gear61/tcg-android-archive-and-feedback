@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LESSON ONE -->
+    <string name="learning_quickly_lesson_1_name">
+        There Is No Such Thing As A Stupid Question
+    </string>
+
+    <string name="learning_quickly_question_1">
+        What are the 2 underutilized but straightforward ways of becoming far more productive?
+    </string>
+    <string name="learning_quickly_question_1_option_1">
+        High-end computer and LinkedIn usage
+    </string>
+    <string name="learning_quickly_question_1_option_2">
+        Performance coach and meditation
+    </string>
+    <string name="learning_quickly_question_1_option_3">
+        Good sleep and regular exercise
+    </string>
+    <string name="learning_quickly_question_1_option_4">
+        Competitive programming and reading architecture blogs
+    </string>
+    <string-array name="learning_quickly_question_1_options">
+        <item>@string/productivity_9_question_1_option_1</item>
+        <item>@string/productivity_9_question_1_option_2</item>
+        <item>@string/productivity_9_question_1_option_3</item>
+        <item>@string/productivity_9_question_1_option_4</item>
+    </string-array>
+</resources>

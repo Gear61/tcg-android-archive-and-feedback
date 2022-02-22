@@ -12,12 +12,11 @@
     <string name="productivity_1_question_1_option_1">Writing code the fastest</string>
     <string name="productivity_1_question_1_option_2">Being able to break down large, ambiguous problems</string>
     <string name="productivity_1_question_1_option_3">Working harder than everyone else</string>
-    <string name="productivity_1_question_1_option_4">All of the above</string>
     <string-array name="productivity_1_question_1_options">
         <item>@string/productivity_1_question_1_option_1</item>
         <item>@string/productivity_1_question_1_option_2</item>
         <item>@string/productivity_1_question_1_option_3</item>
-        <item>@string/productivity_1_question_1_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="productivity_1_question_2">
@@ -49,12 +48,11 @@
     <string name="productivity_1_question_5_option_1">So that your brain registers wins more often</string>
     <string name="productivity_1_question_5_option_2">To make projects more concrete and easier to understand</string>
     <string name="productivity_1_question_5_option_3">To allow work to be done in parallel when you have a team</string>
-    <string name="productivity_1_question_5_option_4">All of the above</string>
     <string-array name="productivity_1_question_5_options">
         <item>@string/productivity_1_question_5_option_1</item>
         <item>@string/productivity_1_question_5_option_2</item>
         <item>@string/productivity_1_question_5_option_3</item>
-        <item>@string/productivity_1_question_5_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <!-- LESSON TWO -->
@@ -86,12 +84,11 @@
     <string name="productivity_2_question_3_option_1">It should be relatively small, maybe even scoped down</string>
     <string name="productivity_2_question_3_option_2">It should be flashy and exciting</string>
     <string name="productivity_2_question_3_option_3">It should be something you can share on social media</string>
-    <string name="productivity_2_question_3_option_4">All of the above</string>
     <string-array name="productivity_2_question_3_options">
         <item>@string/productivity_2_question_3_option_1</item>
         <item>@string/productivity_2_question_3_option_2</item>
         <item>@string/productivity_2_question_3_option_3</item>
-        <item>@string/productivity_2_question_3_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="productivity_2_question_4">
@@ -105,12 +102,11 @@
     <string name="productivity_2_question_5_option_1">Caffeine</string>
     <string name="productivity_2_question_5_option_2">Clarity</string>
     <string name="productivity_2_question_5_option_3">Pressure</string>
-    <string name="productivity_2_question_5_option_4">All of the above</string>
     <string-array name="productivity_2_question_5_options">
         <item>@string/productivity_2_question_5_option_1</item>
         <item>@string/productivity_2_question_5_option_2</item>
         <item>@string/productivity_2_question_5_option_3</item>
-        <item>@string/productivity_2_question_5_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <!-- LESSON THREE -->
@@ -124,12 +120,11 @@
     <string name="productivity_3_question_1_option_1">Writing JIRA tickets</string>
     <string name="productivity_3_question_1_option_2">Time management</string>
     <string name="productivity_3_question_1_option_3">Attending meetings</string>
-    <string name="productivity_3_question_1_option_4">All of the above</string>
     <string-array name="productivity_3_question_1_options">
         <item>@string/productivity_3_question_1_option_1</item>
         <item>@string/productivity_3_question_1_option_2</item>
         <item>@string/productivity_3_question_1_option_3</item>
-        <item>@string/productivity_3_question_1_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <string name="productivity_3_question_2">
@@ -142,12 +137,11 @@
     <string name="productivity_3_question_3_option_1">It can be converted into almost every other resource</string>
     <string name="productivity_3_question_3_option_2">You can\'t really acquire more of it, at least not easily</string>
     <string name="productivity_3_question_3_option_3">You need it to accomplish everything you do</string>
-    <string name="productivity_3_question_3_option_4">All of the above</string>
     <string-array name="productivity_3_question_3_options">
         <item>@string/productivity_3_question_3_option_1</item>
         <item>@string/productivity_3_question_3_option_2</item>
         <item>@string/productivity_3_question_3_option_3</item>
-        <item>@string/productivity_3_question_3_option_4</item>
+        <item>@string/all_of_the_above</item>
     </string-array>
 
     <!-- LESSON FOUR -->
