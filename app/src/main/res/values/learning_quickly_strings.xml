@@ -6,73 +6,148 @@
         There Is No Such Thing As A Stupid Question
     </string>
 
-    <string name="learning_quickly_question_1">
+    <string name="learning_quickly_1_question_1">
         What is a good amount of time to be stuck before asking a question?
     </string>
-    <string name="learning_quickly_question_1_option_1">
+    <string name="learning_quickly_1_question_1_option_1">
         1 - 2 minutes
     </string>
-    <string name="learning_quickly_question_1_option_2">
+    <string name="learning_quickly_1_question_1_option_2">
         15 - 20 minutes
     </string>
-    <string name="learning_quickly_question_1_option_3">
+    <string name="learning_quickly_1_question_1_option_3">
         3 - 4 hours
     </string>
-    <string name="learning_quickly_question_1_option_4">
+    <string name="learning_quickly_1_question_1_option_4">
         1 - 2 days
     </string>
     <string-array name="learning_quickly_question_1_options">
-        <item>@string/learning_quickly_question_1_option_1</item>
-        <item>@string/learning_quickly_question_1_option_2</item>
-        <item>@string/learning_quickly_question_1_option_3</item>
-        <item>@string/learning_quickly_question_1_option_4</item>
+        <item>@string/learning_quickly_1_question_1_option_1</item>
+        <item>@string/learning_quickly_1_question_1_option_2</item>
+        <item>@string/learning_quickly_1_question_1_option_3</item>
+        <item>@string/learning_quickly_1_question_1_option_4</item>
     </string-array>
 
-    <string name="learning_quickly_question_2">
+    <string name="learning_quickly_1_question_2">
         True or false: To prove that you are a good engineer when joining a new team,
         you should ask as few questions as possible.
     </string>
 
-    <string name="learning_quickly_question_3">
+    <string name="learning_quickly_1_question_3">
         What is the optimal amount of questions to ask per week as a junior engineer?
     </string>
-    <string name="learning_quickly_question_3_option_1">
+    <string name="learning_quickly_1_question_3_option_1">
         1 - 2
     </string>
-    <string name="learning_quickly_question_3_option_2">
+    <string name="learning_quickly_1_question_3_option_2">
         3 - 5
     </string>
-    <string name="learning_quickly_question_3_option_3">
+    <string name="learning_quickly_1_question_3_option_3">
         10 - 15
     </string>
-    <string-array name="learning_quickly_question_3_options">
-        <item>@string/learning_quickly_question_3_option_1</item>
-        <item>@string/learning_quickly_question_3_option_2</item>
-        <item>@string/learning_quickly_question_3_option_3</item>
+    <string-array name="learning_quickly_1_question_3_options">
+        <item>@string/learning_quickly_1_question_3_option_1</item>
+        <item>@string/learning_quickly_1_question_3_option_2</item>
+        <item>@string/learning_quickly_1_question_3_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
 
-    <string name="learning_quickly_question_4">
+    <string name="learning_quickly_1_question_4">
         True or false: Asking a lot of questions can help other people
         in your company and increase your respect within your team.
     </string>
 
-    <string name="learning_quickly_question_5">
+    <string name="learning_quickly_1_question_5">
         What are the benefits of asking a lot of good questions?
     </string>
-    <string name="learning_quickly_question_5_option_1">
+    <string name="learning_quickly_1_question_5_option_1">
         You learn faster
     </string>
-    <string name="learning_quickly_question_5_option_2">
+    <string name="learning_quickly_1_question_5_option_2">
         You help other people who have the same question
     </string>
-    <string name="learning_quickly_question_5_option_3">
+    <string name="learning_quickly_1_question_5_option_3">
         You are creating a useful piece of content via your question and answer pair
     </string>
-    <string-array name="learning_quickly_question_5_options">
-        <item>@string/learning_quickly_question_5_option_1</item>
-        <item>@string/learning_quickly_question_5_option_2</item>
-        <item>@string/learning_quickly_question_5_option_3</item>
+    <string-array name="learning_quickly_1_question_5_options">
+        <item>@string/learning_quickly_1_question_5_option_1</item>
+        <item>@string/learning_quickly_1_question_5_option_2</item>
+        <item>@string/learning_quickly_1_question_5_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <!-- LESSON TWO -->
+    <string name="learning_quickly_lesson_2_name">
+        Asking Effective Questions That Get Great Answers Quickly
+    </string>
+
+    <string name="learning_quickly_2_question_1">
+        What are some things you can do to improve your question?
+    </string>
+    <string name="learning_quickly_2_question_1_option_1">
+        Do a Google search for it and include what you were able or unable to get from them
+    </string>
+    <string name="learning_quickly_2_question_1_option_2">
+        Describe what you have already tried to solve your issue
+    </string>
+    <string name="learning_quickly_2_question_1_option_3">
+        Preemptively thank anybody who takes the time to read and answer your question
+    </string>
+    <string-array name="learning_quickly_2_question_1_options">
+        <item>@string/learning_quickly_2_question_1_option_1</item>
+        <item>@string/learning_quickly_2_question_1_option_2</item>
+        <item>@string/learning_quickly_2_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_2_question_2">
+        True or false: Ideally, your question takes less time to answer
+        than it took for you to ask the question.
+    </string>
+
+    <string name="learning_quickly_2_question_3">
+        What is the core operating principle behind asking and answering questions?
+    </string>
+    <string name="learning_quickly_2_question_3_option_1">
+        Use StackOverflow
+    </string>
+    <string name="learning_quickly_2_question_3_option_2">
+        Attach every single line of relevant code you are working with
+        if you are asking a software question
+    </string>
+    <string name="learning_quickly_2_question_3_option_3">
+        Questions are an exchange of time
+    </string>
+    <string-array name="learning_quickly_2_question_3_options">
+        <item>@string/learning_quickly_2_question_3_option_1</item>
+        <item>@string/learning_quickly_2_question_3_option_2</item>
+        <item>@string/learning_quickly_2_question_3_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_2_question_4">
+        True or false: In order to be polite, you should preface your question
+        with a simple greeting like [Hello]. After the potential answerer responds,
+        then you can ask your question.
+    </string>
+
+    <string name="learning_quickly_2_question_5">
+        Why do you need to attach a lot of context and be as specific as possible
+        asking questions in tech?
+    </string>
+    <string name="learning_quickly_2_question_5_option_1">
+        Longer questions are better
+    </string>
+    <string name="learning_quickly_2_question_5_option_2">
+        It filters out the people who are not serious about answering your question
+    </string>
+    <string name="learning_quickly_2_question_5_option_3">
+        Tech is an effectively infinite space, so this narrows down the problem space for answerers
+    </string>
+    <string-array name="learning_quickly_2_question_5_options">
+        <item>@string/learning_quickly_2_question_5_option_1</item>
+        <item>@string/learning_quickly_2_question_5_option_2</item>
+        <item>@string/learning_quickly_2_question_5_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
 </resources>
