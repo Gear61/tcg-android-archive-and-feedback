@@ -40,16 +40,16 @@ object LessonProvider {
             if (seenYouTubeIds.contains(lesson.youtubeVideoId)) {
                 error("Duplicate YouTube video ID of " + lesson.youtubeVideoId + " || Lesson ID: " + lesson.id)
             }
+            seenYouTubeIds.add(lesson.youtubeVideoId)
 
             for (question in lesson.questions) {
                 val options = context.resources.getStringArray(question.optionsListResId)
-                if (context.getString(question.correctAnswerId) !in options) {
+                val rightAnswer = context.getString(question.correctAnswerId)
+                if (rightAnswer !in options) {
                     val questionText = context.getString(question.textResId)
-                    error("There is no correct answer for the question ["
-                            + questionText + "] || Lesson ID: " + lesson.id)
+                    error("There is no correct answer for the question [" + questionText + "] || Lesson ID: " + lesson.id)
                 }
             }
-            seenYouTubeIds.add(lesson.youtubeVideoId)
         }
     }
 }
