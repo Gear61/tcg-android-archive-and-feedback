@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
 
-class PreferencesManager(context: Context?) {
+class PreferencesManager(context: Context) {
 
     companion object {
 

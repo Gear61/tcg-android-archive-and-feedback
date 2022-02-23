@@ -238,5 +238,4 @@ object LearningQuicklyContentProvider {
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )
     }
-
 }
