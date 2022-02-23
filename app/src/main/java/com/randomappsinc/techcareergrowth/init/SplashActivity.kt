@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.randomappsinc.techcareergrowth.home.MainActivity
+import com.randomappsinc.techcareergrowth.intro.IntroSlideshowActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -17,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
             finish()
             return
         }
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, IntroSlideshowActivity::class.java))
         finish()
     }
 }

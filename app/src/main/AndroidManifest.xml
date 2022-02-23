@@ -33,6 +33,12 @@
         </activity>
 
         <activity
+            android:name=".intro.IntroSlideshowActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
             android:name=".home.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/full_app_name"
