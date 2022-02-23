@@ -27,4 +27,6 @@
 
     <color name="progress_bar_track_color">#E0E0E0</color>
     <color name="progress_bar_status_color">@color/accent_green</color>
+
+    <color name="indicator_circle_color">#BDBDBD</color>
 </resources>

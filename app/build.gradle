@@ -59,4 +59,5 @@ dependencies {
         exclude group: 'com.android.support'
     }
     implementation 'nl.dionsegijn:konfetti-xml:2.0.1'
+    implementation 'com.airbnb.android:lottie:5.0.1'
 }

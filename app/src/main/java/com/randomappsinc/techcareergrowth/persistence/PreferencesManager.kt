@@ -9,6 +9,8 @@ class PreferencesManager(context: Context) {
 
     companion object {
 
+        const val KEY_HAS_SEEN_SLIDESHOW = "KEY_HAS_SEEN_SLIDESHOW"
+
         const val THEME_MODE = "KEY_THEME_MODE"
         const val NUM_APP_OPENS = "NUM_APP_OPENS"
 
@@ -16,6 +18,12 @@ class PreferencesManager(context: Context) {
     }
 
     private val prefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+
+    var hasSeenSlideshow: Boolean
+        get() = prefs.getBoolean(KEY_HAS_SEEN_SLIDESHOW, false)
+        set(newHasSeenSlideshow) {
+            prefs.edit().putBoolean(KEY_HAS_SEEN_SLIDESHOW, newHasSeenSlideshow).apply()
+        }
 
     var themeMode: Int
         get() = prefs.getInt(THEME_MODE, ThemeMode.FOLLOW_SYSTEM)
