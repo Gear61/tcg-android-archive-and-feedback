@@ -288,4 +288,60 @@
         <item>@string/learning_quickly_3_question_10_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON FOUR -->
+    <string name="learning_quickly_lesson_4_name">
+        Make It Easy For You To Receive Help
+    </string>
+
+    <string name="learning_quickly_4_question_1">
+        True or false: If you ask for help on a coding issue,
+        link the entire repo of the codebase you are working on to be safe.
+        This guarantees that helpers have all the context they need.
+    </string>
+
+    <string name="learning_quickly_4_question_2">
+        What can you do to really sharpen your question before asking it?
+    </string>
+    <string name="learning_quickly_4_question_2_option_1">
+        Spend a couple extra hours trying to solve it yourself
+        just to make extra sure you are blocked on a truly difficult issue
+    </string>
+    <string name="learning_quickly_4_question_2_option_2">
+        Do something else, so you can wait for someone else to hit your same
+        issue and see how they solve it
+    </string>
+    <string name="learning_quickly_4_question_2_option_3">
+        Anticipate the questions you will get in response to your question
+        and solve for those preemptively
+    </string>
+    <string-array name="learning_quickly_4_question_2_options">
+        <item>@string/learning_quickly_4_question_2_option_1</item>
+        <item>@string/learning_quickly_4_question_2_option_2</item>
+        <item>@string/learning_quickly_4_question_2_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_4_question_3">
+        [I am having trouble getting a button to appear above an image in my webpage.
+        Can someone help with this?]
+        - Which of the following are questions that should have been
+        anticipated beforehand for this question?
+    </string>
+    <string name="learning_quickly_4_question_3_option_1">
+        What framework (React, Vue, etc) are you using to build your webpage?
+    </string>
+    <string name="learning_quickly_4_question_3_option_2">
+        What have you tried already to solve this problem?
+    </string>
+    <string name="learning_quickly_4_question_3_option_3">
+        Have you gone through the first couple StackOverflow results
+        talking about this same problem?
+    </string>
+    <string-array name="learning_quickly_4_question_3_options">
+        <item>@string/learning_quickly_4_question_3_option_1</item>
+        <item>@string/learning_quickly_4_question_3_option_2</item>
+        <item>@string/learning_quickly_4_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>

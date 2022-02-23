@@ -17,6 +17,7 @@ object LearningQuicklyContentProvider {
             lessons!!.add(getLesson1(context = context))
             lessons!!.add(getLesson2(context = context))
             lessons!!.add(getLesson3(context = context))
+            lessons!!.add(getLesson4(context = context))
         }
         return lessons!!
     }
@@ -202,4 +203,40 @@ object LearningQuicklyContentProvider {
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )
     }
+
+    private fun getLesson4(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_4_question_1,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_4_question_2,
+                optionsListResId = R.array.learning_quickly_4_question_2_options,
+                correctAnswerId = R.string.learning_quickly_4_question_2_option_3
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_4_question_3,
+                optionsListResId = R.array.learning_quickly_4_question_3_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+
+        val lessonId = "learning_quickly_4"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.LEARNING_QUICKLY,
+            nameResId = R.string.learning_quickly_lesson_4_name,
+            youtubeVideoId = "rfSy_MlMyfI",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
 }
