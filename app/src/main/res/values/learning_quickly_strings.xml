@@ -150,4 +150,142 @@
         <item>@string/learning_quickly_2_question_5_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON THREE -->
+    <string name="learning_quickly_lesson_3_name">
+        Bad Question vs. Good Question Example
+    </string>
+
+    <string name="learning_quickly_3_question_1">
+        Is the following a good question:
+        What are the best open-source projects to work on?
+    </string>
+
+    <string name="learning_quickly_3_question_2">
+        [What are the best open-source projects to work on?]
+        - How can the asker improve this question?
+    </string>
+    <string name="learning_quickly_3_question_2_option_1">
+        Include context on why they want to work on open-source
+    </string>
+    <string name="learning_quickly_3_question_2_option_2">
+        Describe their current experience level working with open-source
+    </string>
+    <string name="learning_quickly_3_question_2_option_3">
+        Outline the programming languages and frameworks they are already familiar with
+    </string>
+    <string-array name="learning_quickly_3_question_2_options">
+        <item>@string/learning_quickly_3_question_2_option_1</item>
+        <item>@string/learning_quickly_3_question_2_option_2</item>
+        <item>@string/learning_quickly_3_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_3_question_3">
+        Is the following a good question:
+        Any Java developers here who have worked on ML?
+    </string>
+
+    <string name="learning_quickly_3_question_4">
+        [Any Java developers here who have worked on ML?]
+        - Why is this not a good question?
+    </string>
+    <string name="learning_quickly_3_question_4_option_1">
+        Java is not a good language for machine learning
+    </string>
+    <string name="learning_quickly_3_question_4_option_2">
+        The true objective of the asker is not there
+    </string>
+    <string name="learning_quickly_3_question_4_option_3">
+        It should have a greeting like [Hello] to be polite
+    </string>
+    <string-array name="learning_quickly_3_question_4_options">
+        <item>@string/learning_quickly_3_question_4_option_1</item>
+        <item>@string/learning_quickly_3_question_4_option_2</item>
+        <item>@string/learning_quickly_3_question_4_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_3_question_5">
+        Is the following a good question:
+        Does anybody know what the front-end engineering interview for Amazon looks like?
+    </string>
+
+    <string name="learning_quickly_3_question_6">
+        [Does anybody know what the front-end engineering interview for Amazon looks like?]
+        - How can the asker improve this question?
+    </string>
+    <string name="learning_quickly_3_question_6_option_1">
+        Include what they have found out through Glassdoor and their recruiter
+    </string>
+    <string name="learning_quickly_3_question_6_option_2">
+        Reframe this question to have their true intention,
+        which is that they have this interview coming up and would like
+        help with it. They can then add information like when the interview is
+        and the office/team it is for
+    </string>
+    <string name="learning_quickly_3_question_6_option_3">
+        Preemptively thank those who take the time to answer this question
+        as sharing interview material is dicey due to NDA
+    </string>
+    <string-array name="learning_quickly_3_question_6_options">
+        <item>@string/learning_quickly_3_question_6_option_1</item>
+        <item>@string/learning_quickly_3_question_6_option_2</item>
+        <item>@string/learning_quickly_3_question_6_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_3_question_7">
+        Is the following a good question:
+        Can someone recommend me resources for blockchain development?
+    </string>
+
+    <string name="learning_quickly_3_question_8">
+        [Can someone recommend me resources for blockchain development?]
+        - How can the asker improve this question?
+    </string>
+    <string name="learning_quickly_3_question_8_option_1">
+        Explain why they are interested in blockchain
+    </string>
+    <string name="learning_quickly_3_question_8_option_2">
+        Include the preferred way they like to learn (video, article, etc)
+    </string>
+    <string name="learning_quickly_3_question_8_option_3">
+        Describe what kind of product they are looking to build with blockchain
+    </string>
+    <string-array name="learning_quickly_3_question_8_options">
+        <item>@string/learning_quickly_3_question_8_option_1</item>
+        <item>@string/learning_quickly_3_question_8_option_2</item>
+        <item>@string/learning_quickly_3_question_8_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_3_question_9">
+        Is the following a good question:
+        Is there anybody here who can refer me into FAANG?
+    </string>
+
+    <string name="learning_quickly_3_question_10">
+        [Is there anybody here who can refer me into FAANG?]
+        - Why is this not a good question?
+    </string>
+    <string name="learning_quickly_3_question_10_option_1">
+        It is very unlikely somebody is willing to do such a massive
+        favor for someone they do not know
+    </string>
+    <string name="learning_quickly_3_question_10_option_2">
+        Everybody wants to get into FAANG. It is hard to empathize with the asker,
+        especially as they have not described any difficulties
+        they have faced trying to get into FAANG
+    </string>
+    <string name="learning_quickly_3_question_10_option_3">
+        For an ask this large, it should definitely have a
+        preemptive thanks
+    </string>
+    <string-array name="learning_quickly_3_question_10_options">
+        <item>@string/learning_quickly_3_question_10_option_1</item>
+        <item>@string/learning_quickly_3_question_10_option_2</item>
+        <item>@string/learning_quickly_3_question_10_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
