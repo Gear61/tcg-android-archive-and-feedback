@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="start_learning">Start Learning</string>
+
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_text">
+        Tech Career Growth is a 15,000+ person learning community
+        designed to accelerate your career in tech.
+        We are so happy to have you with us!
+    </string>
+
+    <string name="learn_title">Learn From The Best</string>
+    <string name="learn_text">
+        With the official Tech Career Growth app,
+        you can take lessons carefully crafted by engineers from
+        top tech companies like Meta, Robinhood, and Pinterest.
+    </string>
+
+    <string name="feedback_title">We Strive To Improve. Fast.</string>
+    <string name="feedback_text">
+        In the end, this app is built for you.
+        We update it every few days with new lessons and improvements,
+        powered by your feedback so let us know what you think!
+    </string>
 </resources>

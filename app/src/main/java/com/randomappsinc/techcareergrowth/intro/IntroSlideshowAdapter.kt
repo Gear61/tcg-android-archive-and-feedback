@@ -13,18 +13,18 @@ class IntroSlideshowAdapter(activity: FragmentActivity) : FragmentStateAdapter(a
         return when (position) {
             0 -> IntroSlideshowFragment.getInstance(
                 lottieResId = R.raw.welcome,
-                titleId = R.string.interviewing_1_question_1_option_2,
-                textId = R.string.interviewing_1_question_1
+                titleId = R.string.welcome_title,
+                textId = R.string.welcome_text
             )
             1 -> IntroSlideshowFragment.getInstance(
                 lottieResId = R.raw.learn,
-                titleId = R.string.interviewing_1_question_1_option_2,
-                textId = R.string.interviewing_1_question_1
+                titleId = R.string.learn_title,
+                textId = R.string.learn_text
             )
             2 -> IntroSlideshowFragment.getInstance(
-                lottieResId = R.raw.update,
-                titleId = R.string.interviewing_1_question_1_option_2,
-                textId = R.string.interviewing_1_question_1
+                lottieResId = R.raw.feedback,
+                titleId = R.string.feedback_title,
+                textId = R.string.feedback_text
             )
             else -> throw IllegalArgumentException("There should only be 3 slides!")
         }
