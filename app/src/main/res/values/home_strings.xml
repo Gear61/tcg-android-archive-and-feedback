@@ -6,14 +6,6 @@
     <string name="promotion">Promotion</string>
     <string name="learning_quickly">Learning Quickly</string>
 
-    <string-array name="learning_category_options">
-        <item>@string/interviewing</item>
-        <item>@string/resume</item>
-        <item>@string/productivity</item>
-        <item>@string/promotion</item>
-        <item>@string/learning_quickly</item>
-    </string-array>
-
     <string name="green_check_icon">{ion-checkmark @color/green}</string>
     <string name="red_x_icon">{ion-android-close @color/red}</string>
 

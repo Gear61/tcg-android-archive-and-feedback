@@ -14,17 +14,22 @@ import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.SettingsActivity
+import com.randomappsinc.techcareergrowth.util.ListUtil
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var preferencesManager: PreferencesManager
+    private lateinit var learningCategoriesAdapter: LearningCategoryTabsAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-        val preferencesManager = PreferencesManager(this)
+        preferencesManager = PreferencesManager(this)
         if (preferencesManager.logAppOpenAndCheckForRatingUpsell()) {
             AlertDialog.Builder(this)
                 .setMessage(R.string.please_rate)
@@ -41,17 +46,32 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
 
-        val profileTabs = resources.getStringArray(R.array.learning_category_options)
         val lessonTypes = preferencesManager.getContentOrder()
-        val profileTabsAdapter = LearningCategoryTabsAdapter(
+        learningCategoriesAdapter = LearningCategoryTabsAdapter(
             activity = this,
             lessonTypes = lessonTypes
         )
-        binding.learningCategoryViewpager.adapter = profileTabsAdapter
+        binding.learningCategoryViewpager.adapter = learningCategoriesAdapter
 
         TabLayoutMediator(binding.learningCategoryTabs, binding.learningCategoryViewpager) { tab, position ->
             tab.setText(lessonTypes[position].overallLabelId)
         }.attach()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val freshLessonTypes = preferencesManager.getContentOrder()
+        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = learningCategoriesAdapter.lessonTypes)) {
+            learningCategoriesAdapter = LearningCategoryTabsAdapter(
+                activity = this,
+                lessonTypes = freshLessonTypes
+            )
+            binding.learningCategoryViewpager.adapter = learningCategoriesAdapter
+
+            TabLayoutMediator(binding.learningCategoryTabs, binding.learningCategoryViewpager) { tab, position ->
+                tab.setText(freshLessonTypes[position].overallLabelId)
+            }.attach()
+        }
     }
 
     override fun startActivityForResult(intent: Intent?, requestCode: Int) {
