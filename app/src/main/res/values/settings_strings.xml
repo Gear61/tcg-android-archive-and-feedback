@@ -64,10 +64,9 @@
 
     <string name="order_content">Order Content</string>
     <string name="order_instructions">
-        Tell us what you need help with the most,
-        so we can make those lessons the easiest to find.
+        Tell us what you need help with the most to make those lessons the easiest to find.
         Simply drag and drop what you care about most to the top.
-        You can reorder this from the settings whenever you want.
+        Update your ordering from the settings whenever.
     </string>
     <string name="save_order">Save Order</string>
 </resources>

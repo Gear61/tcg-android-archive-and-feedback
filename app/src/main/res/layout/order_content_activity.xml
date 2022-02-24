@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     >
 
     <TextView
-        android:id="@+id/save_button"
-        android:layout_marginTop="0dp"
-        android:layout_alignParentBottom="true"
-        android:text="@string/save_order"
-        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_instructions"
+        android:textSize="17sp"
+        android:textColor="@color/text_normal"
+        android:paddingTop="12dp"
+        android:paddingHorizontal="12dp"
         />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lesson_types_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/save_button"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
         android:paddingLeft="8dp"
@@ -26,4 +29,10 @@
         android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/save_button"
+        android:text="@string/save_order"
+        style="@style/button"
+        />
+</LinearLayout>
