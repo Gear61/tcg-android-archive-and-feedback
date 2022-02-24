@@ -12,17 +12,17 @@ class IntroSlideshowAdapter(activity: FragmentActivity) : FragmentStateAdapter(a
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> IntroSlideshowFragment.getInstance(
-                imageId = R.drawable.splash_logo,
+                lottieResId = R.raw.welcome,
                 titleId = R.string.interviewing_1_question_1_option_2,
                 textId = R.string.interviewing_1_question_1
             )
             1 -> IntroSlideshowFragment.getInstance(
-                imageId = R.drawable.splash_logo,
+                lottieResId = R.raw.learn,
                 titleId = R.string.interviewing_1_question_1_option_2,
                 textId = R.string.interviewing_1_question_1
             )
             2 -> IntroSlideshowFragment.getInstance(
-                imageId = R.drawable.splash_logo,
+                lottieResId = R.raw.update,
                 titleId = R.string.interviewing_1_question_1_option_2,
                 textId = R.string.interviewing_1_question_1
             )
