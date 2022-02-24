@@ -1,0 +1,23 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movable_lesson_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        style="@style/standard_card"
+        >
+
+        <TextView
+            android:id="@+id/lesson_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/text_normal"
+            />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

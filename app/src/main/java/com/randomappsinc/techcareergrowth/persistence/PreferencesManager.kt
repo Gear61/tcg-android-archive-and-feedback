@@ -3,6 +3,7 @@ package com.randomappsinc.techcareergrowth.persistence
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
+import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
 
 class PreferencesManager(context: Context) {
@@ -30,6 +31,16 @@ class PreferencesManager(context: Context) {
         set(newThemeMode) {
             prefs.edit().putInt(THEME_MODE, newThemeMode).apply()
         }
+
+    fun getContentOrder(): MutableList<LessonType> {
+        return mutableListOf(
+            LessonType.INTERVIEWING,
+            LessonType.RESUME,
+            LessonType.PRODUCTIVITY,
+            LessonType.PROMOTION,
+            LessonType.LEARNING_QUICKLY
+        )
+    }
 
     fun getLessonCompletionStatus(lessonId: String): Boolean {
         return prefs.getBoolean(lessonId, false)

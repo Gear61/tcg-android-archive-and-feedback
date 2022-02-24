@@ -55,4 +55,19 @@
     <string name="copy_link">Copy link</string>
     <string name="share_link">Share link</string>
     <string name="link_copied_to_clipboard">Link copied to clipboard</string>
+
+    <string name="acing_interviews">Acing Interviews</string>
+    <string name="writing_resumes">Writing A Great Resume</string>
+    <string name="becoming_productive">Becoming More Productive</string>
+    <string name="getting_promoted">Getting Promoted</string>
+    <string name="learning_stuff_quickly">Learning Stuff Quickly</string>
+
+    <string name="order_content">Order Content</string>
+    <string name="order_instructions">
+        Tell us what you need help with the most,
+        so we can make those lessons the easiest to find.
+        Simply drag and drop what you care about most to the top.
+        You can reorder this from the settings whenever you want.
+    </string>
+    <string name="save_order">Save Order</string>
 </resources>

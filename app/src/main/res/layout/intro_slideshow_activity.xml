@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     >
 
-    <ImageView
-        android:layout_marginTop="16dp"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@mipmap/ic_launcher_round"
-        />
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/slideshow_viewpager"
         android:layout_width="match_parent"
