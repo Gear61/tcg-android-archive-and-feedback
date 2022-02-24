@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
+import java.lang.StringBuilder
 
 class PreferencesManager(context: Context) {
 
@@ -14,6 +15,7 @@ class PreferencesManager(context: Context) {
 
         const val THEME_MODE = "KEY_THEME_MODE"
         const val NUM_APP_OPENS = "NUM_APP_OPENS"
+        const val KEY_CONTENT_ORDER = "KEY_CONTENT_ORDER"
 
         const val APP_OPENS_FOR_RATING_UPSELL = 5
     }
@@ -33,13 +35,34 @@ class PreferencesManager(context: Context) {
         }
 
     fun getContentOrder(): MutableList<LessonType> {
-        return mutableListOf(
-            LessonType.INTERVIEWING,
-            LessonType.RESUME,
-            LessonType.PRODUCTIVITY,
-            LessonType.PROMOTION,
-            LessonType.LEARNING_QUICKLY
-        )
+        val orderedTypes = prefs.getString(KEY_CONTENT_ORDER, "")
+        if (orderedTypes!!.isEmpty()) {
+            return mutableListOf(
+                LessonType.INTERVIEWING,
+                LessonType.RESUME,
+                LessonType.PRODUCTIVITY,
+                LessonType.PROMOTION,
+                LessonType.LEARNING_QUICKLY
+            )
+        } else {
+            val splitUpTypes = orderedTypes.split(",")
+            val lessonTypes = mutableListOf<LessonType>()
+            for (type in splitUpTypes) {
+                lessonTypes.add(LessonType.valueOf(type))
+            }
+            return lessonTypes
+        }
+    }
+
+    fun setContentOrder(lessonTypes: List<LessonType>) {
+        val typesString = StringBuilder()
+        for (type in lessonTypes) {
+            if (typesString.isNotEmpty()) {
+                typesString.append(",")
+            }
+            typesString.append(type.toString())
+        }
+        prefs.edit().putString(KEY_CONTENT_ORDER, typesString.toString()).apply()
     }
 
     fun getLessonCompletionStatus(lessonId: String): Boolean {

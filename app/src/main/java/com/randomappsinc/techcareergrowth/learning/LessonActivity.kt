@@ -26,7 +26,7 @@ class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         lesson = intent.getParcelableExtra(LESSON_KEY)!!
-        val lessonType = getString(lesson.type.lessonLabelId)
+        val lessonType = getString(lesson.type.overallLabelId)
         title = (getString(R.string.lesson_title, lessonType))
 
         viewState = LearningViewState(

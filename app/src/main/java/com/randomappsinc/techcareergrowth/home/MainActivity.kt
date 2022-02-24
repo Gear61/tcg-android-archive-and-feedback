@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-        if (PreferencesManager(this).logAppOpenAndCheckForRatingUpsell()) {
+        val preferencesManager = PreferencesManager(this)
+        if (preferencesManager.logAppOpenAndCheckForRatingUpsell()) {
             AlertDialog.Builder(this)
                 .setMessage(R.string.please_rate)
                 .setNegativeButton(R.string.no_im_good) { _: DialogInterface, _: Int -> }
@@ -41,14 +42,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         val profileTabs = resources.getStringArray(R.array.learning_category_options)
+        val lessonTypes = preferencesManager.getContentOrder()
         val profileTabsAdapter = LearningCategoryTabsAdapter(
             activity = this,
-            numItems = profileTabs.size
+            lessonTypes = lessonTypes
         )
         binding.learningCategoryViewpager.adapter = profileTabsAdapter
 
         TabLayoutMediator(binding.learningCategoryTabs, binding.learningCategoryViewpager) { tab, position ->
-            tab.text = profileTabs[position]
+            tab.setText(lessonTypes[position].overallLabelId)
         }.attach()
     }
 

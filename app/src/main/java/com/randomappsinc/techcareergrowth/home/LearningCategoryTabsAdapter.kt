@@ -7,19 +7,12 @@ import com.randomappsinc.techcareergrowth.models.LessonType
 
 class LearningCategoryTabsAdapter(
     activity: FragmentActivity,
-    private val numItems: Int
+    private val lessonTypes: List<LessonType>
 ) : FragmentStateAdapter(activity) {
 
-    override fun getItemCount(): Int = numItems
+    override fun getItemCount(): Int = lessonTypes.size
 
     override fun createFragment(position: Int): Fragment {
-        return when (position) {
-            0 -> LessonListFragment.getInstance(LessonType.INTERVIEWING)
-            1 -> LessonListFragment.getInstance(LessonType.RESUME)
-            2 -> LessonListFragment.getInstance(LessonType.PRODUCTIVITY)
-            3 -> LessonListFragment.getInstance(LessonType.PROMOTION)
-            4 -> LessonListFragment.getInstance(LessonType.LEARNING_QUICKLY)
-            else -> throw IllegalArgumentException("There should only be 4 tabs!")
-        }
+        return LessonListFragment.getInstance(lessonType = lessonTypes[position])
     }
 }

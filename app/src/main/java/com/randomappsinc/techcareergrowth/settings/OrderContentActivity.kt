@@ -1,16 +1,14 @@
 package com.randomappsinc.techcareergrowth.settings
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
-import androidx.recyclerview.widget.RecyclerView
 import com.randomappsinc.techcareergrowth.databinding.OrderContentActivityBinding
+import com.randomappsinc.techcareergrowth.home.MainActivity
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
 class OrderContentActivity : AppCompatActivity() {
-
-    var flashcardsList: RecyclerView? = null
-    private lateinit var contentOrderingAdapter: ContentOrderingAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,12 +16,17 @@ class OrderContentActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val preferencesManager = PreferencesManager(this)
-        contentOrderingAdapter = ContentOrderingAdapter(lessonTypes = preferencesManager.getContentOrder())
-        flashcardsList!!.adapter = contentOrderingAdapter
+        val contentOrderingAdapter = ContentOrderingAdapter(lessonTypes = preferencesManager.getContentOrder())
+        binding.lessonTypesList.adapter = contentOrderingAdapter
 
         val callback: ItemTouchHelper.Callback =
             SimpleItemTouchHelperCallback(contentOrderingAdapter)
         val itemTouchHelper = ItemTouchHelper(callback)
-        itemTouchHelper.attachToRecyclerView(flashcardsList)
+        itemTouchHelper.attachToRecyclerView(binding.lessonTypesList)
+
+        binding.saveButton.setOnClickListener {
+            preferencesManager.setContentOrder(contentOrderingAdapter.lessonTypes)
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 }

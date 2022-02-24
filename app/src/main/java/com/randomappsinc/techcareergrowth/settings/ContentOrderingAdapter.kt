@@ -3,11 +3,12 @@ package com.randomappsinc.techcareergrowth.settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.LessonType
 
-class ContentOrderingAdapter(private val lessonTypes: MutableList<LessonType>) :
+class ContentOrderingAdapter(val lessonTypes: MutableList<LessonType>) :
     RecyclerView.Adapter<ContentOrderingAdapter.LessonTypeViewHolder>(), ItemTouchHelperAdapter {
 
     override fun onItemMove(fromPosition: Int, toPosition: Int) {
@@ -33,15 +34,12 @@ class ContentOrderingAdapter(private val lessonTypes: MutableList<LessonType>) :
         return lessonTypes.size
     }
 
-    fun getLessonTypes(): List<LessonType> {
-        return lessonTypes
-    }
+    inner class LessonTypeViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    inner class LessonTypeViewHolder internal constructor(view: View?) :
-        RecyclerView.ViewHolder(view!!) {
+        private val lessonTitle: TextView = itemView.findViewById(R.id.lesson_type)
 
         fun loadLessonType(position: Int) {
-
+            lessonTitle.setText(lessonTypes[position].orderingLabelId)
         }
     }
 }

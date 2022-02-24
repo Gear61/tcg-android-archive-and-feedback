@@ -8,6 +8,7 @@ import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.IntroSlideshowActivityBinding
 import com.randomappsinc.techcareergrowth.home.MainActivity
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
+import com.randomappsinc.techcareergrowth.settings.OrderContentActivity
 
 class IntroSlideshowActivity : AppCompatActivity() {
 
@@ -45,7 +46,7 @@ class IntroSlideshowActivity : AppCompatActivity() {
         binding.slideshowViewpager.currentItem = 0
         binding.getStartedButton.setOnClickListener {
             preferencesManager.hasSeenSlideshow = true
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, OrderContentActivity::class.java))
         }
     }
 }

@@ -16,8 +16,9 @@
             android:id="@+id/lesson_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
+            android:textSize="21sp"
             android:textColor="@color/text_normal"
+            android:padding="16dp"
             />
     </androidx.cardview.widget.CardView>
 </FrameLayout>

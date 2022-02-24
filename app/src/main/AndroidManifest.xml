@@ -64,5 +64,12 @@
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize"
             />
+
+        <activity
+            android:name=".settings.OrderContentActivity"
+            android:label="@string/order_content"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
     </application>
 </manifest>
