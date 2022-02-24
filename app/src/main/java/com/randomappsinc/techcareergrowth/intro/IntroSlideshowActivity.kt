@@ -46,7 +46,11 @@ class IntroSlideshowActivity : AppCompatActivity() {
         binding.slideshowViewpager.currentItem = 0
         binding.getStartedButton.setOnClickListener {
             preferencesManager.hasSeenSlideshow = true
-            startActivity(Intent(this, OrderContentActivity::class.java))
+            val intent = Intent(this, OrderContentActivity::class.java)
+            intent.putExtra(OrderContentActivity.FROM_SETTINGS_KEY, false)
+            startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.stay)
+            finish()
         }
     }
 }

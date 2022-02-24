@@ -73,4 +73,5 @@
         Update your ordering from the settings whenever.
     </string>
     <string name="save_order">Save Order</string>
+    <string name="order_saved">Order saved.</string>
 </resources>

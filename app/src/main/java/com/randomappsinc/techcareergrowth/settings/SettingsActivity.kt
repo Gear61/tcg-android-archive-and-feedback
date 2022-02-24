@@ -50,7 +50,12 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
 
     override fun onSettingsItemClicked(position: Int) {
         when (position) {
-            0 -> startActivity(Intent(this, OrderContentActivity::class.java))
+            0 -> {
+                val intent = Intent(this, OrderContentActivity::class.java)
+                intent.putExtra(OrderContentActivity.FROM_SETTINGS_KEY, true)
+                startActivity(intent)
+                overridePendingTransition(R.anim.slide_in_bottom, R.anim.stay)
+            }
             1 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(SLACK_URL)))
             2 -> {
                 val itemCell: View = binding.settingsOptions.getChildAt(SettingsAdapter.DARK_MODE_POSITION)
