@@ -21,7 +21,7 @@ open class SettingsAdapter(
 ) : RecyclerView.Adapter<SettingsAdapter.ViewHolder>()  {
 
     companion object {
-        const val DARK_MODE_POSITION = 1
+        const val DARK_MODE_POSITION = 2
     }
 
     interface SettingsSelectionListener {

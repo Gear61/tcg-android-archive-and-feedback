@@ -50,8 +50,9 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
 
     override fun onSettingsItemClicked(position: Int) {
         when (position) {
-            0 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(SLACK_URL)))
-            1 -> {
+            0 -> startActivity(Intent(this, OrderContentActivity::class.java))
+            1 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(SLACK_URL)))
+            2 -> {
                 val itemCell: View = binding.settingsOptions.getChildAt(SettingsAdapter.DARK_MODE_POSITION)
                 val darkModeToggle = itemCell.findViewById<SwitchCompat>(R.id.settings_toggle)
                 darkModeToggle.isChecked = !darkModeToggle.isChecked
@@ -59,14 +60,14 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
                 preferencesManager.themeMode = themeMode
                 ThemeManager.applyTheme(themeMode)
             }
-            2 -> {
+            3 -> {
                 val uriText =
                     "mailto:${SUPPORT_EMAIL}?subject=" + Uri.encode(getString(R.string.feedback_subject))
                 val mailUri = Uri.parse(uriText)
                 val sendIntent = Intent(Intent.ACTION_SENDTO, mailUri)
                 startActivity(Intent.createChooser(sendIntent, getString(R.string.send_email)))
             }
-            3 -> {
+            4 -> {
                 val uri = Uri.parse("market://details?id=${packageName}")
                 val rateIntent = Intent(Intent.ACTION_VIEW, uri)
                 if (packageManager.queryIntentActivities(rateIntent, 0).size <= 0) {
@@ -74,7 +75,7 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
                 }
                 startActivity(rateIntent)
             }
-            4 -> {
+            5 -> {
                 val shareIntent = ShareCompat.IntentBuilder(this)
                     .setType("text/plain")
                     .setText(getString(R.string.share_app_message))
@@ -83,9 +84,9 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
                     startActivity(shareIntent)
                 }
             }
-            5 -> openWebActivity(getString(R.string.terms_and_conditions), TERMS_AND_CONDITIONS_URL)
-            6 -> openWebActivity(getString(R.string.privacy_policy), PRIVACY_POLICY_URL)
-            7 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(REPO_URL)))
+            6 -> openWebActivity(getString(R.string.terms_and_conditions), TERMS_AND_CONDITIONS_URL)
+            7 -> openWebActivity(getString(R.string.privacy_policy), PRIVACY_POLICY_URL)
+            8 -> startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(REPO_URL)))
         }
     }
 
