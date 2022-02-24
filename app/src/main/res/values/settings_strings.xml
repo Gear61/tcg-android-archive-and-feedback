@@ -68,9 +68,9 @@
 
     <string name="order_content">Order Content</string>
     <string name="order_instructions">
-        Tell us what you need help with the most to make those lessons the easiest to find.
-        Simply drag and drop what you care about most to the top.
-        Update your ordering from the settings whenever.
+        Simply drag and drop what you care about more to the top,
+        and those lessons will be easier to find.
+        You can update this from the settings later too.
     </string>
     <string name="save_order">Save Order</string>
     <string name="order_saved">Order saved.</string>
