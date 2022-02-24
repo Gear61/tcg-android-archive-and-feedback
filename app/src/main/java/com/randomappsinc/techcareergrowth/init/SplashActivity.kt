@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.randomappsinc.techcareergrowth.home.MainActivity
 import com.randomappsinc.techcareergrowth.intro.IntroSlideshowActivity
+import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
 class SplashActivity : AppCompatActivity() {
 
@@ -18,7 +19,12 @@ class SplashActivity : AppCompatActivity() {
             finish()
             return
         }
-        startActivity(Intent(this, IntroSlideshowActivity::class.java))
+
+        if (PreferencesManager(this).hasSeenSlideshow) {
+            startActivity(Intent(this, MainActivity::class.java))
+        } else {
+            startActivity(Intent(this, IntroSlideshowActivity::class.java))
+        }
         finish()
     }
 }
