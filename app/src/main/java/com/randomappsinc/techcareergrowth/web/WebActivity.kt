@@ -35,7 +35,8 @@ open class WebActivity : AppCompatActivity() {
         supportActionBar!!.setHomeAsUpIndicator(
             IconDrawable(this, IoniconsIcons.ion_android_close)
                 .colorRes(R.color.white)
-                .actionBarSize())
+                .actionBarSize()
+        )
 
         url = intent.getStringExtra(URL_KEY)!!
         title = intent.getStringExtra(TITLE_KEY)!!

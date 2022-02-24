@@ -7,13 +7,8 @@ import com.randomappsinc.techcareergrowth.models.LessonType
 
 class LearningCategoryTabsAdapter(
     activity: FragmentActivity,
-    var lessonTypes: List<LessonType>
+    val lessonTypes: List<LessonType>
 ) : FragmentStateAdapter(activity) {
-
-    fun updateLessonTypes(lessonTypes: List<LessonType>) {
-        this.lessonTypes = lessonTypes
-        notifyDataSetChanged()
-    }
 
     override fun getItemCount(): Int = lessonTypes.size
 
