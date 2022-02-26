@@ -19,6 +19,7 @@ object LearningQuicklyContentProvider {
             lessons!!.add(getLesson3(context = context))
             lessons!!.add(getLesson4(context = context))
             lessons!!.add(getLesson5(context = context))
+            lessons!!.add(getLesson6(context = context))
         }
         return lessons!!
     }
@@ -291,6 +292,55 @@ object LearningQuicklyContentProvider {
             type = LessonType.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_5_name,
             youtubeVideoId = "QLCq91qrMC0",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson6(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_6_question_1,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_6_question_2,
+                optionsListResId = R.array.learning_quickly_6_question_2_options,
+                correctAnswerId = R.string.learning_quickly_6_question_2_option_3
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_6_question_3,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_6_question_4,
+                optionsListResId = R.array.learning_quickly_6_question_4_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_6_question_5,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+
+        val lessonId = "learning_quickly_6"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.LEARNING_QUICKLY,
+            nameResId = R.string.learning_quickly_lesson_6_name,
+            youtubeVideoId = "ZfZzJ6C235s",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

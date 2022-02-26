@@ -427,4 +427,117 @@
         True or false: Breaking something locally is an effective way
         to learn a codebase.
     </string>
+
+    <!-- LESSON SIX -->
+    <string name="learning_quickly_lesson_6_name">
+        Feedback Is A Gift
+    </string>
+
+    <string name="learning_quickly_6_question_1">
+        True or false: If you get a piece of feedback,
+        you should assume good intent and that it is correct.
+    </string>
+
+    <string name="learning_quickly_6_question_2">
+        What should be your immediate reaction when you get a piece of constructive feedback?
+    </string>
+    <string name="learning_quickly_6_question_2_option_1">
+        Be defensive and ask them questions to make the giver validate the feedback
+    </string>
+    <string name="learning_quickly_6_question_2_option_2">
+        Provide a piece of constructive criticism of the giver in return
+    </string>
+    <string name="learning_quickly_6_question_2_option_3">
+        Thank the giver, as they are likely feeling awkward themselves
+    </string>
+    <string-array name="learning_quickly_6_question_2_options">
+        <item>@string/learning_quickly_6_question_2_option_1</item>
+        <item>@string/learning_quickly_6_question_2_option_2</item>
+        <item>@string/learning_quickly_6_question_2_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_6_question_3">
+        True or false: If you get feedback that you do not believe is 100% correct,
+        you should just ignore it.
+    </string>
+
+    <string name="learning_quickly_6_question_4">
+        Which of the following are good things to do whe you get a piece of feedback
+        that you genuinely believe is not constructive and is phrased
+        in a harmful way?
+    </string>
+    <string name="learning_quickly_6_question_4_option_1">
+        Talk to the superior of the feedback giver
+    </string>
+    <string name="learning_quickly_6_question_4_option_2">
+        Have a crucial, honest conversation with the feedback giver and explain how you feel
+    </string>
+    <string name="learning_quickly_6_question_4_option_3">
+        Be vulnerable and share your feelings and perspective with people you trust
+    </string>
+    <string-array name="learning_quickly_6_question_4_options">
+        <item>@string/learning_quickly_6_question_4_option_1</item>
+        <item>@string/learning_quickly_6_question_4_option_2</item>
+        <item>@string/learning_quickly_6_question_4_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_6_question_5">
+        True or false: One of the most straightforward ways to grow
+        in tech is to just immediately incorporate every piece of
+        feedback you get.
+    </string>
+
+    <!-- LESSON SEVEN -->
+    <string name="learning_quickly_lesson_7_name">
+        Finding The Best Environment For Learning
+    </string>
+
+    <string name="learning_quickly_7_question_1">
+        What is the best way to learn a codebase?
+    </string>
+    <string name="learning_quickly_7_question_1_option_1">
+        Reading as much documentation as you can
+    </string>
+    <string name="learning_quickly_7_question_1_option_2">
+        Just making some code changes in it and seeing what happens
+    </string>
+    <string name="learning_quickly_7_question_1_option_3">
+        Following 5-10 tutorials to build various clone projects
+        with the language the codebase is written in
+    </string>
+    <string-array name="learning_quickly_7_question_1_options">
+        <item>@string/learning_quickly_5_question_1_option_1</item>
+        <item>@string/learning_quickly_5_question_1_option_2</item>
+        <item>@string/learning_quickly_5_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_7_question_2">
+        True or false: In software, experimenting and making changes is cheap,
+        so a great way to learn is by trying a lot of things and seeing what
+        happens, even if you do not fully understand the overall codebase yet.
+    </string>
+
+    <string name="learning_quickly_7_question_3">
+        Why is structured learning like tutorials and courses
+        not effectively for actually learning a codebase?
+    </string>
+    <string name="learning_quickly_7_question_3_option_1">
+        The good ones are too expensive
+    </string>
+    <string name="learning_quickly_7_question_3_option_2">
+        They take too long
+    </string>
+    <string name="learning_quickly_7_question_3_option_3">
+        They do not actually prepare you for the end goal,
+        taking you away from the core concept of learning by doing
+    </string>
+    <string-array name="learning_quickly_7_question_3_options">
+        <item>@string/learning_quickly_5_question_3_option_1</item>
+        <item>@string/learning_quickly_5_question_3_option_2</item>
+        <item>@string/learning_quickly_5_question_3_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
 </resources>
