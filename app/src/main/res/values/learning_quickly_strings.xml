@@ -344,4 +344,87 @@
         <item>@string/learning_quickly_4_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON FIVE -->
+    <string name="learning_quickly_lesson_5_name">
+        How To Learn A New Codebase Fast
+    </string>
+
+    <string name="learning_quickly_5_question_1">
+        What is the best way to learn a codebase?
+    </string>
+    <string name="learning_quickly_5_question_1_option_1">
+        Reading as much documentation as you can
+    </string>
+    <string name="learning_quickly_5_question_1_option_2">
+        Just making some code changes in it and seeing what happens
+    </string>
+    <string name="learning_quickly_5_question_1_option_3">
+        Following 5-10 tutorials to build various clone projects
+        with the language the codebase is written in
+    </string>
+    <string-array name="learning_quickly_5_question_1_options">
+        <item>@string/learning_quickly_5_question_1_option_1</item>
+        <item>@string/learning_quickly_5_question_1_option_2</item>
+        <item>@string/learning_quickly_5_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_5_question_2">
+        True or false: In software, experimenting and making changes is cheap,
+        so a great way to learn is by trying a lot of things and seeing what
+        happens, even if you do not fully understand the overall codebase yet.
+    </string>
+
+    <string name="learning_quickly_5_question_3">
+        Why is structured learning like tutorials and courses
+        not effectively for actually learning a codebase?
+    </string>
+    <string name="learning_quickly_5_question_3_option_1">
+        The good ones are too expensive
+    </string>
+    <string name="learning_quickly_5_question_3_option_2">
+        They take too long
+    </string>
+    <string name="learning_quickly_5_question_3_option_3">
+        They do not actually prepare you for the end goal,
+        taking you away from the core concept of learning by doing
+    </string>
+    <string-array name="learning_quickly_5_question_3_options">
+        <item>@string/learning_quickly_5_question_3_option_1</item>
+        <item>@string/learning_quickly_5_question_3_option_2</item>
+        <item>@string/learning_quickly_5_question_3_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_5_question_4">
+        True or false: Before you jump into a codebase,
+        you should ideally get a certificate in that tech stack before working with it.
+    </string>
+
+    <string name="learning_quickly_5_question_5">
+        Which of these is a good way to learn a codebase with your
+        first code changes within it?
+    </string>
+    <string name="learning_quickly_5_question_5_option_1">
+        Pair program with someone and have them tell you exactly what to do
+    </string>
+    <string name="learning_quickly_5_question_5_option_2">
+        Submit a pull request with a small to medium amount of code changes,
+        even if you know it is far from perfect
+    </string>
+    <string name="learning_quickly_5_question_5_option_3">
+        Try to build a new very large and complex feature
+    </string>
+    <string-array name="learning_quickly_5_question_5_options">
+        <item>@string/learning_quickly_5_question_5_option_1</item>
+        <item>@string/learning_quickly_5_question_5_option_2</item>
+        <item>@string/learning_quickly_5_question_5_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="learning_quickly_5_question_6">
+        True or false: Breaking something locally is an effective way
+        to learn a codebase.
+    </string>
 </resources>
