@@ -495,49 +495,50 @@
     </string>
 
     <string name="learning_quickly_7_question_1">
-        What is the best way to learn a codebase?
+        True or false: The best way to level up is to join a team
+        where you are the absolute strongest and know more than everybody.
+        This way, you will get made the lead by default.
     </string>
-    <string name="learning_quickly_7_question_1_option_1">
-        Reading as much documentation as you can
-    </string>
-    <string name="learning_quickly_7_question_1_option_2">
-        Just making some code changes in it and seeing what happens
-    </string>
-    <string name="learning_quickly_7_question_1_option_3">
-        Following 5-10 tutorials to build various clone projects
-        with the language the codebase is written in
-    </string>
-    <string-array name="learning_quickly_7_question_1_options">
-        <item>@string/learning_quickly_5_question_1_option_1</item>
-        <item>@string/learning_quickly_5_question_1_option_2</item>
-        <item>@string/learning_quickly_5_question_1_option_3</item>
-        <item>@string/none_of_the_above</item>
-    </string-array>
 
     <string name="learning_quickly_7_question_2">
-        True or false: In software, experimenting and making changes is cheap,
-        so a great way to learn is by trying a lot of things and seeing what
-        happens, even if you do not fully understand the overall codebase yet.
+        Why is it good to be the dumbest person in the room?
     </string>
+    <string name="learning_quickly_7_question_2_option_1">
+        You will get more feedback
+    </string>
+    <string name="learning_quickly_7_question_2_option_2">
+        You have more people to learn from
+    </string>
+    <string name="learning_quickly_7_question_2_option_3">
+        Embracing the struggle and being uncomfortable
+        motivates you to become better
+    </string>
+    <string-array name="learning_quickly_7_question_2_options">
+        <item>@string/learning_quickly_7_question_2_option_1</item>
+        <item>@string/learning_quickly_7_question_2_option_2</item>
+        <item>@string/learning_quickly_7_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 
     <string name="learning_quickly_7_question_3">
-        Why is structured learning like tutorials and courses
-        not effectively for actually learning a codebase?
+        How can you really level up your skills building within a tech
+        stack you are already familiar with?
     </string>
     <string name="learning_quickly_7_question_3_option_1">
-        The good ones are too expensive
+        Refactor all the code you have ever written
     </string>
     <string name="learning_quickly_7_question_3_option_2">
-        They take too long
+        Incorporate blockchain
     </string>
     <string name="learning_quickly_7_question_3_option_3">
-        They do not actually prepare you for the end goal,
-        taking you away from the core concept of learning by doing
+        Build a product with a higher level of quality and
+        fidelity than you have ever done, handling extreme
+        edge cases and scale
     </string>
     <string-array name="learning_quickly_7_question_3_options">
-        <item>@string/learning_quickly_5_question_3_option_1</item>
-        <item>@string/learning_quickly_5_question_3_option_2</item>
-        <item>@string/learning_quickly_5_question_3_option_3</item>
+        <item>@string/learning_quickly_7_question_3_option_1</item>
+        <item>@string/learning_quickly_7_question_3_option_2</item>
+        <item>@string/learning_quickly_7_question_3_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
 </resources>

@@ -20,6 +20,7 @@ object LearningQuicklyContentProvider {
             lessons!!.add(getLesson4(context = context))
             lessons!!.add(getLesson5(context = context))
             lessons!!.add(getLesson6(context = context))
+            lessons!!.add(getLesson7(context = context))
         }
         return lessons!!
     }
@@ -341,6 +342,41 @@ object LearningQuicklyContentProvider {
             type = LessonType.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_6_name,
             youtubeVideoId = "ZfZzJ6C235s",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson7(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_7_question_1,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.false_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_7_question_2,
+                optionsListResId = R.array.learning_quickly_7_question_2_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.learning_quickly_7_question_3,
+                optionsListResId = R.array.learning_quickly_7_question_3_options,
+                correctAnswerId = R.string.learning_quickly_7_question_3_option_3
+            )
+        )
+
+        val lessonId = "learning_quickly_7"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.LEARNING_QUICKLY,
+            nameResId = R.string.learning_quickly_lesson_7_name,
+            youtubeVideoId = "1jJf0ehQ7Fo",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )
