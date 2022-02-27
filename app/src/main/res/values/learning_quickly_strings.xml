@@ -378,7 +378,7 @@
 
     <string name="learning_quickly_5_question_3">
         Why is structured learning like tutorials and courses
-        not effectively for actually learning a codebase?
+        not effective for actually learning a codebase?
     </string>
     <string name="learning_quickly_5_question_3_option_1">
         The good ones are too expensive
@@ -435,14 +435,14 @@
 
     <string name="learning_quickly_6_question_1">
         True or false: If you get a piece of feedback,
-        you should assume good intent and that it is correct.
+        you should initially assume good intent and that it is correct.
     </string>
 
     <string name="learning_quickly_6_question_2">
         What should be your immediate reaction when you get a piece of constructive feedback?
     </string>
     <string name="learning_quickly_6_question_2_option_1">
-        Be defensive and ask them questions to make the giver validate the feedback
+        Be defensive and ask questions to make the giver validate the feedback
     </string>
     <string name="learning_quickly_6_question_2_option_2">
         Provide a piece of constructive criticism of the giver in return
@@ -463,7 +463,7 @@
     </string>
 
     <string name="learning_quickly_6_question_4">
-        Which of the following are good things to do whe you get a piece of feedback
+        Which of the following are good things you can do when you get a piece of feedback
         that you genuinely believe is not constructive and is phrased
         in a harmful way?
     </string>
