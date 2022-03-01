@@ -255,4 +255,53 @@
         <item>@string/meetings_4_question_4_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
+
+    <!-- LESSON FIVE -->
+    <string name="meetings_lesson_5_name">
+        A Simple Trick To Make Your Meetings More Efficient
+    </string>
+
+    <string name="meetings_5_question_1">
+        What can you do before a meeting to empower it
+        to achieve more outcomes?
+    </string>
+    <string name="meetings_5_question_1_option_1">
+        Meditate
+    </string>
+    <string name="meetings_5_question_1_option_2">
+        Get free donuts for everyone in the meeting
+    </string>
+    <string name="meetings_5_question_1_option_3">
+        Write down an agenda with discussion topics
+        and seed it into the meeting notes document
+    </string>
+    <string-array name="meetings_5_question_1_options">
+        <item>@string/meetings_5_question_1_option_1</item>
+        <item>@string/meetings_5_question_1_option_2</item>
+        <item>@string/meetings_5_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_5_question_2">
+        You write down an agenda for your upcoming meeting,
+        and you realize that it is incredibly rich and complex.
+        What else can you do to level up the meeting?
+    </string>
+    <string name="meetings_5_question_2_option_1">
+        Nothing, an agenda is all you need
+    </string>
+    <string name="meetings_5_question_2_option_2">
+        Come up with some funny stories to tell during the meeting
+    </string>
+    <string name="meetings_5_question_2_option_3">
+        Let everyone else on the meeting know that you
+        have seeded it with an agenda, and you would appreciate
+        them going through the agenda beforehand
+    </string>
+    <string-array name="meetings_5_question_2_options">
+        <item>@string/meetings_5_question_2_option_1</item>
+        <item>@string/meetings_5_question_2_option_2</item>
+        <item>@string/meetings_5_question_2_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
 </resources>
