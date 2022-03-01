@@ -1,4 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- LESSON ONE -->
+    <string name="meetings_lesson_1_name">
+        The #1 Thing To Remember With Meetings
+    </string>
+
+    <string name="meetings_question_1">
+        Which is the core principle you have to remember with meetings?
+    </string>
+    <string name="meetings_question_1_option_1">
+        It is important to go to every single meeting,
+        especially as junior engineer
+    </string>
+    <string name="meetings_question_1_option_2">
+        They are inherently expensive,
+        as they are a pure usage of time
+    </string>
+    <string name="meetings_question_1_option_3">
+        They are necessary for status updates
+    </string>
+    <string-array name="meetings_question_1_options">
+        <item>@string/meetings_question_1_option_1</item>
+        <item>@string/meetings_question_1_option_2</item>
+        <item>@string/meetings_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_question_2">
+        True or false: It is safer to just keep attending a meeting series,
+        even if you are not clear exactly what value you are getting from it.
+    </string>
+
+    <string name="meetings_question_3">
+        You have a meeting series where there is always action,
+        but there is always an awkward portion at the end where
+        people run out of topics. What should you do?
+    </string>
+    <string name="meetings_question_3_option_1">
+        Decrease the length of the meeting
+    </string>
+    <string name="meetings_question_3_option_2">
+        Delete the meeting
+    </string>
+    <string name="meetings_question_3_option_3">
+        Invite more people to the meeting,
+        so you have more to talk about
+    </string>
+    <string-array name="meetings_question_3_options">
+        <item>@string/meetings_question_3_option_1</item>
+        <item>@string/meetings_question_3_option_2</item>
+        <item>@string/meetings_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_question_4">
+        True or false: When in doubt of a meeting\'s value prop,
+        just delete it.
+        You can always bring it back later.
+    </string>
+
+    <string name="meetings_question_5">
+        You have a 1 on 1 meeting series,
+        and by the time of the meeting, you feel like
+        there are a lot of issues that you two are getting to
+        too late. What should you do?
+    </string>
+    <string name="meetings_question_5_option_1">
+        Decrease the length of the meeting
+    </string>
+    <string name="meetings_question_5_option_2">
+        Increase the frequency of the meeting
+    </string>
+    <string name="meetings_question_5_option_3">
+        Push for the team to work on projects more slowly
+    </string>
+    <string-array name="meetings_question_5_options">
+        <item>@string/meetings_question_5_option_1</item>
+        <item>@string/meetings_question_5_option_2</item>
+        <item>@string/meetings_question_5_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
 </resources>
