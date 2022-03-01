@@ -16,6 +16,7 @@ object MeetingsLessonProvider {
             lessons = mutableListOf()
             lessons!!.add(getLesson1(context = context))
             lessons!!.add(getLesson2(context = context))
+            lessons!!.add(getLesson3(context = context))
         }
         return lessons!!
     }
@@ -68,6 +69,7 @@ object MeetingsLessonProvider {
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )
     }
+
     private fun getLesson2(context: Context): Lesson {
         val questions: MutableList<Question> = mutableListOf()
         questions.add(
@@ -91,6 +93,41 @@ object MeetingsLessonProvider {
             type = LessonType.MEETINGS,
             nameResId = R.string.meetings_lesson_2_name,
             youtubeVideoId = "ZzQquAy7gwQ",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson3(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.meetings_3_question_1,
+                optionsListResId = R.array.meetings_3_question_1_options,
+                correctAnswerId = R.string.meetings_3_question_1_option_2
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.meetings_3_question_2,
+                optionsListResId = R.array.true_false_options,
+                correctAnswerId = R.string.true_option
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.meetings_3_question_3,
+                optionsListResId = R.array.meetings_3_question_3_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+
+        val lessonId = "meetings_3"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.MEETINGS,
+            nameResId = R.string.meetings_lesson_3_name,
+            youtubeVideoId = "BIcS6glgqyQ",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

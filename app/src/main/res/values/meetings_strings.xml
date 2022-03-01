@@ -126,4 +126,54 @@
         <item>@string/meetings_2_question_2_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
+
+    <!-- LESSON THREE -->
+    <string name="meetings_lesson_3_name">
+        The Most Straightforward Way To Level Up Your Meetings
+    </string>
+
+    <string name="meetings_3_question_1">
+        What is the most straightforward way to level up a meeting?
+    </string>
+    <string name="meetings_3_question_1_option_1">
+        Make it longer
+    </string>
+    <string name="meetings_3_question_1_option_2">
+        Write down what happens in the meeting and maintain a running set of notes
+    </string>
+    <string name="meetings_3_question_1_option_3">
+        Invite more people in leadership roles to the meeting
+    </string>
+    <string-array name="meetings_3_question_1_options">
+        <item>@string/meetings_3_question_1_option_1</item>
+        <item>@string/meetings_3_question_1_option_2</item>
+        <item>@string/meetings_3_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_3_question_2">
+        True or false: Maintaining a good set of meeting notes
+        can help you substantially with promotion.
+    </string>
+
+    <string name="meetings_3_question_3">
+        Which of the following are benefits of maintaining
+        meeting notes?
+    </string>
+    <string name="meetings_3_question_3_option_1">
+        It helps you remember what happened during the meeting
+    </string>
+    <string name="meetings_3_question_3_option_2">
+        It allows you to reflect on how useful a meeting series is
+    </string>
+    <string name="meetings_3_question_3_option_3">
+        It shows that you care a lot about the meeting and the
+        people within it
+    </string>
+    <string-array name="meetings_3_question_3_options">
+        <item>@string/meetings_3_question_3_option_1</item>
+        <item>@string/meetings_3_question_3_option_2</item>
+        <item>@string/meetings_3_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
