@@ -36,20 +36,30 @@ class PreferencesManager(context: Context) {
 
     fun getContentOrder(): MutableList<LessonType> {
         val orderedTypes = prefs.getString(KEY_CONTENT_ORDER, "")
+        val defaultTypes = mutableListOf(
+            LessonType.INTERVIEWING,
+            LessonType.RESUME,
+            LessonType.PRODUCTIVITY,
+            LessonType.PROMOTION,
+            LessonType.LEARNING_QUICKLY,
+            LessonType.MEETINGS
+        )
+
         if (orderedTypes!!.isEmpty()) {
-            return mutableListOf(
-                LessonType.INTERVIEWING,
-                LessonType.RESUME,
-                LessonType.PRODUCTIVITY,
-                LessonType.PROMOTION,
-                LessonType.LEARNING_QUICKLY
-            )
+            return defaultTypes
         } else {
             val splitUpTypes = orderedTypes.split(",")
             val lessonTypes = mutableListOf<LessonType>()
             for (type in splitUpTypes) {
                 lessonTypes.add(LessonType.valueOf(type))
             }
+
+            for (defaultType in defaultTypes) {
+                if (!lessonTypes.contains(defaultType)) {
+                    lessonTypes.add(defaultType)
+                }
+            }
+
             return lessonTypes
         }
     }

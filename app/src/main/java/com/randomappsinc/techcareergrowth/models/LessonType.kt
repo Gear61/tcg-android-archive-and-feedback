@@ -27,5 +27,9 @@ enum class LessonType(
     LEARNING_QUICKLY(
         R.string.learning_quickly,
         R.string.learning_stuff_quickly
+    ),
+    MEETINGS(
+        R.string.meetings,
+        R.string.having_effective_meetings
     )
 }
