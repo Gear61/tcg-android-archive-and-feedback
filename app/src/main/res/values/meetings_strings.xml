@@ -304,4 +304,40 @@
         <item>@string/meetings_5_question_2_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
+
+    <!-- LESSON SIX -->
+    <string name="meetings_lesson_6_name">
+        1 on 1 Meetings Are An Exercise In Proactivity
+    </string>
+
+    <string name="meetings_6_question_1">
+        Why should you err on the side of creating a
+        1 on 1 meeting instead of waiting for it to
+        be absolutely necessary?
+    </string>
+    <string name="meetings_6_question_1_option_1">
+        They are relatively cheap as they only
+        consume the time of 2 people
+    </string>
+    <string name="meetings_6_question_1_option_2">
+        1 on 1 meetings are crucial to functioning
+        optimally within a team due to their deep
+        relationship-building nature
+    </string>
+    <string name="meetings_6_question_1_option_3">
+        The consequences of not having a 1 on 1 meeting
+        when you should have had one are often really painful
+    </string>
+    <string-array name="meetings_6_question_1_options">
+        <item>@string/meetings_6_question_1_option_1</item>
+        <item>@string/meetings_6_question_1_option_2</item>
+        <item>@string/meetings_6_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_6_question_2">
+        True or false: Team meetings are more important
+        than 1 on 1 meetings, so you should create them
+        more aggressively for everyone to stay in sync.
+    </string>
 </resources>
