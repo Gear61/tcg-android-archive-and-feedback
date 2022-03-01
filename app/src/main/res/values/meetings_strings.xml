@@ -75,7 +75,7 @@
     <string name="meetings_1_question_5_option_3">
         Push for the team to work on projects more slowly
     </string>
-    <string-array name="meetings_question_5_options">
+    <string-array name="meetings_1_question_5_options">
         <item>@string/meetings_1_question_5_option_1</item>
         <item>@string/meetings_1_question_5_option_2</item>
         <item>@string/meetings_1_question_5_option_3</item>
@@ -175,5 +175,84 @@
         <item>@string/meetings_3_question_3_option_2</item>
         <item>@string/meetings_3_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <!-- LESSON FOUR -->
+    <string name="meetings_lesson_4_name">
+        Taking Amazing Meeting Notes
+    </string>
+
+    <string name="meetings_4_question_1">
+        For any meeting, what should you make sure for it?
+    </string>
+    <string name="meetings_4_question_1_option_1">
+        It is clear who is responsible for taking notes
+    </string>
+    <string name="meetings_4_question_1_option_2">
+        That everyone on the meeting invite is coming
+    </string>
+    <string name="meetings_4_question_1_option_3">
+        That at least 5 people are on the meeting
+        if it is a team meeting
+    </string>
+    <string-array name="meetings_4_question_1_options">
+        <item>@string/meetings_4_question_1_option_1</item>
+        <item>@string/meetings_4_question_1_option_2</item>
+        <item>@string/meetings_4_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_4_question_2">
+        True or false: As long as you write down most of what
+        was said in a meeting, you have taken a good set
+        of meeting notes.
+    </string>
+
+    <string name="meetings_4_question_3">
+        What can you do when someone else in a meeting
+        says something really insightful?
+    </string>
+    <string name="meetings_4_question_3_option_1">
+        Stop paying attention to the meeting,
+        so you can write it down
+    </string>
+    <string name="meetings_4_question_3_option_2">
+        Stop the meeting and ask them to send an email
+        to the entire team with that insight
+    </string>
+    <string name="meetings_4_question_3_option_3">
+        Call out how you found what they just said to be very
+        valuable and ask them for a bit of time so you can write
+        it down
+    </string>
+    <string-array name="meetings_4_question_3_options">
+        <item>@string/meetings_4_question_3_option_1</item>
+        <item>@string/meetings_4_question_3_option_2</item>
+        <item>@string/meetings_4_question_3_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_4_question_4">
+        Your meeting is winding down, and you have a good set of
+        notes of what was said during the meeting. What should
+        you do next?
+    </string>
+    <string name="meetings_4_question_4_option_1">
+        Your job is done. Tune out of the meeting
+    </string>
+    <string name="meetings_4_question_4_option_2">
+        Work with the meeting group to convert
+        what was covered in the meeting into concrete
+        action items
+    </string>
+    <string name="meetings_4_question_4_option_3">
+        Check your emails to see what you missed
+        during the meeting
+    </string>
+    <string-array name="meetings_4_question_4_options">
+        <item>@string/meetings_4_question_4_option_1</item>
+        <item>@string/meetings_4_question_4_option_2</item>
+        <item>@string/meetings_4_question_4_option_3</item>
+        <item>@string/none_of_the_above</item>
     </string-array>
 </resources>
