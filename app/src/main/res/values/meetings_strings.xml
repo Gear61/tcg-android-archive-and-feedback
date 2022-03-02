@@ -495,4 +495,68 @@
         <item>@string/meetings_9_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON TEN -->
+    <string name="meetings_lesson_10_name">
+        Structuring Your Manager 1 on 1
+    </string>
+
+    <string name="meetings_10_question_1">
+        If you are working in a strong, high-growth tech company,
+        what is a good frequency to meet with your manager?
+    </string>
+    <string name="meetings_10_question_1_option_1">
+        Once a day
+    </string>
+    <string name="meetings_10_question_1_option_2">
+        Once every 1-2 weeks
+    </string>
+    <string name="meetings_10_question_1_option_3">
+        Once every 1-2 months
+    </string>
+    <string-array name="meetings_10_question_1_options">
+        <item>@string/meetings_10_question_1_option_1</item>
+        <item>@string/meetings_10_question_1_option_2</item>
+        <item>@string/meetings_10_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_10_question_2">
+        True or false: Managers are extremely busy,
+        so it is best to have ad-hoc 1 on 1 meetings
+        with them based on whenever they are able to find
+        a sliver of free time.
+    </string>
+
+    <!-- LESSON ELEVEN -->
+    <string name="meetings_lesson_11_name">
+        What To Do If Your Manager Keeps Canceling Your 1 on 1s
+    </string>
+
+    <string name="meetings_11_question_1">
+        If you are working in a strong, high-growth tech company,
+        what is a good frequency to meet with your manager?
+    </string>
+    <string name="meetings_11_question_1_option_1">
+        Once a day
+    </string>
+    <string name="meetings_11_question_1_option_2">
+        Once every 1-2 weeks
+    </string>
+    <string name="meetings_11_question_1_option_3">
+        Once every 1-2 months
+    </string>
+    <string-array name="meetings_11_question_1_options">
+        <item>@string/meetings_10_question_1_option_1</item>
+        <item>@string/meetings_10_question_1_option_2</item>
+        <item>@string/meetings_10_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_11_question_2">
+        True or false: Managers are extremely busy,
+        so it is best to have ad-hoc 1 on 1 meetings
+        with them based on when they are able to find
+        a sliver of free time.
+    </string>
 </resources>
