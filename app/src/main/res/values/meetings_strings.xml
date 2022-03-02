@@ -613,4 +613,53 @@
         <item>@string/meetings_12_question_2_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON THIRTEEN -->
+    <string name="meetings_lesson_13_name">
+        Having The Proper Mentality For Manager 1 on 1s
+    </string>
+
+    <string name="meetings_13_question_1">
+        True or false: Your manager is your superior,
+        so it is on them to ask the right questions and figure
+        out what you need in your 1 on 1 meetings. You just need
+        to show up on time.
+    </string>
+
+    <string name="meetings_13_question_2">
+        Why is the burden on you to set the agenda and overall plan
+        with your manager 1 on 1s?
+    </string>
+    <string name="meetings_13_question_2_option_1">
+        Your manager is not a mind reader.
+        Only you truly know your own needs
+    </string>
+    <string name="meetings_13_question_2_option_2">
+        Your manager is likely very busy and their mind space
+        is split up among multiple reports. Since you only have 1
+        manager, you are better positioned to bring focus to the
+        meeting
+    </string>
+    <string name="meetings_13_question_2_option_3">
+        Creating plans and direction setting are vital
+        skills for growing in tech
+    </string>
+    <string-array name="meetings_13_question_2_options">
+        <item>@string/meetings_13_question_2_option_1</item>
+        <item>@string/meetings_13_question_2_option_2</item>
+        <item>@string/meetings_13_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_13_question_3">
+        True or false: It is better for your career growth to
+        view your manager as being a resource for you instead of
+        you being a resource for your manager.
+    </string>
+
+    <string name="meetings_13_question_4">
+        True or false: A good manager 1 on 1 involves you
+        giving status updates and then waiting for instruction
+        on what to do next.
+    </string>
 </resources>
