@@ -441,4 +441,58 @@
         <item>@string/meetings_8_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON NINE -->
+    <string name="meetings_lesson_9_name">
+        Be Awkward
+    </string>
+
+    <string name="meetings_9_question_1">
+        Why should you be awkward and even a little bit uncomfortable
+        in 1 on 1 meetings?
+    </string>
+    <string name="meetings_9_question_1_option_1">
+        1 on 1 meetings are inherently a very inefficient way of
+        conveying information, so you should take the opportunity
+        to talk about more real, heavy-hitting topics
+    </string>
+    <string name="meetings_9_question_1_option_2">
+        True growth happens when you are uncomfortable
+    </string>
+    <string name="meetings_9_question_1_option_3">
+        The transparency helps build the relationship
+    </string>
+    <string-array name="meetings_9_question_1_options">
+        <item>@string/meetings_9_question_1_option_1</item>
+        <item>@string/meetings_9_question_1_option_2</item>
+        <item>@string/meetings_9_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_9_question_2">
+        True or false: 1 on 1 meetings are great for staying in sync,
+        so status updates are one of the best things you can
+        talk about during them.
+    </string>
+
+    <string name="meetings_9_question_3">
+        Which of the following are good things to talk about
+        in 1 on 1 meetings?
+    </string>
+    <string name="meetings_9_question_3_option_1">
+        Feedback to improve
+    </string>
+    <string name="meetings_9_question_3_option_2">
+        How you are feeling
+    </string>
+    <string name="meetings_9_question_3_option_3">
+        The struggles you are facing,
+        both inside and outside of work
+    </string>
+    <string-array name="meetings_9_question_3_options">
+        <item>@string/meetings_9_question_3_option_1</item>
+        <item>@string/meetings_9_question_3_option_2</item>
+        <item>@string/meetings_9_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
