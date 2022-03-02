@@ -387,4 +387,58 @@
         <item>@string/meetings_7_question_2_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON EIGHT -->
+    <string name="meetings_lesson_8_name">
+        Build The Relationship
+    </string>
+
+    <string name="meetings_8_question_1">
+        Why should you build the relationship in
+        1 on 1 meetings?
+    </string>
+    <string name="meetings_8_question_1_option_1">
+        The more intimate nature makes it especially
+        effective for earning social capital
+    </string>
+    <string name="meetings_8_question_1_option_2">
+        It helps pass the time
+    </string>
+    <string name="meetings_8_question_1_option_3">
+        So they can help debug your code
+    </string>
+    <string-array name="meetings_8_question_1_options">
+        <item>@string/meetings_8_question_1_option_1</item>
+        <item>@string/meetings_8_question_1_option_2</item>
+        <item>@string/meetings_8_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_8_question_2">
+        True or false: Small talk is okay in 1 on 1 meetings
+        to break the ice and learn more about the other
+        person\'s life outside of work.
+    </string>
+
+    <string name="meetings_8_question_3">
+        Why are deep relationships needed in tech,
+        especially at senior levels?
+    </string>
+    <string name="meetings_8_question_3_option_1">
+        When things get hard or go wrong, your earned trust
+        will lead to these people having your back
+    </string>
+    <string name="meetings_8_question_3_option_2">
+        So you can play politics effectively
+        and exclude your enemies
+    </string>
+    <string name="meetings_8_question_3_option_3">
+        So you can get more lenient code reviews
+    </string>
+    <string-array name="meetings_8_question_3_options">
+        <item>@string/meetings_8_question_3_option_1</item>
+        <item>@string/meetings_8_question_3_option_2</item>
+        <item>@string/meetings_8_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
