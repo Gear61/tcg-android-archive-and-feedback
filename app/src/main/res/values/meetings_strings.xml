@@ -340,4 +340,51 @@
         than 1 on 1 meetings, so you should create them
         more aggressively for everyone to stay in sync.
     </string>
+
+    <!-- LESSON SEVEN -->
+    <string name="meetings_lesson_7_name">
+        Common Scenarios For Setting Up 1 on 1s
+    </string>
+
+    <string name="meetings_7_question_1">
+        What is the main condition to look out for
+        that could prompt you to set up new 1 on 1 meetings?
+    </string>
+    <string name="meetings_7_question_1_option_1">
+        New people entering your work ecosystem
+    </string>
+    <string name="meetings_7_question_1_option_2">
+        Needing a lot of executives to like you,
+        so you set up meetings with them to get promoted
+    </string>
+    <string name="meetings_7_question_3_option_2">
+        You are bored and just want people to talk to
+    </string>
+    <string-array name="meetings_7_question_1_options">
+        <item>@string/meetings_7_question_1_option_1</item>
+        <item>@string/meetings_7_question_1_option_2</item>
+        <item>@string/meetings_7_question_3_option_2</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_7_question_2">
+        Which of the following scenarios is something
+        you probably should set up some new 1 on 1
+        meetings for?
+    </string>
+    <string name="meetings_7_question_2_option_1">
+        You are joining a new team
+    </string>
+    <string name="meetings_7_question_2_option_2">
+        New members are joining your team
+    </string>
+    <string name="meetings_7_question_2_option_3">
+        You need to work with a new team cross functionally
+    </string>
+    <string-array name="meetings_7_question_2_options">
+        <item>@string/meetings_7_question_2_option_1</item>
+        <item>@string/meetings_7_question_2_option_2</item>
+        <item>@string/meetings_7_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
