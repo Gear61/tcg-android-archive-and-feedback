@@ -534,29 +534,51 @@
     </string>
 
     <string name="meetings_11_question_1">
-        If you are working in a strong, high-growth tech company,
-        what is a good frequency to meet with your manager?
+        Your manager keeps canceling your 1 on 1s due to a perceived
+        lack of discussion topics, even though you always have
+        a lot to talk about. What do you do?
     </string>
     <string name="meetings_11_question_1_option_1">
-        Once a day
+        Nothing, just talk with someone else instead
     </string>
     <string name="meetings_11_question_1_option_2">
-        Once every 1-2 weeks
+        Fill in a detailed, well-articulated agenda before
+        each 1 on 1 and share it with your manager prior
+        to the meeting
     </string>
     <string name="meetings_11_question_1_option_3">
-        Once every 1-2 months
+        Complain to the manager of your manager
     </string>
     <string-array name="meetings_11_question_1_options">
-        <item>@string/meetings_10_question_1_option_1</item>
-        <item>@string/meetings_10_question_1_option_2</item>
-        <item>@string/meetings_10_question_1_option_3</item>
+        <item>@string/meetings_11_question_1_option_1</item>
+        <item>@string/meetings_11_question_1_option_2</item>
+        <item>@string/meetings_11_question_1_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
 
     <string name="meetings_11_question_2">
-        True or false: Managers are extremely busy,
-        so it is best to have ad-hoc 1 on 1 meetings
-        with them based on when they are able to find
-        a sliver of free time.
+        Your manager cancels your upcoming 1 on 1 meeting
+        due to an unexpected, new fire that they have to deal
+        with. However, you have a lot of important issues to talk about.
+        What do you do?
     </string>
+    <string name="meetings_11_question_2_option_1">
+        Nothing, just wait for the next 1 on 1 as this is just how
+        things are sometimes
+    </string>
+    <string name="meetings_11_question_2_option_2">
+        Tell them that you understand the need to deal with fires
+        and that you really value your time together. Proactively
+        find a new time later in the week and move the 1 on 1 there
+    </string>
+    <string name="meetings_11_question_2_option_3">
+        Tell your manager that they should just ignore the fire
+        as things break all the time
+    </string>
+    <string-array name="meetings_11_question_2_options">
+        <item>@string/meetings_11_question_2_option_1</item>
+        <item>@string/meetings_11_question_2_option_2</item>
+        <item>@string/meetings_11_question_2_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
 </resources>
