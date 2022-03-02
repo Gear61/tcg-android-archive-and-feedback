@@ -581,4 +581,36 @@
         <item>@string/meetings_11_question_2_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
+
+    <!-- LESSON TWELVE -->
+    <string name="meetings_lesson_12_name">
+        Why Delayed And Infrequent Manager 1 on 1s Are Like Procrastination
+    </string>
+
+    <string name="meetings_12_question_1">
+        True or false: Delayed and infrequent manager 1 on 1s
+        can seriously affect your career growth long-term.
+    </string>
+
+    <string name="meetings_12_question_2">
+        Why is it crucial to have frequent, consistent 1 on 1 meetings
+        with your manager?
+    </string>
+    <string name="meetings_12_question_2_option_1">
+        It forces you two to think about serious, longer-term issues
+        like your personal career growth
+    </string>
+    <string name="meetings_12_question_2_option_2">
+        It is vital towards building up this crucial work relationships=
+    </string>
+    <string name="meetings_12_question_2_option_3">
+        It maintains the quality of your work life as it prevents
+        work problems from festering over time
+    </string>
+    <string-array name="meetings_12_question_2_options">
+        <item>@string/meetings_12_question_2_option_1</item>
+        <item>@string/meetings_12_question_2_option_1</item>
+        <item>@string/meetings_12_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
