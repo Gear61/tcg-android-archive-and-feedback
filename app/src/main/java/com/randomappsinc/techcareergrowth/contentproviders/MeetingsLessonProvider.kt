@@ -30,6 +30,7 @@ object MeetingsLessonProvider {
             lessons!!.add(getLesson14(context = context))
             lessons!!.add(getLesson15(context = context))
             lessons!!.add(getLesson16(context = context))
+            lessons!!.add(getLesson17(context = context))
         }
         return lessons!!
     }
@@ -561,6 +562,41 @@ object MeetingsLessonProvider {
             type = LessonType.MEETINGS,
             nameResId = R.string.meetings_lesson_16_name,
             youtubeVideoId = "7ZM7YNKHLy8",
+            questions = questions,
+            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+        )
+    }
+
+    private fun getLesson17(context: Context): Lesson {
+        val questions: MutableList<Question> = mutableListOf()
+        questions.add(
+            Question(
+                textResId = R.string.meetings_17_question_1,
+                optionsListResId = R.array.meetings_17_question_1_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.meetings_17_question_2,
+                optionsListResId = R.array.yes_no_options,
+                correctAnswerId = R.string.no
+            )
+        )
+        questions.add(
+            Question(
+                textResId = R.string.meetings_17_question_3,
+                optionsListResId = R.array.meetings_17_question_3_options,
+                correctAnswerId = R.string.all_of_the_above
+            )
+        )
+
+        val lessonId = "meetings_17"
+        return Lesson(
+            id = lessonId,
+            type = LessonType.MEETINGS,
+            nameResId = R.string.meetings_lesson_17_name,
+            youtubeVideoId = "qWXfT2fiPVE",
             questions = questions,
             isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
         )

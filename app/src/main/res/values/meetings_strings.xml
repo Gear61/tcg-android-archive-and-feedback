@@ -791,4 +791,69 @@
         <item>@string/meetings_16_question_3_option_1</item>
         <item>@string/meetings_16_question_3_option_2</item>
     </string-array>
+
+    <!-- LESSON SEVENTEEN -->
+    <string name="meetings_lesson_17_name">
+        Voicing Your Problems And Frustrations Productively
+    </string>
+
+    <string name="meetings_17_question_1">
+        Which of these are important things to remember
+        as you are voicing your problems and frustrations?
+    </string>
+    <string name="meetings_17_question_1_option_1">
+        Start off with how the issue makes you feel,
+        making the dialogue more about how negative your
+        experience was
+    </string>
+    <string name="meetings_17_question_1_option_2">
+        Avoid placing blame on others
+    </string>
+    <string name="meetings_17_question_1_option_3">
+        Talk tentatively using phrases like [I think] and [Maybe].
+        Acknowledge the fact that you may not have all the answers
+        and the issue may be something that is on you instead of a problem
+        inflicted by another party
+    </string>
+    <string-array name="meetings_17_question_1_options">
+        <item>@string/meetings_17_question_1_option_1</item>
+        <item>@string/meetings_17_question_1_option_2</item>
+        <item>@string/meetings_17_question_1_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_17_question_2">
+        Is the following a good way to voice a problem:
+        I really hate how John thinks about the product.
+        His vision does not make sense, and it will drag
+        down the team. You can tell that he does not have
+        enough experience.
+    </string>
+
+    <string name="meetings_17_question_3">
+        [I really hate how John thinks about the product.
+        His vision does not make sense, and it will drag
+        down the team. You can tell that he does not have
+        enough experience.] - What is wrong with how this
+        frustration is phrased?
+    </string>
+    <string name="meetings_17_question_3_option_1">
+        There is no tentative language.
+        The speaker is absolutely confident that John is wrong
+        and that they are right
+    </string>
+    <string name="meetings_17_question_3_option_2">
+        It attacks and places blame on John without
+        trying to understand their viewpoint at all
+    </string>
+    <string name="meetings_17_question_3_option_3">
+        It does not try to solve the problem,
+        acting as a bridge burner instead of a bridge builder
+    </string>
+    <string-array name="meetings_17_question_3_options">
+        <item>@string/meetings_17_question_3_option_1</item>
+        <item>@string/meetings_17_question_3_option_2</item>
+        <item>@string/meetings_17_question_3_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
