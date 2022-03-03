@@ -1,37 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.recyclerview.widget.RecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:id="@+id/homepage_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@color/screen_background"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    />
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:elevation="0dp"
-        >
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/app_core_color"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            />
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/learning_category_tabs"
-        style="@style/tabs"
-        />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/learning_category_viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-</LinearLayout>

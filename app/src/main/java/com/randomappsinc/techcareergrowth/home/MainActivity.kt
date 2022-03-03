@@ -12,22 +12,23 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.joanzapata.iconify.fonts.IoniconsIcons
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
+import com.randomappsinc.techcareergrowth.learning.LessonActivity
+import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.SettingsActivity
 import com.randomappsinc.techcareergrowth.util.ListUtil
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var preferencesManager: PreferencesManager
-    private lateinit var learningCategoriesAdapter: LearningCategoryTabsAdapter
+    private lateinit var homepageAdapter: HomepageAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(binding.toolbar)
 
         preferencesManager = PreferencesManager(this)
         if (preferencesManager.logAppOpenAndCheckForRatingUpsell()) {
@@ -47,30 +48,36 @@ class MainActivity : AppCompatActivity() {
         }
 
         val lessonTypes = preferencesManager.getContentOrder()
-        learningCategoriesAdapter = LearningCategoryTabsAdapter(
-            activity = this,
-            lessonTypes = lessonTypes
+        homepageAdapter = HomepageAdapter(
+            lessonTypes = lessonTypes,
+            listener = this
         )
-        binding.learningCategoryViewpager.adapter = learningCategoriesAdapter
-
-        TabLayoutMediator(binding.learningCategoryTabs, binding.learningCategoryViewpager) { tab, position ->
-            tab.setText(lessonTypes[position].overallLabelId)
-        }.attach()
+        binding.homepageList.adapter = homepageAdapter
     }
 
     override fun onResume() {
         super.onResume()
         val freshLessonTypes = preferencesManager.getContentOrder()
-        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = learningCategoriesAdapter.lessonTypes)) {
-            learningCategoriesAdapter = LearningCategoryTabsAdapter(
-                activity = this,
-                lessonTypes = freshLessonTypes
+        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = homepageAdapter.lessonTypes)) {
+            homepageAdapter.clear()
+            homepageAdapter = HomepageAdapter(
+                lessonTypes = freshLessonTypes,
+                listener = this
             )
-            binding.learningCategoryViewpager.adapter = learningCategoriesAdapter
+            binding.homepageList.adapter = homepageAdapter
+        }
+    }
 
-            TabLayoutMediator(binding.learningCategoryTabs, binding.learningCategoryViewpager) { tab, position ->
-                tab.setText(freshLessonTypes[position].overallLabelId)
-            }.attach()
+    override fun onLessonClicked(lesson: Lesson) {
+        val intent = Intent(this, LessonActivity::class.java)
+        intent.putExtra(LessonActivity.LESSON_KEY, lesson)
+        startActivityForResult(intent, 1)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == LessonListFragment.FIRST_TIME_COMPLETION_CODE) {
+            homepageAdapter.onLessonCompleted()
         }
     }
 

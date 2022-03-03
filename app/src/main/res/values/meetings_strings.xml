@@ -747,7 +747,7 @@
     </string>
     <string name="meetings_16_question_1_option_2">
         No, sharing this is a sign of weakness.
-        It is on you to figure out how you can work more efficiently.
+        It is on you to figure out how you can work more efficiently
     </string>
     <string-array name="meetings_16_question_1_options">
         <item>@string/meetings_16_question_1_option_1</item>
@@ -835,7 +835,7 @@
         His vision does not make sense, and it will drag
         down the team. You can tell that he does not have
         enough experience.] - What is wrong with how this
-        frustration is phrased?
+        frustration is presented?
     </string>
     <string name="meetings_17_question_3_option_1">
         There is no tentative language.

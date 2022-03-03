@@ -40,9 +40,8 @@
 
         <activity
             android:name=".home.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/full_app_name"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait"
             />
 
