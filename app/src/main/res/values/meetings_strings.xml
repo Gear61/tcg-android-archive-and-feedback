@@ -732,4 +732,63 @@
         True or false: A simple [Do you have any feedback for me?]
         is a good way to ask for feedback from your manager.
     </string>
+
+    <!-- LESSON SIXTEEN -->
+    <string name="meetings_lesson_16_name">
+        You Should Be Vulnerable With Your Manager
+    </string>
+
+    <string name="meetings_16_question_1">
+        You are feeling burnt out at work.
+        Should you share this with your manager?
+    </string>
+    <string name="meetings_16_question_1_option_1">
+        Yes, they can help decrease your workload and de-stress
+    </string>
+    <string name="meetings_16_question_1_option_2">
+        No, sharing this is a sign of weakness.
+        It is on you to figure out how you can work more efficiently.
+    </string>
+    <string-array name="meetings_16_question_1_options">
+        <item>@string/meetings_16_question_1_option_1</item>
+        <item>@string/meetings_16_question_1_option_2</item>
+    </string-array>
+
+    <string name="meetings_16_question_2">
+        You feel like you are slower than your other teammates
+        and are afraid that you look bad amongst the team.
+        Should you share this with your manager?
+    </string>
+    <string name="meetings_16_question_2_option_1">
+        Yes, this is a case of imposter syndrome and your
+        manager can help with this
+    </string>
+    <string name="meetings_16_question_2_option_2">
+        No, you simply need to work harder to catch up to
+        the rest of your team
+    </string>
+    <string-array name="meetings_16_question_2_options">
+        <item>@string/meetings_16_question_2_option_1</item>
+        <item>@string/meetings_16_question_2_option_2</item>
+    </string-array>
+
+    <string name="meetings_16_question_3">
+        Your dog just died, and you are having a really
+        tough time concentrating at work because of this.
+        Should you share this with your manager?
+    </string>
+    <string name="meetings_16_question_3_option_1">
+        Yes, your manager is responsible for your well-being
+        and should be receptive to your current state
+    </string>
+    <string name="meetings_16_question_3_option_2">
+        No, this is a personal issue and you should keep it
+        completely separate from your work life. Hide your
+        pain and prevent your manager from finding out
+        you have a personal issue whatsoever
+    </string>
+    <string-array name="meetings_16_question_3_options">
+        <item>@string/meetings_16_question_3_option_1</item>
+        <item>@string/meetings_16_question_3_option_2</item>
+    </string-array>
 </resources>
