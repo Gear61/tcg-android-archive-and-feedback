@@ -17,4 +17,8 @@ class Lesson(
     fun getYouTubeEmbedUrl(): String {
         return "https://www.youtube.com/embed/$youtubeVideoId"
     }
+
+    fun getYouTubeThumbnailUrl(): String {
+        return "https://img.youtube.com/vi/$youtubeVideoId/maxresdefault.jpg"
+    }
 }

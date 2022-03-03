@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.randomappsinc.techcareergrowth.R
+import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.LessonType
 
@@ -44,11 +45,19 @@ open class HomepageAdapter(
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val lessonName: TextView = itemView.findViewById(R.id.lesson_type)
+        private val lessonTypeTitle: TextView = itemView.findViewById(R.id.lesson_type)
         private val lessonGallery: RecyclerView = itemView.findViewById(R.id.lesson_gallery)
 
         fun bind(position: Int) {
-            lessonName.setText(lessonTypes[position].overallLabelId)
+            lessonTypeTitle.setText(lessonTypes[position].overallLabelId)
+            val lessons = LessonProvider.getLessonList(
+                type = lessonTypes[position],
+                context = itemView.context
+            )
+            lessonGallery.adapter = LessonGalleryAdapter(
+                lessons = lessons,
+                listener = listener
+            )
         }
     }
 }

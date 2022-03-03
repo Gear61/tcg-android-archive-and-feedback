@@ -35,4 +35,10 @@
         <item name="cardCornerRadius">3dp</item>
         <item name="cardElevation">2dp</item>
     </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/line_divider_color</item>
+    </style>
 </resources>

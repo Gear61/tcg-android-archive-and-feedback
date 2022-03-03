@@ -2,21 +2,20 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:ignore="RtlHardcoded,SpUsage,UnusedAttribute"
     >
 
     <TextView
         android:id="@+id/lesson_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:textSize="21sp"
         android:textColor="@color/text_title"
+        android:textStyle="bold"
         />
 
     <androidx.recyclerview.widget.RecyclerView
