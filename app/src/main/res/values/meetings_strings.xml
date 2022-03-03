@@ -662,4 +662,37 @@
         giving status updates and then waiting for instruction
         on what to do next.
     </string>
+
+    <!-- LESSON FOURTEEN -->
+    <string name="meetings_lesson_14_name">
+        The Manager 1 on 1 Is A Litmus Test For Seniority
+    </string>
+
+    <string name="meetings_14_question_1">
+        True or false: In tech, operating at senior levels
+        means that you are driving more, if not most, of the
+        conversation in your manager 1 on 1s.
+    </string>
+
+    <string name="meetings_14_question_2">
+        Why do senior employees tend to drive more of the
+        conversation in manager 1 on 1 meetings?
+    </string>
+    <string name="meetings_14_question_2_option_1">
+        Because they really like talking
+    </string>
+    <string name="meetings_14_question_2_option_2">
+        A mark of seniority is defining your own work,
+        as opposed to someone telling you what to do
+    </string>
+    <string name="meetings_14_question_2_option_3">
+        Managers do not have as much to say in meetings with
+        senior reports
+    </string>
+    <string-array name="meetings_14_question_2_options">
+        <item>@string/meetings_14_question_2_option_1</item>
+        <item>@string/meetings_14_question_2_option_2</item>
+        <item>@string/meetings_14_question_2_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
 </resources>
