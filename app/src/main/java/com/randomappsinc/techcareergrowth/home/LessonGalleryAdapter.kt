@@ -10,6 +10,7 @@ import coil.load
 import coil.size.Scale
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
+import com.squareup.picasso.Picasso
 
 open class LessonGalleryAdapter(
     val lessons: List<Lesson>,
@@ -44,7 +45,12 @@ open class LessonGalleryAdapter(
         fun bind(position: Int) {
             val lesson = lessons[position]
             lessonName.setText(lesson.nameResId)
-            lessonThumbnail.load(lesson.getYouTubeThumbnailUrl())
+            Picasso
+                .get()
+                .load(lesson.getYouTubeThumbnailUrl())
+                .resize(240, 135)
+                .centerCrop()
+                .into(lessonThumbnail)
         }
     }
 }
