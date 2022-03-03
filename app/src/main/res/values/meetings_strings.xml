@@ -695,4 +695,41 @@
         <item>@string/meetings_14_question_2_option_3</item>
         <item>@string/none_of_the_above</item>
     </string-array>
+
+    <!-- LESSON FIFTEEN -->
+    <string name="meetings_lesson_15_name">
+        Make Sure To Get This Resource From Your Manager 1 on 1s
+    </string>
+
+    <string name="meetings_15_question_1">
+        True or false: Your performance review result should not
+        be a surprise, and the manager 1 on 1 is an instrumental
+        mechanism towards ensuring that.
+    </string>
+
+    <string name="meetings_15_question_2">
+        What are some ways to get the feedback flowing in a manager
+        1 on 1?
+    </string>
+    <string name="meetings_15_question_2_option_1">
+        Share your wins
+    </string>
+    <string name="meetings_15_question_2_option_2">
+        Share an observation about a specific project or other aspect
+        of your work life where you feel like you could improve
+    </string>
+    <string name="meetings_15_question_2_option_3">
+        Ask how you are trending overall performance-wise every few months
+    </string>
+    <string-array name="meetings_15_question_2_options">
+        <item>@string/meetings_15_question_2_option_1</item>
+        <item>@string/meetings_15_question_2_option_2</item>
+        <item>@string/meetings_15_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
+
+    <string name="meetings_15_question_3">
+        True or false: A simple [Do you have any feedback for me?]
+        is a good way to ask for feedback from your manager.
+    </string>
 </resources>
