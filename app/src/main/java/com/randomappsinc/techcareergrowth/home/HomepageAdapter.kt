@@ -18,6 +18,8 @@ open class HomepageAdapter(
 
     interface Listener {
         fun onLessonClicked(lesson: Lesson)
+
+        fun onLessonTypeClicked(type: LessonType)
     }
 
     fun clear() {
@@ -53,6 +55,10 @@ open class HomepageAdapter(
 
         fun bind(position: Int) {
             lessonTypeTitle.setText(lessonTypes[position].overallLabelId)
+            lessonTypeTitle.setOnClickListener {
+                listener?.onLessonTypeClicked(lessonTypes[position])
+            }
+
             val lessons = LessonProvider.getLessonList(
                 type = lessonTypes[position],
                 context = itemView.context

@@ -14,7 +14,9 @@ import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.common.Constants
 import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
 import com.randomappsinc.techcareergrowth.learning.LessonActivity
+import com.randomappsinc.techcareergrowth.lessonlist.LessonListActivity
 import com.randomappsinc.techcareergrowth.models.Lesson
+import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.SettingsActivity
 import com.randomappsinc.techcareergrowth.util.ListUtil
@@ -73,6 +75,12 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
         val intent = Intent(this, LessonActivity::class.java)
         intent.putExtra(LessonActivity.LESSON_KEY, lesson)
         startActivityForResult(intent, 1)
+    }
+
+    override fun onLessonTypeClicked(type: LessonType) {
+        val intent = Intent(this, LessonListActivity::class.java)
+        intent.putExtra(Constants.LESSON_TYPE_KEY, type)
+        startActivity(intent)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
