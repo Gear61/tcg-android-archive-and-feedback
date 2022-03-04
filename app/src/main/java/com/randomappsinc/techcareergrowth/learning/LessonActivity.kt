@@ -1,5 +1,6 @@
 package com.randomappsinc.techcareergrowth.learning
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -61,7 +62,8 @@ class LessonActivity: AppCompatActivity(), LearningViewState.Listener {
 
     override fun finish() {
         if (viewState.completedForFirstTime){
-            setResult(Constants.FIRST_TIME_COMPLETION_CODE)
+            val intent = Intent().putExtra(Constants.LESSON_ID_KEY, lesson.id)
+            setResult(Constants.FIRST_TIME_COMPLETION_CODE, intent)
         }
         super.finish()
         overridePendingTransition(R.anim.slide_right_out, R.anim.slide_right_in)

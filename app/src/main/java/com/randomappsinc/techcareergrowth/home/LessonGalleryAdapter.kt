@@ -15,8 +15,13 @@ open class LessonGalleryAdapter(
     var listener: HomepageAdapter.Listener?
 ) : RecyclerView.Adapter<LessonGalleryAdapter.ViewHolder>() {
 
-    fun onLessonCompleted() {
-
+    fun onLessonCompleted(lessonId: String) {
+        for ((index, lesson) in lessons.withIndex()) {
+            if (lesson.id == lessonId) {
+                lesson.isCompleted = true
+                notifyItemChanged(index)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -78,7 +78,8 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Constants.FIRST_TIME_COMPLETION_CODE) {
-            homepageAdapter.onLessonCompleted()
+            val lessonId = data!!.getStringExtra(Constants.LESSON_ID_KEY)!!
+            homepageAdapter.onLessonCompleted(lessonId = lessonId)
         }
     }
 

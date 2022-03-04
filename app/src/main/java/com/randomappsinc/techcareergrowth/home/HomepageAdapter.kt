@@ -12,7 +12,8 @@ import com.randomappsinc.techcareergrowth.models.LessonType
 
 open class HomepageAdapter(
     val lessonTypes: List<LessonType>,
-    var listener: Listener?
+    var listener: Listener?,
+    val positionToAdapter: MutableMap<Int, LessonGalleryAdapter> = mutableMapOf()
 ) : RecyclerView.Adapter<HomepageAdapter.ViewHolder>()  {
 
     interface Listener {
@@ -23,8 +24,10 @@ open class HomepageAdapter(
         this.listener = null
     }
 
-    fun onLessonCompleted() {
-
+    fun onLessonCompleted(lessonId: String) {
+        for (adapter in positionToAdapter.values) {
+            adapter.onLessonCompleted(lessonId = lessonId)
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -54,10 +57,16 @@ open class HomepageAdapter(
                 type = lessonTypes[position],
                 context = itemView.context
             )
-            lessonGallery.adapter = LessonGalleryAdapter(
-                lessons = lessons,
-                listener = listener
-            )
+
+            var adapter = positionToAdapter[position]
+            if (adapter == null) {
+                adapter = LessonGalleryAdapter(
+                    lessons = lessons,
+                    listener = listener
+                )
+                positionToAdapter[position] = adapter
+            }
+            lessonGallery.adapter = adapter
         }
     }
 }
