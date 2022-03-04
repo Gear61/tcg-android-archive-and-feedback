@@ -19,7 +19,18 @@ object LessonProvider {
             lessons = lessons,
             context = context
         )
-        return lessons
+
+        val incompleteLessons = mutableListOf<Lesson>()
+        val completedLessons = mutableListOf<Lesson>()
+        for (lesson in lessons) {
+            if (lesson.isCompleted) {
+                completedLessons.add(lesson)
+            } else {
+                incompleteLessons.add(lesson)
+            }
+        }
+
+        return incompleteLessons + completedLessons
     }
 
     private fun verifyLessonList(lessons: List<Lesson>, context: Context) {
