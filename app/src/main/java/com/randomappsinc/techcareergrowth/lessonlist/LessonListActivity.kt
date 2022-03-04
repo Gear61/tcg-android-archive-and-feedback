@@ -2,6 +2,7 @@ package com.randomappsinc.techcareergrowth.lessonlist
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.common.Constants
@@ -41,5 +42,18 @@ class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener {
     override fun startActivityForResult(intent: Intent?, requestCode: Int) {
         super.startActivityForResult(intent, requestCode)
         overridePendingTransition(R.anim.slide_left_out, R.anim.slide_left_in)
+    }
+
+    override fun finish() {
+        super.finish()
+        overridePendingTransition(R.anim.slide_right_out, R.anim.slide_right_in)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
