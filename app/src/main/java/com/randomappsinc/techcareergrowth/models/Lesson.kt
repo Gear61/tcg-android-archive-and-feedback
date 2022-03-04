@@ -19,6 +19,6 @@ class Lesson(
     }
 
     fun getYouTubeThumbnailUrl(): String {
-        return "https://img.youtube.com/vi/$youtubeVideoId/hqdefault.jpg"
+        return "https://img.youtube.com/vi/$youtubeVideoId/maxresdefault.jpg"
     }
 }
