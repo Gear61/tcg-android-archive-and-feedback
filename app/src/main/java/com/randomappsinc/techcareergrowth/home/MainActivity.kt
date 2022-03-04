@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import com.joanzapata.iconify.fonts.IoniconsIcons
 import com.randomappsinc.techcareergrowth.R
+import com.randomappsinc.techcareergrowth.common.Constants
 import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
 import com.randomappsinc.techcareergrowth.learning.LessonActivity
 import com.randomappsinc.techcareergrowth.models.Lesson
@@ -76,7 +77,7 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == LessonListFragment.FIRST_TIME_COMPLETION_CODE) {
+        if (resultCode == Constants.FIRST_TIME_COMPLETION_CODE) {
             homepageAdapter.onLessonCompleted()
         }
     }

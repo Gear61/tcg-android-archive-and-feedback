@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="tabs">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/app_core_color</item>
-        <item name="tabMode">scrollable</item>
-        <item name="tabMaxWidth">0dp</item>
-        <item name="tabIndicatorColor">@color/accent_green</item>
-        <item name="tabIndicatorHeight">4dp</item>
-        <item name="tabTextColor">@color/white_50_alpha</item>
-        <item name="tabSelectedTextColor">@color/white</item>
-    </style>
-
     <style name="button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
