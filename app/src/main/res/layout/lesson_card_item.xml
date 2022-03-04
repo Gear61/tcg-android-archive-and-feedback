@@ -2,12 +2,12 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/parent"
     android:layout_width="256dp"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="9dp"
     android:layout_marginTop="4dp"
     android:layout_marginBottom="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
     tools:ignore="SpUsage,ContentDescription"
     >
 

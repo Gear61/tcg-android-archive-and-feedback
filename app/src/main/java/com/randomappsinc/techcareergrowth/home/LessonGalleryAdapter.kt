@@ -50,6 +50,10 @@ open class LessonGalleryAdapter(
             } else {
                 completionIcon.setText(R.string.red_x_icon)
             }
+
+            itemView.setOnClickListener {
+                listener?.onLessonClicked(lesson = lesson)
+            }
         }
     }
 }
