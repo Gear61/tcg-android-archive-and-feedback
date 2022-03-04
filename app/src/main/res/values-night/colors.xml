@@ -12,6 +12,7 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="white_50_alpha">#80FFFFFF</color>
+    <color name="white_80_alpha">#CCFFFFFF</color>
     <color name="line_divider_color">#E0E0E0</color>
     <color name="dialog_background">#424242</color>
 

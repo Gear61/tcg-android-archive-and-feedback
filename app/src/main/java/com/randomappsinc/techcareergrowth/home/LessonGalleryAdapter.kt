@@ -39,11 +39,17 @@ open class LessonGalleryAdapter(
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val lessonName: TextView = itemView.findViewById(R.id.lesson_name)
         private val lessonThumbnail: ImageView = itemView.findViewById(R.id.lesson_thumbnail)
+        private val completionIcon: TextView = itemView.findViewById(R.id.completion_icon)
 
         fun bind(position: Int) {
             val lesson = lessons[position]
             lessonName.setText(lesson.nameResId)
             lessonThumbnail.load(lesson.getYouTubeThumbnailUrl())
+            if (lesson.isCompleted) {
+                completionIcon.setText(R.string.green_check_icon)
+            } else {
+                completionIcon.setText(R.string.red_x_icon)
+            }
         }
     }
 }

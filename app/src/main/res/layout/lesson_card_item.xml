@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent"
-    android:layout_width="240dp"
+    android:layout_width="256dp"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="9dp"
     android:layout_marginTop="4dp"
@@ -17,18 +17,35 @@
         android:orientation="vertical"
         >
 
-        <ImageView
-            android:id="@+id/lesson_thumbnail"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            />
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/lesson_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/completion_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end|top"
+                android:layout_margin="6dp"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_semi_transparent_background"
+                />
+        </FrameLayout>
 
         <View style="@style/divider"/>
 
         <TextView
             android:id="@+id/lesson_name"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="52dp"
             android:textSize="15dp"
             android:textColor="@color/text_normal"
             android:gravity="center_vertical"
