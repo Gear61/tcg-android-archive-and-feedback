@@ -65,7 +65,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_1"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.INTERVIEWING,
+            tags = setOf(LessonTag.INTERVIEWING, LessonTag.DSA),
             nameResId = R.string.interviewing_lesson_1_name,
             youtubeVideoId = "j9FD_Y5JTbw",
             questions = questions,
@@ -114,7 +114,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_2"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.INTERVIEWING,
+            tags = setOf(LessonTag.INTERVIEWING, LessonTag.BIG_TECH),
             nameResId = R.string.interviewing_lesson_2_name,
             youtubeVideoId = "guxFTl_qIRg",
             questions = questions,
@@ -163,7 +163,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_3"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.INTERVIEWING,
+            tags = setOf(LessonTag.INTERVIEWING, LessonTag.DSA),
             nameResId = R.string.interviewing_lesson_3_name,
             youtubeVideoId = "LSLyly2GJo4",
             questions = questions,
@@ -198,7 +198,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_4"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.INTERVIEWING,
+            tags = setOf(LessonTag.INTERVIEWING, LessonTag.DSA),
             nameResId = R.string.interviewing_lesson_4_name,
             youtubeVideoId = "tfqPGGdS8Tk",
             questions = questions,
@@ -247,7 +247,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_5"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.INTERVIEWING,
+            tags = setOf(LessonTag.INTERVIEWING, LessonTag.DSA, LessonTag.BIG_TECH),
             nameResId = R.string.interviewing_lesson_5_name,
             youtubeVideoId = "TqjiQbyomx4",
             questions = questions,
@@ -296,7 +296,7 @@ object InterviewingLessonProvider {
         val lessonId = "interviewing_6"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.INTERVIEWING,
+            tags = setOf(LessonTag.INTERVIEWING, LessonTag.DSA),
             nameResId = R.string.interviewing_lesson_6_name,
             youtubeVideoId = "XuOXRBYlidg",
             questions = questions,

@@ -6,6 +6,12 @@
     <string name="promotion">Promotion</string>
     <string name="learning_quickly">Learning Quickly</string>
     <string name="meetings">Meetings</string>
+    <string name="dsa">Data Structures And Algorithms</string>
+    <string name="big_tech">Big Tech</string>
+    <string name="junior_engineer">Junior Engineer</string>
+    <string name="senior_engineer">Senior Engineer</string>
+    <string name="one_on_one_meetings">1 on 1 Meetings</string>
+    <string name="working_with_manager">Working With Your Manager</string>
 
     <string name="arrow_icon">{ion-arrow-right-c}</string>
     <string name="green_check_icon">{ion-checkmark @color/green}</string>

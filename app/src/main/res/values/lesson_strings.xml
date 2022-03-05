@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="lesson_title">%s Lesson</string>
+    <string name="lesson_page_title">Learn Lesson</string>
 
     <string name="watch_content_preface">
         To learn the contents of this lesson, watch the video below.

@@ -73,6 +73,7 @@
 
         <activity
             android:name=".lessonlist.LessonListActivity"
+            android:label="@string/lesson_page_title"
             android:exported="false"
             android:screenOrientation="portrait"
             />

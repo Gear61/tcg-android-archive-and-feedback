@@ -62,7 +62,7 @@ object ResumeLessonProvider {
         val lessonId = "resume_1"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.RESUME,
+            tags = setOf(LessonTag.RESUME),
             nameResId = R.string.resume_lesson_1_name,
             youtubeVideoId = "MByD2CTwfmM",
             questions = questions,
@@ -111,7 +111,7 @@ object ResumeLessonProvider {
         val lessonId = "resume_2"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.RESUME,
+            tags = setOf(LessonTag.RESUME),
             nameResId = R.string.resume_lesson_2_name,
             youtubeVideoId = "sDbK84GEE94",
             questions = questions,
@@ -153,7 +153,7 @@ object ResumeLessonProvider {
         val lessonId = "resume_3"
         return Lesson(
             id = lessonId,
-            tag = LessonTag.RESUME,
+            tags = setOf(LessonTag.RESUME),
             nameResId = R.string.resume_lesson_3_name,
             youtubeVideoId = "9Wb-gHEO9ug",
             questions = questions,

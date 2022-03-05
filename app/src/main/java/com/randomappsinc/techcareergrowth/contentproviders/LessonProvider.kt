@@ -6,27 +6,33 @@ import com.randomappsinc.techcareergrowth.models.LessonTag
 
 object LessonProvider {
 
+    private var lessons: List<Lesson>? = null
+
     fun getLessonList(tag: LessonTag, context: Context): List<Lesson> {
-        val lessons = when (tag) {
-            LessonTag.INTERVIEWING -> InterviewingLessonProvider.getLessons(context = context)
-            LessonTag.RESUME -> ResumeLessonProvider.getLessons(context = context)
-            LessonTag.PRODUCTIVITY -> ProductivityLessonProvider.getLessons(context = context)
-            LessonTag.PROMOTION -> PromotionLessonProvider.getLessons(context = context)
-            LessonTag.LEARNING_QUICKLY -> LearningQuicklyContentProvider.getLessons(context = context)
-            LessonTag.MEETINGS -> MeetingsLessonProvider.getLessons(context = context)
+        if (lessons == null) {
+            lessons = listOf(
+                InterviewingLessonProvider.getLessons(context = context),
+                ResumeLessonProvider.getLessons(context = context),
+                ProductivityLessonProvider.getLessons(context = context),
+                PromotionLessonProvider.getLessons(context = context),
+                LearningQuicklyContentProvider.getLessons(context = context),
+                MeetingsLessonProvider.getLessons(context = context)
+            ).flatten()
+            verifyLessonList(
+                lessons = lessons!!,
+                context = context
+            )
         }
-        verifyLessonList(
-            lessons = lessons,
-            context = context
-        )
 
         val incompleteLessons = mutableListOf<Lesson>()
         val completedLessons = mutableListOf<Lesson>()
-        for (lesson in lessons) {
-            if (lesson.isCompleted) {
-                completedLessons.add(lesson)
-            } else {
-                incompleteLessons.add(lesson)
+        for (lesson in lessons!!) {
+            if (lesson.tags.contains(tag)) {
+                if (lesson.isCompleted) {
+                    completedLessons.add(lesson)
+                } else {
+                    incompleteLessons.add(lesson)
+                }
             }
         }
 
@@ -35,21 +41,13 @@ object LessonProvider {
 
     private fun verifyLessonList(lessons: List<Lesson>, context: Context) {
         val seenYouTubeIds = mutableSetOf<String>()
+        val seenLessonIds = mutableSetOf<String>()
 
-        for ((index, lesson) in lessons.iterator().withIndex()) {
-            val idPrefix = when (lesson.tag) {
-                LessonTag.INTERVIEWING -> "interviewing"
-                LessonTag.RESUME -> "resume"
-                LessonTag.PRODUCTIVITY -> "productivity"
-                LessonTag.PROMOTION -> "promotion"
-                LessonTag.LEARNING_QUICKLY -> "learning_quickly"
-                LessonTag.MEETINGS -> "meetings"
+        for (lesson in lessons) {
+            if (seenLessonIds.contains(lesson.id)) {
+                error("Duplicate lesson ID of " + lesson.id)
             }
-            val lessonNumber = (index + 1).toString()
-            val expectedLessonId = idPrefix + "_" + lessonNumber
-            if (expectedLessonId != lesson.id) {
-                error("Lesson ID is incorrect. Expected " + expectedLessonId + " and got " + lesson.id)
-            }
+            seenLessonIds.add(lesson.id)
             if (seenYouTubeIds.contains(lesson.youtubeVideoId)) {
                 error("Duplicate YouTube video ID of " + lesson.youtubeVideoId + " || Lesson ID: " + lesson.id)
             }
