@@ -80,7 +80,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_1_name,
             youtubeVideoId = "e6Ej_9mEc10",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -108,7 +108,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_2_name,
             youtubeVideoId = "ZzQquAy7gwQ",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -143,7 +143,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_3_name,
             youtubeVideoId = "BIcS6glgqyQ",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -185,7 +185,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_4_name,
             youtubeVideoId = "b4A4zPu4xMQ",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -213,7 +213,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_5_name,
             youtubeVideoId = "q8RxMZqVYmk",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -241,7 +241,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_6_name,
             youtubeVideoId = "JmVVa94j04I",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -269,7 +269,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_7_name,
             youtubeVideoId = "Et3Klf_jIhM",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -304,7 +304,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_8_name,
             youtubeVideoId = "GJHsNeogthY",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -339,7 +339,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_9_name,
             youtubeVideoId = "4XFgKxYfrxY",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -367,7 +367,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_10_name,
             youtubeVideoId = "3x4Oz332R9s",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -395,7 +395,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_11_name,
             youtubeVideoId = "bPk5gEoGLAU",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -423,7 +423,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_12_name,
             youtubeVideoId = "NswneqhmEJ4",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -465,7 +465,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_13_name,
             youtubeVideoId = "Ftcwz1I6mIg",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -493,7 +493,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_14_name,
             youtubeVideoId = "X8nxyvydHjg",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -528,7 +528,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_15_name,
             youtubeVideoId = "SBf9S0B0W3Q",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -563,7 +563,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_16_name,
             youtubeVideoId = "7ZM7YNKHLy8",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -598,7 +598,7 @@ object MeetingsLessonProvider {
             nameResId = R.string.meetings_lesson_17_name,
             youtubeVideoId = "qWXfT2fiPVE",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 }

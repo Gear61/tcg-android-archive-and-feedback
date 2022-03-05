@@ -51,7 +51,7 @@ class LearningViewState(
                 gotPerfectScore = true
                 if (!lesson.isCompleted) {
                     completedForFirstTime = true
-                    PreferencesManager(context).onLessonCompleted(lesson.id)
+                    PreferencesManager.getInstance(context).onLessonCompleted(lesson.id)
                 }
             }
             if (percentCorrect == 100.0f) {

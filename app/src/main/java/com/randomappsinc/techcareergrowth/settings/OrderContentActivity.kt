@@ -37,7 +37,7 @@ class OrderContentActivity : AppCompatActivity() {
             )
         }
 
-        val preferencesManager = PreferencesManager(this)
+        val preferencesManager = PreferencesManager.getInstance(this)
         val contentOrderingAdapter = ContentOrderingAdapter(lessonTypes = preferencesManager.getContentOrder())
         binding.lessonTypesList.adapter = contentOrderingAdapter
 

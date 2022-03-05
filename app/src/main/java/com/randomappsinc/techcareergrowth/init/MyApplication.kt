@@ -11,7 +11,7 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         Iconify.with(IoniconsModule())
-        val preferencesManager = PreferencesManager(this)
+        val preferencesManager = PreferencesManager.getInstance(this)
         ThemeManager.applyTheme(preferencesManager.themeMode)
     }
 }

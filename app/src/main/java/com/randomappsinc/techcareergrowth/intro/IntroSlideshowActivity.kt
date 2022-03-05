@@ -17,7 +17,7 @@ class IntroSlideshowActivity : AppCompatActivity() {
         val binding = IntroSlideshowActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val preferencesManager = PreferencesManager(this)
+        val preferencesManager = PreferencesManager.getInstance(this)
 
         binding.slideshowViewpager.adapter = IntroSlideshowAdapter(this)
         binding.slideshowViewpager.offscreenPageLimit = 3

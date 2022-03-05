@@ -3,13 +3,14 @@ package com.randomappsinc.techcareergrowth.persistence
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
+import com.randomappsinc.techcareergrowth.common.SingletonHolder
 import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
 import java.lang.StringBuilder
 
-class PreferencesManager(context: Context) {
+class PreferencesManager private constructor(context: Context) {
 
-    companion object {
+    companion object : SingletonHolder<PreferencesManager, Context>(::PreferencesManager) {
 
         const val KEY_HAS_SEEN_SLIDESHOW = "KEY_HAS_SEEN_SLIDESHOW"
 

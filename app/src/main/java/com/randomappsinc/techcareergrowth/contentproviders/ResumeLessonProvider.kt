@@ -66,7 +66,7 @@ object ResumeLessonProvider {
             nameResId = R.string.resume_lesson_1_name,
             youtubeVideoId = "MByD2CTwfmM",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -115,7 +115,7 @@ object ResumeLessonProvider {
             nameResId = R.string.resume_lesson_2_name,
             youtubeVideoId = "sDbK84GEE94",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -157,7 +157,7 @@ object ResumeLessonProvider {
             nameResId = R.string.resume_lesson_3_name,
             youtubeVideoId = "9Wb-gHEO9ug",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 }

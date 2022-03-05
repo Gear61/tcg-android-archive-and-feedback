@@ -20,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
             return
         }
 
-        if (PreferencesManager(this).hasSeenSlideshow) {
+        if (PreferencesManager.getInstance(this).hasSeenSlideshow) {
             startActivity(Intent(this, MainActivity::class.java))
         } else {
             startActivity(Intent(this, IntroSlideshowActivity::class.java))

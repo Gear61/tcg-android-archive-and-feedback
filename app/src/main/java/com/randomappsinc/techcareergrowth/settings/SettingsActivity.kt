@@ -39,7 +39,7 @@ class SettingsActivity: AppCompatActivity(), SettingsAdapter.SettingsSelectionLi
         binding = SettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        preferencesManager = PreferencesManager(this)
+        preferencesManager = PreferencesManager.getInstance(this)
 
         val itemDecorator = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         itemDecorator.setDrawable(ContextCompat.getDrawable(this, R.drawable.line_divider)!!)

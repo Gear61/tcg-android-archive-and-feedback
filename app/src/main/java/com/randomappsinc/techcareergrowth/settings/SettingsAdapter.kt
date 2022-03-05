@@ -28,7 +28,7 @@ open class SettingsAdapter(
         fun onSettingsItemClicked(position: Int)
     }
 
-    private var preferencesManager: PreferencesManager = PreferencesManager(context)
+    private var preferencesManager: PreferencesManager = PreferencesManager.getInstance(context)
     private var options: MutableList<String> = mutableListOf(*context.resources.getStringArray(R.array.settings_options))
     private var icons: MutableList<String> = mutableListOf(*context.resources.getStringArray(R.array.settings_icons))
 

@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        preferencesManager = PreferencesManager(this)
+        preferencesManager = PreferencesManager.getInstance(this)
         if (preferencesManager.logAppOpenAndCheckForRatingUpsell()) {
             AlertDialog.Builder(this)
                 .setMessage(R.string.please_rate)

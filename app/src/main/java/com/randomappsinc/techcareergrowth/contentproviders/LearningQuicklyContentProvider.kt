@@ -70,7 +70,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_1_name,
             youtubeVideoId = "fVgZBX0yinc",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -119,7 +119,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_2_name,
             youtubeVideoId = "VS75nql2Csg",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -203,7 +203,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_3_name,
             youtubeVideoId = "24CGlaL5bXo",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -238,7 +238,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_4_name,
             youtubeVideoId = "rfSy_MlMyfI",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -294,7 +294,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_5_name,
             youtubeVideoId = "QLCq91qrMC0",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -343,7 +343,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_6_name,
             youtubeVideoId = "ZfZzJ6C235s",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -378,7 +378,7 @@ object LearningQuicklyContentProvider {
             nameResId = R.string.learning_quickly_lesson_7_name,
             youtubeVideoId = "1jJf0ehQ7Fo",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 }

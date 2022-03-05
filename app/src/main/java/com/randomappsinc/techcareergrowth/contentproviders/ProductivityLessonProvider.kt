@@ -72,7 +72,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_1_name,
             youtubeVideoId = "XqBA2fkvUTg",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -121,7 +121,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_2_name,
             youtubeVideoId = "3gvjpMhhfnY",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -156,7 +156,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_3_name,
             youtubeVideoId = "7VwKfMZUFxk",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -205,7 +205,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_4_name,
             youtubeVideoId = "L8a4Sc17DLw",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -240,7 +240,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_5_name,
             youtubeVideoId = "Ntb5IvW869s",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -275,7 +275,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_6_name,
             youtubeVideoId = "PMUyZ7VoowE",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -310,7 +310,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_7_name,
             youtubeVideoId = "nrg02T8VSDY",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -345,7 +345,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_8_name,
             youtubeVideoId = "RPXLB8HH4Q4",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -380,7 +380,7 @@ object ProductivityLessonProvider {
             nameResId = R.string.productivity_lesson_9_name,
             youtubeVideoId = "JtpVI7dc-9A",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 }

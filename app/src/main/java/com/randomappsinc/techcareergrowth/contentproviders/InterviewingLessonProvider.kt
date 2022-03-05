@@ -69,7 +69,7 @@ object InterviewingLessonProvider {
             nameResId = R.string.interviewing_lesson_1_name,
             youtubeVideoId = "j9FD_Y5JTbw",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -118,7 +118,7 @@ object InterviewingLessonProvider {
             nameResId = R.string.interviewing_lesson_2_name,
             youtubeVideoId = "guxFTl_qIRg",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -167,7 +167,7 @@ object InterviewingLessonProvider {
             nameResId = R.string.interviewing_lesson_3_name,
             youtubeVideoId = "LSLyly2GJo4",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -202,7 +202,7 @@ object InterviewingLessonProvider {
             nameResId = R.string.interviewing_lesson_4_name,
             youtubeVideoId = "tfqPGGdS8Tk",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -251,7 +251,7 @@ object InterviewingLessonProvider {
             nameResId = R.string.interviewing_lesson_5_name,
             youtubeVideoId = "TqjiQbyomx4",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 
@@ -300,7 +300,7 @@ object InterviewingLessonProvider {
             nameResId = R.string.interviewing_lesson_6_name,
             youtubeVideoId = "XuOXRBYlidg",
             questions = questions,
-            isCompleted = PreferencesManager(context).getLessonCompletionStatus(lessonId)
+            isCompleted = PreferencesManager.getInstance(context).getLessonCompletionStatus(lessonId)
         )
     }
 }
