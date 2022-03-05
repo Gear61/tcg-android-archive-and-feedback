@@ -10,30 +10,26 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.joanzapata.iconify.fonts.IoniconsIcons
 import com.randomappsinc.techcareergrowth.R
-import com.randomappsinc.techcareergrowth.common.Constants
 import com.randomappsinc.techcareergrowth.databinding.ActivityMainBinding
-import com.randomappsinc.techcareergrowth.learning.LessonActivity
-import com.randomappsinc.techcareergrowth.lessonlist.LessonListActivity
-import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.SettingsActivity
-import com.randomappsinc.techcareergrowth.util.ListUtil
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
-class MainActivity : AppCompatActivity(), HomepageAdapter.Listener, PreferencesManager.Listener {
+class MainActivity : AppCompatActivity(), BottomNavigationView.Listener {
+
+    companion object {
+        private const val PREVIOUSLY_SELECTED_PAGE_ID = "previouslySelectedPageId"
+    }
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var preferencesManager: PreferencesManager
-    private lateinit var homepageAdapter: HomepageAdapter
+    private lateinit var navigationController: HomepageFragmentController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        preferencesManager = PreferencesManager.getInstance(this)
-        preferencesManager.registerListener(listener = this)
+        val preferencesManager = PreferencesManager.getInstance(this)
         if (preferencesManager.logAppOpenAndCheckForRatingUpsell()) {
             AlertDialog.Builder(this)
                 .setMessage(R.string.please_rate)
@@ -50,51 +46,41 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener, PreferencesM
                 .show()
         }
 
-        val lessonTypes = preferencesManager.getContentOrder()
-        homepageAdapter = HomepageAdapter(
-            lessonTypes = lessonTypes,
-            listener = this
-        )
-        binding.homepageList.adapter = homepageAdapter
-    }
-
-    override fun onLessonCompleted(lessonId: String) {
-        homepageAdapter.onLessonCompleted(lessonId = lessonId)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        val freshLessonTypes = preferencesManager.getContentOrder()
-        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = homepageAdapter.lessonTypes)) {
-            homepageAdapter.clear()
-            homepageAdapter = HomepageAdapter(
-                lessonTypes = freshLessonTypes,
-                listener = this
+        navigationController = HomepageFragmentController(supportFragmentManager, R.id.container)
+        if (savedInstanceState == null) {
+            navigationController.loadHomeInitially()
+        } else {
+            navigationController.restoreFragments()
+            val previousSelectedId = savedInstanceState.getInt(
+                PREVIOUSLY_SELECTED_PAGE_ID,
+                R.id.home
             )
-            binding.homepageList.adapter = homepageAdapter
+            navigationController.onNavItemSelected(previousSelectedId)
+            binding.bottomNavigation.setCurrentlySelected(previousSelectedId)
+        }
+        binding.bottomNavigation.setListener(this)
+    }
+
+    override fun onNavItemSelected(viewId: Int) {
+        navigationController.onNavItemSelected(viewId)
+
+        when (viewId) {
+            R.id.home -> setTitle(R.string.app_name)
+            R.id.lesson_tags -> setTitle(R.string.lesson_tags)
         }
     }
 
-    override fun onLessonClicked(lesson: Lesson) {
-        val intent = Intent(this, LessonActivity::class.java)
-        intent.putExtra(LessonActivity.LESSON_KEY, lesson)
-        startActivity(intent)
-    }
-
-    override fun onLessonTypeClicked(type: LessonType) {
-        val intent = Intent(this, LessonListActivity::class.java)
-        intent.putExtra(Constants.LESSON_TYPE_KEY, type)
-        startActivity(intent)
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(
+            PREVIOUSLY_SELECTED_PAGE_ID,
+            navigationController.currentViewId
+        )
     }
 
     override fun startActivityForResult(intent: Intent?, requestCode: Int) {
         super.startActivityForResult(intent, requestCode)
         overridePendingTransition(R.anim.slide_left_out, R.anim.slide_left_in)
-    }
-
-    override fun finish() {
-        super.finish()
-        preferencesManager.unregisterListener(listener = this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
