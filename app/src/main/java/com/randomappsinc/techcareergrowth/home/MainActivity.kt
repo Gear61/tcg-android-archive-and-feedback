@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.Listener {
         navigationController.onNavItemSelected(viewId)
 
         when (viewId) {
-            R.id.home -> setTitle(R.string.app_name)
+            R.id.home -> setTitle(R.string.full_app_name)
             R.id.lesson_tags -> setTitle(R.string.lesson_tags)
         }
     }
