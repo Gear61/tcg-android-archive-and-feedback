@@ -5,9 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonTagsFragmentBinding
+import com.randomappsinc.techcareergrowth.home.mainfeed.HomeFeedAdapter
+import com.randomappsinc.techcareergrowth.models.LessonTag
+import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
-class LessonTagsFragment: Fragment() {
+class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener {
 
     companion object {
 
@@ -26,5 +30,33 @@ class LessonTagsFragment: Fragment() {
     ): View {
         _binding = LessonTagsFragmentBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val allTags = LessonTag.values()
+        val tagViewModels = mutableListOf<LessonTagViewModel>()
+        for (tag in allTags) {
+            tagViewModels.add(
+                LessonTagViewModel(
+                    tag = tag,
+                    lessons = LessonProvider.getLessonList(
+                        tag = tag,
+                        context = view.context
+                    ),
+                    tagLabel = getString(tag.overallLabelId)
+                )
+            )
+        }
+
+        val adapter = LessonTagsAdapter(
+            viewModels = tagViewModels,
+            listener = this
+        )
+        binding.tagsList.adapter = adapter
+    }
+
+    override fun onTagClicked(tag: LessonTag) {
     }
 }
