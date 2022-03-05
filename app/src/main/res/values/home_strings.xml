@@ -7,6 +7,7 @@
     <string name="learning_quickly">Learning Quickly</string>
     <string name="meetings">Meetings</string>
 
+    <string name="arrow_icon">{ion-android-arrow-dropright-circle @color/green}</string>
     <string name="green_check_icon">{ion-checkmark @color/green}</string>
     <string name="red_x_icon">{ion-android-close @color/red}</string>
 
