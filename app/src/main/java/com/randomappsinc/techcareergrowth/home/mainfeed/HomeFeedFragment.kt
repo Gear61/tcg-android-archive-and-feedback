@@ -1,4 +1,4 @@
-package com.randomappsinc.techcareergrowth.home
+package com.randomappsinc.techcareergrowth.home.mainfeed
 
 import android.content.Intent
 import android.os.Bundle
@@ -16,7 +16,7 @@ import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.util.ListUtil
 
-class HomeFeedFragment : Fragment(), HomepageAdapter.Listener, PreferencesManager.Listener {
+class HomeFeedFragment : Fragment(), HomeFeedAdapter.Listener, PreferencesManager.Listener {
 
     companion object {
 
@@ -29,7 +29,7 @@ class HomeFeedFragment : Fragment(), HomepageAdapter.Listener, PreferencesManage
     private val binding get() = _binding!!
 
     private lateinit var preferencesManager: PreferencesManager
-    private lateinit var homepageAdapter: HomepageAdapter
+    private lateinit var homeFeedAdapter: HomeFeedAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -46,27 +46,27 @@ class HomeFeedFragment : Fragment(), HomepageAdapter.Listener, PreferencesManage
         preferencesManager.registerListener(listener = this)
 
         val lessonTypes = preferencesManager.getContentOrder()
-        homepageAdapter = HomepageAdapter(
+        homeFeedAdapter = HomeFeedAdapter(
             lessonTags = lessonTypes,
             listener = this
         )
-        binding.homepageList.adapter = homepageAdapter
+        binding.homepageList.adapter = homeFeedAdapter
     }
 
     override fun onLessonCompleted(lessonId: String) {
-        homepageAdapter.onLessonCompleted(lessonId = lessonId)
+        homeFeedAdapter.onLessonCompleted(lessonId = lessonId)
     }
 
     override fun onResume() {
         super.onResume()
         val freshLessonTypes = preferencesManager.getContentOrder()
-        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = homepageAdapter.lessonTags)) {
-            homepageAdapter.clear()
-            homepageAdapter = HomepageAdapter(
+        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = homeFeedAdapter.lessonTags)) {
+            homeFeedAdapter.clear()
+            homeFeedAdapter = HomeFeedAdapter(
                 lessonTags = freshLessonTypes,
                 listener = this
             )
-            binding.homepageList.adapter = homepageAdapter
+            binding.homepageList.adapter = homeFeedAdapter
         }
     }
 

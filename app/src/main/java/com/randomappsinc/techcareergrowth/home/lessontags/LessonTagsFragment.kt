@@ -1,4 +1,4 @@
-package com.randomappsinc.techcareergrowth.home
+package com.randomappsinc.techcareergrowth.home.lessontags
 
 import android.os.Bundle
 import android.view.LayoutInflater

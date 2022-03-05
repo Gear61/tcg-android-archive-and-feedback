@@ -1,4 +1,4 @@
-package com.randomappsinc.techcareergrowth.home
+package com.randomappsinc.techcareergrowth.home.mainfeed
 
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +12,7 @@ import com.randomappsinc.techcareergrowth.models.Lesson
 
 open class LessonGalleryAdapter(
     val lessons: List<Lesson>,
-    var listener: HomepageAdapter.Listener?
+    var listener: HomeFeedAdapter.Listener?
 ) : RecyclerView.Adapter<LessonGalleryAdapter.ViewHolder>() {
 
     fun onLessonCompleted(lessonId: String) {

@@ -1,4 +1,4 @@
-package com.randomappsinc.techcareergrowth.home
+package com.randomappsinc.techcareergrowth.home.mainfeed
 
 import android.view.LayoutInflater
 import android.view.View
@@ -10,11 +10,11 @@ import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.LessonTag
 
-open class HomepageAdapter(
+open class HomeFeedAdapter(
     val lessonTags: List<LessonTag>,
     var listener: Listener?,
     val positionToAdapter: MutableMap<Int, LessonGalleryAdapter> = mutableMapOf()
-) : RecyclerView.Adapter<HomepageAdapter.ViewHolder>()  {
+) : RecyclerView.Adapter<HomeFeedAdapter.ViewHolder>()  {
 
     interface Listener {
         fun onLessonClicked(lesson: Lesson)

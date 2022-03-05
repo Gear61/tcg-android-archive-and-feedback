@@ -4,6 +4,8 @@ import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.randomappsinc.techcareergrowth.R
+import com.randomappsinc.techcareergrowth.home.lessontags.LessonTagsFragment
+import com.randomappsinc.techcareergrowth.home.mainfeed.HomeFeedFragment
 
 internal class HomepageFragmentController(
     private val fragmentManager: FragmentManager,
