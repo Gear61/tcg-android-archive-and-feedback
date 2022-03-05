@@ -3,7 +3,7 @@ package com.randomappsinc.techcareergrowth.contentproviders
 import android.content.Context
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.models.Question
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
@@ -53,7 +53,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_1"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_1_name,
             youtubeVideoId = "8a-ZMCGg4rc",
             questions = questions,
@@ -88,7 +88,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_2"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_2_name,
             youtubeVideoId = "tdfXpFZriFI",
             questions = questions,
@@ -137,7 +137,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_3"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_3_name,
             youtubeVideoId = "wgCDDE_WAJ8",
             questions = questions,
@@ -172,7 +172,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_4"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_4_name,
             youtubeVideoId = "6ss9oQWn2K8",
             questions = questions,
@@ -235,7 +235,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_5"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_5_name,
             youtubeVideoId = "nHwHnNwN6to",
             questions = questions,
@@ -270,7 +270,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_6"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_6_name,
             youtubeVideoId = "xDKjrf-tpZ4",
             questions = questions,
@@ -305,7 +305,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_7"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_7_name,
             youtubeVideoId = "s3Fq2xzZ8E0",
             questions = questions,
@@ -340,7 +340,7 @@ object PromotionLessonProvider {
         val lessonId = "promotion_8"
         return Lesson(
             id = lessonId,
-            type = LessonType.PROMOTION,
+            tag = LessonTag.PROMOTION,
             nameResId = R.string.promotion_lesson_8_name,
             youtubeVideoId = "_w0VUTA7z2E",
             questions = questions,

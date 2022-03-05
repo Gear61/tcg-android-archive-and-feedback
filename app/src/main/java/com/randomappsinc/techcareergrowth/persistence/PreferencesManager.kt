@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import com.randomappsinc.techcareergrowth.common.SingletonHolder
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
 
 class PreferencesManager private constructor(context: Context) {
@@ -39,24 +39,24 @@ class PreferencesManager private constructor(context: Context) {
             prefs.edit().putInt(THEME_MODE, newThemeMode).apply()
         }
 
-    fun getContentOrder(): MutableList<LessonType> {
+    fun getContentOrder(): MutableList<LessonTag> {
         val orderedTypes = prefs.getString(KEY_CONTENT_ORDER, "")
         val defaultTypes = mutableListOf(
-            LessonType.INTERVIEWING,
-            LessonType.RESUME,
-            LessonType.PRODUCTIVITY,
-            LessonType.PROMOTION,
-            LessonType.LEARNING_QUICKLY,
-            LessonType.MEETINGS
+            LessonTag.INTERVIEWING,
+            LessonTag.RESUME,
+            LessonTag.PRODUCTIVITY,
+            LessonTag.PROMOTION,
+            LessonTag.LEARNING_QUICKLY,
+            LessonTag.MEETINGS
         )
 
         if (orderedTypes!!.isEmpty()) {
             return defaultTypes
         } else {
             val splitUpTypes = orderedTypes.split(",")
-            val lessonTypes = mutableListOf<LessonType>()
+            val lessonTypes = mutableListOf<LessonTag>()
             for (type in splitUpTypes) {
-                lessonTypes.add(LessonType.valueOf(type))
+                lessonTypes.add(LessonTag.valueOf(type))
             }
 
             for (defaultType in defaultTypes) {
@@ -69,9 +69,9 @@ class PreferencesManager private constructor(context: Context) {
         }
     }
 
-    fun setContentOrder(lessonTypes: List<LessonType>) {
+    fun setContentOrder(lessonTags: List<LessonTag>) {
         val typesString = StringBuilder()
-        for (type in lessonTypes) {
+        for (type in lessonTags) {
             if (typesString.isNotEmpty()) {
                 typesString.append(",")
             }

@@ -3,7 +3,7 @@ package com.randomappsinc.techcareergrowth.contentproviders
 import android.content.Context
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.models.Question
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
@@ -76,7 +76,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_1"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_1_name,
             youtubeVideoId = "e6Ej_9mEc10",
             questions = questions,
@@ -104,7 +104,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_2"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_2_name,
             youtubeVideoId = "ZzQquAy7gwQ",
             questions = questions,
@@ -139,7 +139,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_3"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_3_name,
             youtubeVideoId = "BIcS6glgqyQ",
             questions = questions,
@@ -181,7 +181,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_4"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_4_name,
             youtubeVideoId = "b4A4zPu4xMQ",
             questions = questions,
@@ -209,7 +209,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_5"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_5_name,
             youtubeVideoId = "q8RxMZqVYmk",
             questions = questions,
@@ -237,7 +237,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_6"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_6_name,
             youtubeVideoId = "JmVVa94j04I",
             questions = questions,
@@ -265,7 +265,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_7"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_7_name,
             youtubeVideoId = "Et3Klf_jIhM",
             questions = questions,
@@ -300,7 +300,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_8"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_8_name,
             youtubeVideoId = "GJHsNeogthY",
             questions = questions,
@@ -335,7 +335,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_9"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_9_name,
             youtubeVideoId = "4XFgKxYfrxY",
             questions = questions,
@@ -363,7 +363,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_10"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_10_name,
             youtubeVideoId = "3x4Oz332R9s",
             questions = questions,
@@ -391,7 +391,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_11"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_11_name,
             youtubeVideoId = "bPk5gEoGLAU",
             questions = questions,
@@ -419,7 +419,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_12"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_12_name,
             youtubeVideoId = "NswneqhmEJ4",
             questions = questions,
@@ -461,7 +461,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_13"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_13_name,
             youtubeVideoId = "Ftcwz1I6mIg",
             questions = questions,
@@ -489,7 +489,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_14"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_14_name,
             youtubeVideoId = "X8nxyvydHjg",
             questions = questions,
@@ -524,7 +524,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_15"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_15_name,
             youtubeVideoId = "SBf9S0B0W3Q",
             questions = questions,
@@ -559,7 +559,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_16"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_16_name,
             youtubeVideoId = "7ZM7YNKHLy8",
             questions = questions,
@@ -594,7 +594,7 @@ object MeetingsLessonProvider {
         val lessonId = "meetings_17"
         return Lesson(
             id = lessonId,
-            type = LessonType.MEETINGS,
+            tag = LessonTag.MEETINGS,
             nameResId = R.string.meetings_lesson_17_name,
             youtubeVideoId = "qWXfT2fiPVE",
             questions = questions,

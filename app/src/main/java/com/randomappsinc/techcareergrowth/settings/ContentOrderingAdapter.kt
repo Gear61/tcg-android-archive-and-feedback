@@ -6,14 +6,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.randomappsinc.techcareergrowth.R
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 
-class ContentOrderingAdapter(val lessonTypes: MutableList<LessonType>) :
+class ContentOrderingAdapter(val lessonTags: MutableList<LessonTag>) :
     RecyclerView.Adapter<ContentOrderingAdapter.LessonTypeViewHolder>(), ItemTouchHelperAdapter {
 
     override fun onItemMove(fromPosition: Int, toPosition: Int) {
-        val movedCard = lessonTypes.removeAt(fromPosition)
-        lessonTypes.add(toPosition, movedCard)
+        val movedCard = lessonTags.removeAt(fromPosition)
+        lessonTags.add(toPosition, movedCard)
         notifyItemMoved(fromPosition, toPosition)
     }
 
@@ -31,7 +31,7 @@ class ContentOrderingAdapter(val lessonTypes: MutableList<LessonType>) :
     }
 
     override fun getItemCount(): Int {
-        return lessonTypes.size
+        return lessonTags.size
     }
 
     inner class LessonTypeViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -39,7 +39,7 @@ class ContentOrderingAdapter(val lessonTypes: MutableList<LessonType>) :
         private val lessonTitle: TextView = itemView.findViewById(R.id.lesson_type)
 
         fun loadLessonType(position: Int) {
-            lessonTitle.setText(lessonTypes[position].orderingLabelId)
+            lessonTitle.setText(lessonTags[position].overallLabelId)
         }
     }
 }

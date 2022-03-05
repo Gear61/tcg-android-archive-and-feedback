@@ -12,7 +12,7 @@ import com.randomappsinc.techcareergrowth.databinding.HomeFeedFragmentBinding
 import com.randomappsinc.techcareergrowth.learning.LessonActivity
 import com.randomappsinc.techcareergrowth.lessonlist.LessonListActivity
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.util.ListUtil
 
@@ -47,7 +47,7 @@ class HomeFeedFragment : Fragment(), HomepageAdapter.Listener, PreferencesManage
 
         val lessonTypes = preferencesManager.getContentOrder()
         homepageAdapter = HomepageAdapter(
-            lessonTypes = lessonTypes,
+            lessonTags = lessonTypes,
             listener = this
         )
         binding.homepageList.adapter = homepageAdapter
@@ -60,10 +60,10 @@ class HomeFeedFragment : Fragment(), HomepageAdapter.Listener, PreferencesManage
     override fun onResume() {
         super.onResume()
         val freshLessonTypes = preferencesManager.getContentOrder()
-        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = homepageAdapter.lessonTypes)) {
+        if (!ListUtil.areListsEqual(first = freshLessonTypes, second = homepageAdapter.lessonTags)) {
             homepageAdapter.clear()
             homepageAdapter = HomepageAdapter(
-                lessonTypes = freshLessonTypes,
+                lessonTags = freshLessonTypes,
                 listener = this
             )
             binding.homepageList.adapter = homepageAdapter
@@ -76,9 +76,9 @@ class HomeFeedFragment : Fragment(), HomepageAdapter.Listener, PreferencesManage
         startActivity(intent)
     }
 
-    override fun onLessonTypeClicked(type: LessonType) {
+    override fun onLessonTypeClicked(tag: LessonTag) {
         val intent = Intent(requireActivity(), LessonListActivity::class.java)
-        intent.putExtra(Constants.LESSON_TYPE_KEY, type)
+        intent.putExtra(Constants.LESSON_TYPE_KEY, tag)
         startActivity(intent)
     }
 

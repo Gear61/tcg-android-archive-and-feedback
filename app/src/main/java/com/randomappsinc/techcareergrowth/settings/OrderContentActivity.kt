@@ -38,7 +38,7 @@ class OrderContentActivity : AppCompatActivity() {
         }
 
         val preferencesManager = PreferencesManager.getInstance(this)
-        val contentOrderingAdapter = ContentOrderingAdapter(lessonTypes = preferencesManager.getContentOrder())
+        val contentOrderingAdapter = ContentOrderingAdapter(lessonTags = preferencesManager.getContentOrder())
         binding.lessonTypesList.adapter = contentOrderingAdapter
 
         val callback: ItemTouchHelper.Callback =
@@ -47,7 +47,7 @@ class OrderContentActivity : AppCompatActivity() {
         itemTouchHelper.attachToRecyclerView(binding.lessonTypesList)
 
         binding.saveButton.setOnClickListener {
-            preferencesManager.setContentOrder(contentOrderingAdapter.lessonTypes)
+            preferencesManager.setContentOrder(contentOrderingAdapter.lessonTags)
             UIUtil.showShortToast(R.string.order_saved, it.context)
 
             if (fromSettings) {

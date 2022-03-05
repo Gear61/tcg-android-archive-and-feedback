@@ -10,7 +10,7 @@ import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonListBinding
 import com.randomappsinc.techcareergrowth.learning.LessonActivity
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
 class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener, PreferencesManager.Listener {
@@ -23,13 +23,13 @@ class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener, Prefe
         setContentView(binding.root)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        val lessonType = intent.getSerializableExtra(Constants.LESSON_TYPE_KEY) as LessonType
+        val lessonType = intent.getSerializableExtra(Constants.LESSON_TYPE_KEY) as LessonTag
         setTitle(lessonType.overallLabelId)
 
         PreferencesManager.getInstance(this).registerListener(listener = this)
         lessonsAdapter = LessonListAdapter(
             lessons = LessonProvider.getLessonList(
-                type = lessonType,
+                tag = lessonType,
                 context = this
             ),
             listener = this

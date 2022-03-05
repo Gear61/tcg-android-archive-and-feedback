@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 
 open class HomepageAdapter(
-    val lessonTypes: List<LessonType>,
+    val lessonTags: List<LessonTag>,
     var listener: Listener?,
     val positionToAdapter: MutableMap<Int, LessonGalleryAdapter> = mutableMapOf()
 ) : RecyclerView.Adapter<HomepageAdapter.ViewHolder>()  {
@@ -19,7 +19,7 @@ open class HomepageAdapter(
     interface Listener {
         fun onLessonClicked(lesson: Lesson)
 
-        fun onLessonTypeClicked(type: LessonType)
+        fun onLessonTypeClicked(tag: LessonTag)
     }
 
     fun clear() {
@@ -46,7 +46,7 @@ open class HomepageAdapter(
     }
 
     override fun getItemCount(): Int {
-        return lessonTypes.size
+        return lessonTags.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -55,16 +55,16 @@ open class HomepageAdapter(
         private val lessonGallery: RecyclerView = itemView.findViewById(R.id.lesson_gallery)
 
         fun bind(position: Int) {
-            lessonTypeTitle.setText(lessonTypes[position].overallLabelId)
+            lessonTypeTitle.setText(lessonTags[position].overallLabelId)
             lessonTypeTitle.setOnClickListener {
-                listener?.onLessonTypeClicked(lessonTypes[position])
+                listener?.onLessonTypeClicked(lessonTags[position])
             }
             arrowButton.setOnClickListener {
-                listener?.onLessonTypeClicked(lessonTypes[position])
+                listener?.onLessonTypeClicked(lessonTags[position])
             }
 
             val lessons = LessonProvider.getLessonList(
-                type = lessonTypes[position],
+                tag = lessonTags[position],
                 context = itemView.context
             )
 

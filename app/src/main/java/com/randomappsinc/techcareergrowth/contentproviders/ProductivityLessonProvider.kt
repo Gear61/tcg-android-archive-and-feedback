@@ -3,7 +3,7 @@ package com.randomappsinc.techcareergrowth.contentproviders
 import android.content.Context
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.models.Question
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
@@ -68,7 +68,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_1"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_1_name,
             youtubeVideoId = "XqBA2fkvUTg",
             questions = questions,
@@ -117,7 +117,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_2"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_2_name,
             youtubeVideoId = "3gvjpMhhfnY",
             questions = questions,
@@ -152,7 +152,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_3"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_3_name,
             youtubeVideoId = "7VwKfMZUFxk",
             questions = questions,
@@ -201,7 +201,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_4"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_4_name,
             youtubeVideoId = "L8a4Sc17DLw",
             questions = questions,
@@ -236,7 +236,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_5"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_5_name,
             youtubeVideoId = "Ntb5IvW869s",
             questions = questions,
@@ -271,7 +271,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_6"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_6_name,
             youtubeVideoId = "PMUyZ7VoowE",
             questions = questions,
@@ -306,7 +306,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_7"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_7_name,
             youtubeVideoId = "nrg02T8VSDY",
             questions = questions,
@@ -341,7 +341,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_8"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_8_name,
             youtubeVideoId = "RPXLB8HH4Q4",
             questions = questions,
@@ -376,7 +376,7 @@ object ProductivityLessonProvider {
         val lessonId = "productivity_9"
         return Lesson(
             id = lessonId,
-            type = LessonType.PRODUCTIVITY,
+            tag = LessonTag.PRODUCTIVITY,
             nameResId = R.string.productivity_lesson_9_name,
             youtubeVideoId = "JtpVI7dc-9A",
             questions = questions,

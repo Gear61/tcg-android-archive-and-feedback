@@ -3,7 +3,7 @@ package com.randomappsinc.techcareergrowth.contentproviders
 import android.content.Context
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.models.Question
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
@@ -66,7 +66,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_1"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_1_name,
             youtubeVideoId = "fVgZBX0yinc",
             questions = questions,
@@ -115,7 +115,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_2"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_2_name,
             youtubeVideoId = "VS75nql2Csg",
             questions = questions,
@@ -199,7 +199,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_3"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_3_name,
             youtubeVideoId = "24CGlaL5bXo",
             questions = questions,
@@ -234,7 +234,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_4"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_4_name,
             youtubeVideoId = "rfSy_MlMyfI",
             questions = questions,
@@ -290,7 +290,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_5"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_5_name,
             youtubeVideoId = "QLCq91qrMC0",
             questions = questions,
@@ -339,7 +339,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_6"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_6_name,
             youtubeVideoId = "ZfZzJ6C235s",
             questions = questions,
@@ -374,7 +374,7 @@ object LearningQuicklyContentProvider {
         val lessonId = "learning_quickly_7"
         return Lesson(
             id = lessonId,
-            type = LessonType.LEARNING_QUICKLY,
+            tag = LessonTag.LEARNING_QUICKLY,
             nameResId = R.string.learning_quickly_lesson_7_name,
             youtubeVideoId = "1jJf0ehQ7Fo",
             questions = questions,

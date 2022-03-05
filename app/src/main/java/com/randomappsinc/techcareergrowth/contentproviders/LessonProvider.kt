@@ -2,18 +2,18 @@ package com.randomappsinc.techcareergrowth.contentproviders
 
 import android.content.Context
 import com.randomappsinc.techcareergrowth.models.Lesson
-import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.models.LessonTag
 
 object LessonProvider {
 
-    fun getLessonList(type: LessonType, context: Context): List<Lesson> {
-        val lessons = when (type) {
-            LessonType.INTERVIEWING -> InterviewingLessonProvider.getLessons(context = context)
-            LessonType.RESUME -> ResumeLessonProvider.getLessons(context = context)
-            LessonType.PRODUCTIVITY -> ProductivityLessonProvider.getLessons(context = context)
-            LessonType.PROMOTION -> PromotionLessonProvider.getLessons(context = context)
-            LessonType.LEARNING_QUICKLY -> LearningQuicklyContentProvider.getLessons(context = context)
-            LessonType.MEETINGS -> MeetingsLessonProvider.getLessons(context = context)
+    fun getLessonList(tag: LessonTag, context: Context): List<Lesson> {
+        val lessons = when (tag) {
+            LessonTag.INTERVIEWING -> InterviewingLessonProvider.getLessons(context = context)
+            LessonTag.RESUME -> ResumeLessonProvider.getLessons(context = context)
+            LessonTag.PRODUCTIVITY -> ProductivityLessonProvider.getLessons(context = context)
+            LessonTag.PROMOTION -> PromotionLessonProvider.getLessons(context = context)
+            LessonTag.LEARNING_QUICKLY -> LearningQuicklyContentProvider.getLessons(context = context)
+            LessonTag.MEETINGS -> MeetingsLessonProvider.getLessons(context = context)
         }
         verifyLessonList(
             lessons = lessons,
@@ -37,13 +37,13 @@ object LessonProvider {
         val seenYouTubeIds = mutableSetOf<String>()
 
         for ((index, lesson) in lessons.iterator().withIndex()) {
-            val idPrefix = when (lesson.type) {
-                LessonType.INTERVIEWING -> "interviewing"
-                LessonType.RESUME -> "resume"
-                LessonType.PRODUCTIVITY -> "productivity"
-                LessonType.PROMOTION -> "promotion"
-                LessonType.LEARNING_QUICKLY -> "learning_quickly"
-                LessonType.MEETINGS -> "meetings"
+            val idPrefix = when (lesson.tag) {
+                LessonTag.INTERVIEWING -> "interviewing"
+                LessonTag.RESUME -> "resume"
+                LessonTag.PRODUCTIVITY -> "productivity"
+                LessonTag.PROMOTION -> "promotion"
+                LessonTag.LEARNING_QUICKLY -> "learning_quickly"
+                LessonTag.MEETINGS -> "meetings"
             }
             val lessonNumber = (index + 1).toString()
             val expectedLessonId = idPrefix + "_" + lessonNumber

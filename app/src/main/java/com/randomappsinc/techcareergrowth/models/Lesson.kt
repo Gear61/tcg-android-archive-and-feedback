@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 class Lesson(
     val id: String,
-    val type: LessonType,
+    val tag: LessonTag,
     @StringRes val nameResId: Int,
     val youtubeVideoId: String,
     val questions: List<Question>,
