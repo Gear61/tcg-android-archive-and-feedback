@@ -1,15 +1,15 @@
 package com.randomappsinc.techcareergrowth.home.lessontags
 
+import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
 import com.randomappsinc.techcareergrowth.R
-import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.LessonTag
+
 
 open class LessonTagsAdapter(
     val viewModels: List<LessonTagViewModel>,
@@ -43,11 +43,19 @@ open class LessonTagsAdapter(
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val lessonTag: TextView = itemView.findViewById(R.id.lesson_tag)
         private val numLessonsText: TextView = itemView.findViewById(R.id.num_lessons_text)
+        private val completionPercent: TextView = itemView.findViewById(R.id.completion_percent)
 
         fun bind(position: Int) {
             val viewModel = viewModels[position]
             lessonTag.text = viewModel.tagLabel
             numLessonsText.text = viewModel.getNumLessonText(context = itemView.context)
+            completionPercent.text = viewModel.getCompletionRateText()
+            val completionTextColor = viewModel.getCompletionTextColor()
+            completionPercent.setTextColor(completionTextColor)
+
+            val completionBackground: GradientDrawable = completionPercent.background as GradientDrawable
+            val strokeWidthPixels = itemView.context.resources.getDimensionPixelSize(R.dimen.completion_percent_stroke_width)
+            completionBackground.setStroke(strokeWidthPixels, completionTextColor)
 
             itemView.setOnClickListener {
                 listener.onTagClicked(viewModel.tag)

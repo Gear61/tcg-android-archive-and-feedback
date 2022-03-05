@@ -13,24 +13,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:padding="8dp"
         >
 
-        <TextView
-            android:id="@+id/lesson_tag"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="21sp"
-            android:textColor="@color/text_title"
-            />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/lesson_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="@color/text_title"
+                />
+
+            <TextView
+                android:id="@+id/num_lessons_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/text_footer"
+                />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/num_lessons_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="@color/text_footer"
+            android:id="@+id/completion_percent"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="@drawable/circular_border_background"
             />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

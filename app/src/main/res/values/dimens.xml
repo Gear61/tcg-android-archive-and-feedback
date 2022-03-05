@@ -5,4 +5,6 @@
 
     <dimen name="radio_group_button_spacing">4dp</dimen>
     <dimen name="radio_button_padding">8dp</dimen>
+
+    <dimen name="completion_percent_stroke_width">2dp</dimen>
 </resources>
