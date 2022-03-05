@@ -42,11 +42,16 @@ open class LessonTagsAdapter(
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val lessonTag: TextView = itemView.findViewById(R.id.lesson_tag)
-        private val lessonName: TextView = itemView.findViewById(R.id.lesson_name)
+        private val numLessonsText: TextView = itemView.findViewById(R.id.num_lessons_text)
 
         fun bind(position: Int) {
             val viewModel = viewModels[position]
-            lessonName.text = viewModel.tagLabel
+            lessonTag.text = viewModel.tagLabel
+            numLessonsText.text = viewModel.getNumLessonText(context = itemView.context)
+
+            itemView.setOnClickListener {
+
+            }
         }
     }
 }
