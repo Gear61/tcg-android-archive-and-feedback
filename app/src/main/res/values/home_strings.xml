@@ -11,6 +11,9 @@
     <string name="green_check_icon">{ion-checkmark @color/green}</string>
     <string name="red_x_icon">{ion-android-close @color/red}</string>
 
+    <string name="home_icon">{ion-android-home}</string>
+    <string name="tags_icon">{ion-pricetags}</string>
+
     <string name="please_rate">
         Hey, it looks like you\'re a frequent user of Tech Career Growth!
         If you have a couple seconds, please rate this app in the Play Store.

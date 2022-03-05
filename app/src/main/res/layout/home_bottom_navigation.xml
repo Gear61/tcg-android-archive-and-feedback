@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/screen_background"
+        >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/home"
+                android:text="@string/home_icon"
+                style="@style/bottom_navigation_item"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/lesson_tags"
+                android:text="@string/tags_icon"
+                style="@style/bottom_navigation_item"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/toolbar_shadow"
+        />
+</merge>

@@ -17,6 +17,15 @@
         <item name="android:background">@drawable/rounded_button_background</item>
     </style>
 
+    <style name="bottom_navigation_item">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
     <style name="standard_card">
         <item name="android:layout_width">match_parent</item>
         <item name="cardUseCompatPadding">true</item>
