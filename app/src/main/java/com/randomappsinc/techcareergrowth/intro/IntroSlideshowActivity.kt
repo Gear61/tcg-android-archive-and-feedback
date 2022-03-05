@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.databinding.IntroSlideshowActivityBinding
-import com.randomappsinc.techcareergrowth.home.MainActivity
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 import com.randomappsinc.techcareergrowth.settings.OrderContentActivity
 

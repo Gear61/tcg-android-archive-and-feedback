@@ -11,8 +11,11 @@ import com.randomappsinc.techcareergrowth.databinding.LessonListBinding
 import com.randomappsinc.techcareergrowth.learning.LessonActivity
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.LessonType
+import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
-class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener {
+class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener, PreferencesManager.Listener {
+
+    private lateinit var lessonsAdapter: LessonListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,14 +26,19 @@ class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener {
         val lessonType = intent.getSerializableExtra(Constants.LESSON_TYPE_KEY) as LessonType
         setTitle(lessonType.overallLabelId)
 
-        val adapter = LessonListAdapter(
+        PreferencesManager.getInstance(this).registerListener(listener = this)
+        lessonsAdapter = LessonListAdapter(
             lessons = LessonProvider.getLessonList(
                 type = lessonType,
                 context = this
             ),
             listener = this
         )
-        binding.lessonList.adapter = adapter
+        binding.lessonList.adapter = lessonsAdapter
+    }
+
+    override fun onLessonCompleted(lessonId: String) {
+        lessonsAdapter.onLessonCompleted(lessonId = lessonId)
     }
 
     override fun onLessonClicked(lesson: Lesson) {
@@ -46,6 +54,7 @@ class LessonListActivity: AppCompatActivity(), LessonListAdapter.Listener {
 
     override fun finish() {
         super.finish()
+        PreferencesManager.getInstance(this).unregisterListener(listener = this)
         overridePendingTransition(R.anim.slide_right_out, R.anim.slide_right_in)
     }
 

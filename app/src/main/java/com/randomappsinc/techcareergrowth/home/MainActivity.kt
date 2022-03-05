@@ -8,7 +8,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.tabs.TabLayoutMediator
 import com.joanzapata.iconify.fonts.IoniconsIcons
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.common.Constants
@@ -22,7 +21,7 @@ import com.randomappsinc.techcareergrowth.settings.SettingsActivity
 import com.randomappsinc.techcareergrowth.util.ListUtil
 import com.randomappsinc.techcareergrowth.util.UIUtil
 
-class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
+class MainActivity : AppCompatActivity(), HomepageAdapter.Listener, PreferencesManager.Listener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var preferencesManager: PreferencesManager
@@ -34,6 +33,7 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
         setContentView(binding.root)
 
         preferencesManager = PreferencesManager.getInstance(this)
+        preferencesManager.registerListener(listener = this)
         if (preferencesManager.logAppOpenAndCheckForRatingUpsell()) {
             AlertDialog.Builder(this)
                 .setMessage(R.string.please_rate)
@@ -58,6 +58,10 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
         binding.homepageList.adapter = homepageAdapter
     }
 
+    override fun onLessonCompleted(lessonId: String) {
+        homepageAdapter.onLessonCompleted(lessonId = lessonId)
+    }
+
     override fun onResume() {
         super.onResume()
         val freshLessonTypes = preferencesManager.getContentOrder()
@@ -74,7 +78,7 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
     override fun onLessonClicked(lesson: Lesson) {
         val intent = Intent(this, LessonActivity::class.java)
         intent.putExtra(LessonActivity.LESSON_KEY, lesson)
-        startActivityForResult(intent, 1)
+        startActivity(intent)
     }
 
     override fun onLessonTypeClicked(type: LessonType) {
@@ -83,17 +87,14 @@ class MainActivity : AppCompatActivity(), HomepageAdapter.Listener {
         startActivity(intent)
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Constants.FIRST_TIME_COMPLETION_CODE) {
-            val lessonId = data!!.getStringExtra(Constants.LESSON_ID_KEY)!!
-            homepageAdapter.onLessonCompleted(lessonId = lessonId)
-        }
-    }
-
     override fun startActivityForResult(intent: Intent?, requestCode: Int) {
         super.startActivityForResult(intent, requestCode)
         overridePendingTransition(R.anim.slide_left_out, R.anim.slide_left_in)
+    }
+
+    override fun finish() {
+        super.finish()
+        preferencesManager.unregisterListener(listener = this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

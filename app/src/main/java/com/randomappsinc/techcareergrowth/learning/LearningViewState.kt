@@ -14,7 +14,6 @@ class LearningViewState(
     var scoreMessage: String = "",
     var scoreText: String = "",
     var gotPerfectScore: Boolean = false,
-    var completedForFirstTime: Boolean = false,
     var justCompletedQuiz: Boolean = false,
     @StringRes var resultEmojiId: Int = R.string.sad_emoji,
     private val questionAnswers: MutableList<String> = mutableListOf()
@@ -50,7 +49,6 @@ class LearningViewState(
             if (percentCorrect == 100.0f) {
                 gotPerfectScore = true
                 if (!lesson.isCompleted) {
-                    completedForFirstTime = true
                     PreferencesManager.getInstance(context).onLessonCompleted(lesson.id)
                 }
             }

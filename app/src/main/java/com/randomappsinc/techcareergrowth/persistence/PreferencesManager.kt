@@ -6,9 +6,12 @@ import androidx.preference.PreferenceManager
 import com.randomappsinc.techcareergrowth.common.SingletonHolder
 import com.randomappsinc.techcareergrowth.models.LessonType
 import com.randomappsinc.techcareergrowth.theme.ThemeMode
-import java.lang.StringBuilder
 
 class PreferencesManager private constructor(context: Context) {
+
+    interface Listener {
+        fun onLessonCompleted(lessonId: String)
+    }
 
     companion object : SingletonHolder<PreferencesManager, Context>(::PreferencesManager) {
 
@@ -22,6 +25,7 @@ class PreferencesManager private constructor(context: Context) {
     }
 
     private val prefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+    private val listeners = mutableListOf<Listener>()
 
     var hasSeenSlideshow: Boolean
         get() = prefs.getBoolean(KEY_HAS_SEEN_SLIDESHOW, false)
@@ -82,11 +86,22 @@ class PreferencesManager private constructor(context: Context) {
 
     fun onLessonCompleted(lessonId: String) {
         prefs.edit().putBoolean(lessonId, true).apply()
+        for (listener in listeners) {
+            listener.onLessonCompleted(lessonId = lessonId)
+        }
     }
 
     fun logAppOpenAndCheckForRatingUpsell(): Boolean {
         val currentAppOpens = prefs.getInt(NUM_APP_OPENS, 0) + 1
         prefs.edit().putInt(NUM_APP_OPENS, currentAppOpens).apply()
         return currentAppOpens == APP_OPENS_FOR_RATING_UPSELL
+    }
+
+    fun registerListener(listener: Listener) {
+        listeners.add(listener)
+    }
+
+    fun unregisterListener(listener: Listener) {
+        listeners.remove(listener)
     }
 }
