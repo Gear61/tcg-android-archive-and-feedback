@@ -51,11 +51,15 @@ open class HomepageAdapter(
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val lessonTypeTitle: TextView = itemView.findViewById(R.id.lesson_type)
+        private val arrowButton: View = itemView.findViewById(R.id.arrow_button)
         private val lessonGallery: RecyclerView = itemView.findViewById(R.id.lesson_gallery)
 
         fun bind(position: Int) {
             lessonTypeTitle.setText(lessonTypes[position].overallLabelId)
             lessonTypeTitle.setOnClickListener {
+                listener?.onLessonTypeClicked(lessonTypes[position])
+            }
+            arrowButton.setOnClickListener {
                 listener?.onLessonTypeClicked(lessonTypes[position])
             }
 
