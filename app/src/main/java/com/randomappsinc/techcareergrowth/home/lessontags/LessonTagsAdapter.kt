@@ -50,7 +50,7 @@ open class LessonTagsAdapter(
             numLessonsText.text = viewModel.getNumLessonText(context = itemView.context)
 
             itemView.setOnClickListener {
-
+                listener.onTagClicked(viewModel.tag)
             }
         }
     }

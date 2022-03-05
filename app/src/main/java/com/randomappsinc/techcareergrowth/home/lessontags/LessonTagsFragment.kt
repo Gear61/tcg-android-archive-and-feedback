@@ -1,13 +1,16 @@
 package com.randomappsinc.techcareergrowth.home.lessontags
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.randomappsinc.techcareergrowth.common.Constants
 import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonTagsFragmentBinding
 import com.randomappsinc.techcareergrowth.home.mainfeed.HomeFeedAdapter
+import com.randomappsinc.techcareergrowth.lessonlist.LessonListActivity
 import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
@@ -49,6 +52,7 @@ class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener {
                 )
             )
         }
+        tagViewModels.sortBy { it.tagLabel }
 
         val adapter = LessonTagsAdapter(
             viewModels = tagViewModels,
@@ -58,5 +62,8 @@ class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener {
     }
 
     override fun onTagClicked(tag: LessonTag) {
+        val intent = Intent(requireActivity(), LessonListActivity::class.java)
+        intent.putExtra(Constants.LESSON_TYPE_KEY, tag)
+        startActivity(intent)
     }
 }
