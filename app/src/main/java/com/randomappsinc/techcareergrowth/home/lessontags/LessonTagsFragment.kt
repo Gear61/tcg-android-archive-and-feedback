@@ -9,12 +9,11 @@ import androidx.fragment.app.Fragment
 import com.randomappsinc.techcareergrowth.common.Constants
 import com.randomappsinc.techcareergrowth.contentproviders.LessonProvider
 import com.randomappsinc.techcareergrowth.databinding.LessonTagsFragmentBinding
-import com.randomappsinc.techcareergrowth.home.mainfeed.HomeFeedAdapter
 import com.randomappsinc.techcareergrowth.lessonlist.LessonListActivity
 import com.randomappsinc.techcareergrowth.models.LessonTag
 import com.randomappsinc.techcareergrowth.persistence.PreferencesManager
 
-class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener {
+class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener, PreferencesManager.Listener {
 
     companion object {
 
@@ -25,6 +24,8 @@ class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener {
 
     private var _binding: LessonTagsFragmentBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var tagsAdapter: LessonTagsAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -54,16 +55,27 @@ class LessonTagsFragment: Fragment(), LessonTagsAdapter.Listener {
         }
         tagViewModels.sortBy { it.tagLabel }
 
-        val adapter = LessonTagsAdapter(
+        tagsAdapter = LessonTagsAdapter(
             viewModels = tagViewModels,
             listener = this
         )
-        binding.tagsList.adapter = adapter
+        binding.tagsList.adapter = tagsAdapter
+
+        PreferencesManager.getInstance(view.context).registerListener(this)
     }
 
     override fun onTagClicked(tag: LessonTag) {
         val intent = Intent(requireActivity(), LessonListActivity::class.java)
         intent.putExtra(Constants.LESSON_TYPE_KEY, tag)
         startActivity(intent)
+    }
+
+    override fun onLessonCompleted(lessonId: String) {
+        tagsAdapter.onLessonCompleted(lessonId = lessonId)
+    }
+
+    override fun onDestroyView() {
+        PreferencesManager.getInstance(requireContext()).unregisterListener(this)
+        super.onDestroyView()
     }
 }

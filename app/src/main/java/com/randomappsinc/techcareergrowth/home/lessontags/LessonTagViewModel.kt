@@ -39,4 +39,14 @@ data class LessonTagViewModel(
         val green = (255.0f * completionPercent).toInt()
         return Color.rgb(red, green, 0)
     }
+
+    fun onLessonCompleted(lessonId: String): Boolean {
+        for (lesson in lessons) {
+            if (lesson.id == lessonId) {
+                lesson.isCompleted = true
+                return true
+            }
+        }
+        return false
+    }
 }

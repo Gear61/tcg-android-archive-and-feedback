@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.LessonTag
@@ -21,6 +20,11 @@ open class LessonTagsAdapter(
     }
 
     fun onLessonCompleted(lessonId: String) {
+        for ((index, viewModel) in viewModels.iterator().withIndex()) {
+            if (viewModel.onLessonCompleted(lessonId = lessonId)) {
+                notifyItemChanged(index)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
