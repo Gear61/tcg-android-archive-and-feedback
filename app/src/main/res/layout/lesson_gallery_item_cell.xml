@@ -27,15 +27,23 @@
             android:textStyle="bold"
             />
 
-        <com.joanzapata.iconify.widget.IconTextView
-            android:id="@+id/arrow_icon"
+        <FrameLayout
+            android:id="@+id/arrow_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:padding="10dp"
-            android:text="@string/arrow_icon"
-            android:textSize="28dp"
-            android:gravity="center"
-            />
+            >
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/arrow_icon"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:background="@drawable/filled_green_circle_background"
+                />
+        </FrameLayout>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
