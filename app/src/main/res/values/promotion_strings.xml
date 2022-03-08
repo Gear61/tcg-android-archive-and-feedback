@@ -456,4 +456,49 @@
         <item>@string/promotion_8_question_3_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON NINE -->
+    <string name="promotion_lesson_9_name">
+       The First Thing You Need To Do To Set Yourself Up For Promotion
+    </string>
+
+    <string name="promotion_9_question_1">
+        Which of the following is the foundation for your promotion plan?
+    </string>
+    <string name="promotion_9_question_1_option_1">
+        Long hours
+    </string>
+    <string name="promotion_9_question_1_option_2">
+        Discovering your strengths
+    </string>
+    <string name="promotion_9_question_1_option_3">
+        Lots of code
+    </string>
+    <string-array name="promotion_9_question_1_options">
+        <item>@string/promotion_9_question_1_option_1</item>
+        <item>@string/promotion_9_question_1_option_2</item>
+        <item>@string/promotion_9_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_9_question_2">
+        Why is understanding your strengths so important towards
+        your tech career growth?
+    </string>
+    <string name="promotion_9_question_2_option_1">
+        You are more efficient doing what you are good at
+    </string>
+    <string name="promotion_9_question_2_option_2">
+        You will enjoy the work more
+    </string>
+    <string name="promotion_9_question_2_option_3">
+        It lowers your chances of burn out as you are doing
+        work that you are more naturally geared towards
+    </string>
+    <string-array name="promotion_9_question_2_options">
+        <item>@string/promotion_9_question_2_option_1</item>
+        <item>@string/promotion_9_question_2_option_2</item>
+        <item>@string/promotion_9_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
