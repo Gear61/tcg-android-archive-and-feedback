@@ -54,7 +54,7 @@ open class LessonTagsAdapter(
             lessonTag.text = viewModel.tagLabel
             numLessonsText.text = viewModel.getNumLessonText(context = itemView.context)
             completionPercent.text = viewModel.getCompletionRateText()
-            val completionTextColor = viewModel.getCompletionTextColor()
+            val completionTextColor = viewModel.getCompletionTextColor(context = itemView.context)
             completionPercent.setTextColor(completionTextColor)
 
             val completionBackground: GradientDrawable = completionPercent.background as GradientDrawable

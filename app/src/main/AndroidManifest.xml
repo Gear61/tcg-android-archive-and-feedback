@@ -60,6 +60,7 @@
 
         <activity
             android:name=".learning.LessonActivity"
+            android:label="@string/lesson_page_title"
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize"
             />
@@ -73,7 +74,6 @@
 
         <activity
             android:name=".lessonlist.LessonListActivity"
-            android:label="@string/lesson_page_title"
             android:exported="false"
             android:screenOrientation="portrait"
             />

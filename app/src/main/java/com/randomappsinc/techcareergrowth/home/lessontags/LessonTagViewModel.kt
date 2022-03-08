@@ -5,6 +5,7 @@ import android.graphics.Color
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.LessonTag
+import com.randomappsinc.techcareergrowth.util.UIUtil
 
 data class LessonTagViewModel(
     val tag: LessonTag,
@@ -27,7 +28,7 @@ data class LessonTagViewModel(
         return "$completionPercent%"
     }
 
-    fun getCompletionTextColor(): Int {
+    fun getCompletionTextColor(context: Context): Int {
         var numLessonsCompleted = 0.0f
         for (lesson in lessons) {
             if (lesson.isCompleted) {
@@ -35,9 +36,12 @@ data class LessonTagViewModel(
             }
         }
         val completionPercent = numLessonsCompleted / (lessons.size.toFloat())
-        val red = (255.0f * (1 - completionPercent)).toInt()
-        val green = (255.0f * completionPercent).toInt()
-        return Color.rgb(red, green, 0)
+        return UIUtil.getInBetweenColor(
+            context = context,
+            startColorResId = R.color.red,
+            endColorResId = R.color.green,
+            progressTowardsEnd = completionPercent
+        )
     }
 
     fun onLessonCompleted(lessonId: String): Boolean {
