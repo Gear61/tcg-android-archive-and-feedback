@@ -41,8 +41,8 @@ object UIUtil {
         context: Context,
         @ColorRes startColorResId: Int,
         @ColorRes endColorResId: Int,
-        progressTowardsEnd: Float): Int
-    {
+        progressTowardsEnd: Float
+    ): Int {
         val startColor = ContextCompat.getColor(context, startColorResId)
         val endColor = ContextCompat.getColor(context, endColorResId)
 
@@ -54,7 +54,7 @@ object UIUtil {
         val endGreen = Color.green(endColor)
         val endBlue = Color.blue(endColor)
 
-        val redDelta = (endRed - startBlue).toFloat()
+        val redDelta = (endRed - startRed).toFloat()
         val greenDelta = (endGreen - startGreen).toFloat()
         val blueDelta = (endBlue - startBlue).toFloat()
 
