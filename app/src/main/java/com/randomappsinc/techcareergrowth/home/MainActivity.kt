@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.Listener {
         if (savedInstanceState == null) {
             navigationController.loadHomeInitially()
         } else {
-            navigationController.restoreFragments()
+            navigationController.clearFragments()
             val previousSelectedId = savedInstanceState.getInt(
                 PREVIOUSLY_SELECTED_PAGE_ID,
                 R.id.home

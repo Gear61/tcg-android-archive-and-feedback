@@ -38,7 +38,7 @@ internal class HomepageFragmentController(
                 addFragment(lessonTagsFragment)
             } else {
                 showFragment(lessonTagsFragment!!)
-            }
+            } else -> loadHomeInitially()
         }
     }
 
@@ -59,14 +59,9 @@ internal class HomepageFragmentController(
         fragmentManager.beginTransaction().hide(fragment).commit()
     }
 
-    fun restoreFragments() {
+    fun clearFragments() {
         for (fragment in fragmentManager.fragments) {
-            val fragmentName = fragment.javaClass.simpleName
-            if (HomeFeedFragment::class.java.simpleName.equals(fragmentName)) {
-                homeFeedFragment = fragment as HomeFeedFragment
-            } else if (LessonTagsFragment::class.java.simpleName.equals(fragmentName)) {
-                lessonTagsFragment = fragment as LessonTagsFragment
-            }
+            fragmentManager.beginTransaction().remove(fragment).commit()
         }
     }
 }

@@ -1,7 +1,6 @@
 package com.randomappsinc.techcareergrowth.home.lessontags
 
 import android.content.Context
-import android.graphics.Color
 import com.randomappsinc.techcareergrowth.R
 import com.randomappsinc.techcareergrowth.models.Lesson
 import com.randomappsinc.techcareergrowth.models.LessonTag
