@@ -504,14 +504,14 @@
 
     <!-- LESSON TEN -->
     <string name="promotion_lesson_10_name">
-       Understand Your Passion And Hatred
+       Understanding Your Passion And Hatred
     </string>
 
     <string name="promotion_10_question_1">
         Which of the following should you do to discover your work passion?
     </string>
     <string name="promotion_10_question_1_option_1">
-        Wait for your manager to tell you it
+        Wait for your manager to tell you what it is
     </string>
     <string name="promotion_10_question_1_option_2">
         Learn as many different programming languages as possible
