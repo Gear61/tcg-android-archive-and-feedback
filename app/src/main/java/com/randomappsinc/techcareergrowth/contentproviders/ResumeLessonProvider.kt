@@ -153,7 +153,7 @@ object ResumeLessonProvider {
         val lessonId = "resume_3"
         return Lesson(
             id = lessonId,
-            tags = setOf(LessonTag.RESUME),
+            tags = setOf(LessonTag.RESUME, LessonTag.JUNIOR_ENGINEER),
             nameResId = R.string.resume_lesson_3_name,
             youtubeVideoId = "9Wb-gHEO9ug",
             questions = questions,

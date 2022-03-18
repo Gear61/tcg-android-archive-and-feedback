@@ -501,4 +501,50 @@
         <item>@string/promotion_9_question_2_option_3</item>
         <item>@string/all_of_the_above</item>
     </string-array>
+
+    <!-- LESSON TEN -->
+    <string name="promotion_lesson_10_name">
+       Understand Your Passion And Hatred
+    </string>
+
+    <string name="promotion_10_question_1">
+        Which of the following should you do to discover your work passion?
+    </string>
+    <string name="promotion_10_question_1_option_1">
+        Wait for your manager to tell you it
+    </string>
+    <string name="promotion_10_question_1_option_2">
+        Learn as many different programming languages as possible
+    </string>
+    <string name="promotion_10_question_1_option_3">
+        Take the time to reflect on work activities you did in the past
+        and your enjoyment level for them
+    </string>
+    <string-array name="promotion_10_question_1_options">
+        <item>@string/promotion_10_question_1_option_1</item>
+        <item>@string/promotion_10_question_1_option_2</item>
+        <item>@string/promotion_10_question_1_option_3</item>
+        <item>@string/none_of_the_above</item>
+    </string-array>
+
+    <string name="promotion_10_question_2">
+        What of these is a legitimate, strong sign that something is a work passion for you?
+    </string>
+    <string name="promotion_10_question_2_option_1">
+        You have done a lot of it at work
+    </string>
+    <string name="promotion_10_question_2_option_2">
+        You lose track of time when doing it,
+        since you are having so much fun and it doesn\'t
+        feel like work
+    </string>
+    <string name="promotion_10_question_2_option_3">
+        It is important for the company you work at
+    </string>
+    <string-array name="promotion_10_question_2_options">
+        <item>@string/promotion_10_question_2_option_1</item>
+        <item>@string/promotion_10_question_2_option_2</item>
+        <item>@string/promotion_10_question_2_option_3</item>
+        <item>@string/all_of_the_above</item>
+    </string-array>
 </resources>
